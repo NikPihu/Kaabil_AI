@@ -179,7 +179,7 @@ def main() -> None:
     w("## 5. What this does not prove\n")
     w("- No phone was used. Phone CPUs are slower; memory behaviour is approximated by capping resident memory.")
     w("- Test speech is synthetic until the team adds real recordings to `bench/recordings/<lang>/` (a .wav plus a .txt of what was said).")
-    w("- Voice quality is scored by a speech recogniser (intelligibility), not by people. Use the blind test on the Listen tab with Hindi and Marathi speakers.")
+    w("- Voice quality is scored by a speech recogniser (intelligibility), not by people. Play the clips in outputs/bench_pairs/ to Hindi and Marathi speakers without naming the model.")
     w("- The simulated students are written by an LLM; real students will be shorter, noisier and less cooperative.")
     w("- OpenRouter sends the conversation to a cloud model. The deck's data boundary (pseudonymous IDs only) is not yet implemented in this prototype; use fictional data.")
     (ROOT / "JUDGES_BRIEF.md").write_text("\n".join(L) + "\n", encoding="utf-8")

@@ -39,7 +39,7 @@ Open http://127.0.0.1:8765.
 |---|---|
 | **Conversation** | The prototype. Pick language, Ear, Voice, RAM cap (2 GB / 1 GB / 768 MB), threads and an optional CPU cap, press **Start**. Talk with the mic, type, or click example chips: the label sends the text, 🔊 sends a spoken clip through the Ear (tick "noisy phone audio" for an 8 kHz + noise copy). Dashed chips are the hard cases; hover to see what each one tests. The profile card on the right fills live: green filled, amber doubt, red missing. Each reply shows how long the student waited and where the time went. **Echo mode** skips the LLM to test only Ear + Voice. |
 | **Judges brief** | Which model plays which role and why, with the measured numbers. Generated from the benchmark results. |
-| **Listen / Live bench / Models / Findings** | The voice comparison from the first session. |
+| **Live bench** | Type any text and hear it in several voices side by side, with timing. The preset buttons are Kaabil's own follow-up questions (`bench/questions.json`). **Dialogue mix** gives each `A:` / `B:` / `C:` line its own voice. |
 
 ## 3. Each model: role, setup, how it is tested
 

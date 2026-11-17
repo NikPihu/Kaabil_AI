@@ -1,9 +1,9 @@
-"""Voice test rig server.
+"""Kaabil voice prototype server.
 
     python rig/server.py            ->  http://127.0.0.1:8765
 
-Serves the UI, the pre-generated clips, live synthesis for any text, the
-dialogue mixer, and stores your listening ratings in outputs/ratings.json.
+Serves the UI, the Conversation and Judges brief APIs (proto/convo_api.py) and
+the Live bench: synthesis of any text with any voice, and the dialogue mixer.
 """
 from __future__ import annotations
 
@@ -23,18 +23,15 @@ from fastapi.responses import FileResponse  # noqa: E402
 from fastapi.staticfiles import StaticFiles  # noqa: E402
 from pydantic import BaseModel  # noqa: E402
 
-from core import OUT, analyse, load_scenarios, render_dialogue, render_single, save  # noqa: E402
+from core import OUT, WARMUP, analyse, render_dialogue, render_single, save  # noqa: E402
 from engines import PROJECT, engines, get_engine  # noqa: E402
-from generate import WARMUP, read_manifest  # noqa: E402
 
 WEB = PROJECT / "web"
-RATINGS = OUT / "ratings.json"
-FINDINGS = PROJECT / "findings.json"
 LIVE = OUT / "live"
 _lock = threading.Lock()
 _warm: set[tuple] = set()
 
-app = FastAPI(title="Voice test rig")
+app = FastAPI(title="Kaabil voice prototype")
 OUT.mkdir(exist_ok=True)
 
 
@@ -51,10 +48,7 @@ def index():
 def state():
     return {
         "engines": [e.info() for e in engines().values()],
-        "scenarios": load_scenarios(),
-        "manifest": read_manifest(),
-        "ratings": _json(RATINGS, {}),
-        "findings": _json(FINDINGS, {}),
+        "questions": _json(PROJECT / "bench" / "questions.json", {}),
     }
 
 
@@ -136,21 +130,6 @@ def transcribe(r: AsrReq):
     return {"asr_text": hyp, "cer": ev.cer(r.reference, hyp) if r.reference else None}
 
 
-class RateReq(BaseModel):
-    key: str
-    field: str
-    value: int | str
-
-
-@app.post("/api/rate")
-def rate(r: RateReq):
-    if r.field not in ("natural", "clear", "note"):
-        raise HTTPException(400, "bad field")
-    with _lock:
-        data = _json(RATINGS, {})
-        data.setdefault(r.key, {})[r.field] = r.value
-        RATINGS.write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    return {"ok": True}
 
 
 sys.path.insert(0, str(PROJECT / "proto"))

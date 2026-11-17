@@ -1,8 +1,7 @@
-"""Rendering, dialogue mixing and signal measurements shared by the batch
-generator and the live server."""
+"""Rendering, dialogue mixing and signal measurements shared by the server,
+the voice workers and the benchmarks."""
 from __future__ import annotations
 
-import json
 import time
 from pathlib import Path
 
@@ -12,12 +11,11 @@ import soundfile as sf
 from engines import PROJECT, get_engine
 
 OUT = PROJECT / "outputs"
-SCENARIOS = PROJECT / "scenarios.json"
 PAN = {"A": -0.55, "B": 0.55, "C": 0.0, "D": -0.25, "E": 0.25}
 
 
-def load_scenarios() -> list[dict]:
-    return json.loads(SCENARIOS.read_text(encoding="utf-8"))["scenarios"]
+# one short sentence per language, used to load a model before timing it
+WARMUP = {"en": "This is a short warm up sentence.", "hi": "यह एक छोटा वाक्य है।", "mr": "हे एक छोटं वाक्य आहे."}
 
 
 # ---------------------------------------------------------------- loudness
@@ -153,8 +151,3 @@ def save(audio: np.ndarray, sr: int, path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     sf.write(str(path), audio, sr, format="FLAC", subtype="PCM_16")
 
-
-def scenario_text(sc: dict, lang: str) -> str:
-    if "turns" in sc:
-        return "\n".join(f'{t["who"]}: {t["text"]}' for t in sc["turns"][lang])
-    return sc["text"][lang]

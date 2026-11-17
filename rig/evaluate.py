@@ -1,8 +1,5 @@
-"""Machine 'listening test': transcribe every generated clip with Whisper and
-compare with what should have been said.
-
-    python rig/evaluate.py            # clips that have no transcript yet
-    python rig/evaluate.py --force
+"""The Whisper judge: transcribe a clip and compare it with what should have
+been said. Used by the benchmarks in bench/.
 
 CER (character error rate) is a proxy for intelligibility, not naturalness.
 Whisper itself makes mistakes, especially in Marathi, so read CER relative to
@@ -10,7 +7,6 @@ the cloud reference voice on the same sentence, and always check by ear.
 """
 from __future__ import annotations
 
-import argparse
 import os
 import re
 import sys
@@ -23,8 +19,6 @@ from engines import RIG_HOME  # noqa: E402
 
 os.environ.setdefault("HF_HOME", str(RIG_HOME / "hf_cache"))
 
-from core import OUT, load_scenarios  # noqa: E402
-from generate import read_manifest, write_manifest  # noqa: E402
 
 _MODEL = None
 
@@ -118,51 +112,3 @@ def cer(ref: str, hyp: str) -> float:
     if not r:
         return 0.0
     return round(min(1.0, float(jiwer.cer(r, h))), 3)
-
-
-def reference(sc: dict, lang: str) -> str:
-    if "turns" in sc:
-        return " ".join(t["text"] for t in sc["turns"][lang])
-    return sc.get("spoken", {}).get(lang) or sc["text"][lang]
-
-
-def main() -> None:
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--force", action="store_true")
-    ap.add_argument("--only", default="", help="substring filter on clip keys, comma separated")
-    a = ap.parse_args()
-    scen = {s["id"]: s for s in load_scenarios()}
-    m = read_manifest()
-    def short(c):   # transcript much shorter than the script: worth one chunked retry
-        ref = reference(scen[c["scenario"]], c["lang"])
-        n = len(norm(c.get("asr_text", "")))
-        return not c.get("asr_retry") and (
-            (c.get("duration", 0) > 12 and n < 0.75 * len(norm(ref))) or n > 1.5 * len(norm(ref)))
-
-    todo = [k for k, c in m["clips"].items()
-            if "file" in c and c["scenario"] in scen
-            and (a.force or "asr_text" not in c or short(c))
-            and (not a.only or any(f in k for f in a.only.split(",")))]
-    for c in m["clips"].values():      # rescore the transcripts we keep with the current rules
-        if "asr_text" in c and c.get("scenario") in scen:
-            sc = scen[c["scenario"]]
-            c["cer"] = None if c["lang"] in sc.get("no_cer", []) else cer(reference(sc, c["lang"]), c["asr_text"])
-    print(f"{len(todo)} clips to transcribe")
-    for i, key in enumerate(sorted(todo), 1):
-        c = m["clips"][key]
-        sc = scen[c["scenario"]]
-        ref = reference(sc, c["lang"])
-        hyp = transcribe(str(OUT / c["file"]), c["lang"], len(norm(ref)))
-        c["asr_text"] = hyp
-        c["asr_retry"] = True
-        # Whisper writes digits and Latin-script English its own way, so on
-        # those scenarios the score is noise: keep the transcript, drop the number.
-        c["cer"] = None if c["lang"] in sc.get("no_cer", []) else cer(ref, hyp)
-        print(f'{i:3d}/{len(todo)} {key:44s} CER {c["cer"]}', flush=True)
-        if i % 10 == 0:
-            write_manifest(m)
-    write_manifest(m)
-
-
-if __name__ == "__main__":
-    main()

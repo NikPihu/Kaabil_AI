@@ -1,5 +1,5 @@
 # Kaabil voice stack: what we chose and why
-_Generated 17 Nov 2026 19:16 from `bench/results/`. Every number below was measured on this laptop (Intel i5-13500H, CPU only) with the on-device models inside a hard memory cap; nothing was measured on a phone. Re-run the benchmarks and this file to update it._
+_Generated 17 Nov 2026 22:05 from `bench/results/`. Every number below was measured on this laptop (Intel i5-13500H, CPU only) with the on-device models inside a hard memory cap; nothing was measured on a phone. Re-run the benchmarks and this file to update it._
 
 ## The stack in one table
 
@@ -134,6 +134,6 @@ An LLM plays six fictional students (2 per language) with hidden facts and scrip
 
 - No phone was used. Phone CPUs are slower; memory behaviour is approximated by capping resident memory.
 - Test speech is synthetic until the team adds real recordings to `bench/recordings/<lang>/` (a .wav plus a .txt of what was said).
-- Voice quality is scored by a speech recogniser (intelligibility), not by people. Use the blind test on the Listen tab with Hindi and Marathi speakers.
+- Voice quality is scored by a speech recogniser (intelligibility), not by people. Play the clips in outputs/bench_pairs/ to Hindi and Marathi speakers without naming the model.
 - The simulated students are written by an LLM; real students will be shorter, noisier and less cooperative.
 - OpenRouter sends the conversation to a cloud model. The deck's data boundary (pseudonymous IDs only) is not yet implemented in this prototype; use fictional data.
