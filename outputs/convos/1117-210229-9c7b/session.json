@@ -1,0 +1,567 @@
+{
+ "cfg": {
+  "lang": "mr",
+  "stt": "sarvam-stt",
+  "tts": "sarvam",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्कार! मी काबिल आहे. मी तुमची प्रोफाइल बनवायला मदत करेन. तुमच्याबद्दल सांगा: तुमचं नाव काय, तुम्ही कुठे राहता, आणि कोणत्या वर्गात शिकता?",
+   "audio": "/audio/convos/1117-210229-9c7b/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.695,
+    "first_audio_s": 0.433,
+    "sentences": 4,
+    "duration": 10.61,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 127,
+    "peak_commit_mb": 128
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "text": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचं नाव प्रिया जाधव आहे, वय 16 वर्षे आणि तुम्ही अकरावी सायन्सला शिकता. हे बरोबर आहे का?",
+   "spoken": "तुमचं नाव प्रिया जाधव आहे, वय सोळा वर्षे आणि तुम्ही अकरावी सायन्सला शिकता. हे बरोबर आहे का?",
+   "audio": "/audio/convos/1117-210229-9c7b/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.288,
+    "first_audio_s": 1.468,
+    "sentences": 2,
+    "duration": 6.32,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.292,
+    "llm_s": 2.299,
+    "tts_first_s": 1.468,
+    "tts_s": 2.288,
+    "total_s": 4.59,
+    "wait_s": 3.77
+   },
+   "llm": {
+    "ttft_s": 2.292,
+    "total_s": 2.299,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1402,
+    "cost": 0
+   },
+   "asks_about": [],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "प्रिया जाधव, सोळा वर्षं, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला चौऱ्याऐंशी टक्के, शिवणकाम आणि शेळ्या, नर्स व्हायचंय.",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला 74 टक्के. हे बरोबर आहे का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला चौऱ्याहत्तर टक्के. हे बरोबर आहे का?",
+   "audio": "/audio/convos/1117-210229-9c7b/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.373,
+    "first_audio_s": 1.764,
+    "sentences": 2,
+    "duration": 7.35,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 8.009,
+    "llm_s": 8.036,
+    "tts_first_s": 1.764,
+    "tts_s": 2.373,
+    "total_s": 10.41,
+    "wait_s": 9.8
+   },
+   "llm": {
+    "ttft_s": 8.009,
+    "total_s": 8.036,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1710,
+    "cost": 0
+   },
+   "asks_about": [
+    "name",
+    "age",
+    "class_or_year",
+    "village",
+    "district",
+    "last_marks"
+   ],
+   "changes": [
+    "village",
+    "district",
+    "last_marks",
+    "daily_life_skills",
+    "aspiration"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मला जीवशास्त्र आणि चित्रकला आवडते. घरी मी आईबरोबर शिवणकाम करते, शेळ्या सांभाळते आणि लहान भावंडांना शिकवते.",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला 74 टक्के. हे बरोबर आहे का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला चौऱ्याहत्तर टक्के. हे बरोबर आहे का?",
+   "audio": "/audio/convos/1117-210229-9c7b/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.561,
+    "first_audio_s": 1.917,
+    "sentences": 2,
+    "duration": 8.29,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 3.628,
+    "llm_s": 3.628,
+    "tts_first_s": 1.917,
+    "tts_s": 2.561,
+    "total_s": 6.19,
+    "wait_s": 5.54
+   },
+   "llm": {
+    "ttft_s": 3.628,
+    "total_s": 3.628,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1744,
+    "cost": 0
+   },
+   "asks_about": [],
+   "changes": [
+    "favourite_subjects",
+    "daily_life_skills"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "घरचं वर्षाचं उत्पन्न साधारण एक लाख वीस हजार रुपये आहे.",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला 74 टक्के आणि घरचं उत्पन्न साधारण एक लाख वीस हजार रुपये. हे बरोबर आहे का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला चौऱ्याहत्तर टक्के आणि घरचं उत्पन्न साधारण एक लाख वीस हजार रुपये. हे बरोबर आहे का?",
+   "audio": "/audio/convos/1117-210229-9c7b/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.448,
+    "first_audio_s": 2.781,
+    "sentences": 2,
+    "duration": 11.36,
+    "sample_rate": 24000,
+    "rss_mb": 46,
+    "commit_mb": 126,
+    "peak_commit_mb": 130
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.497,
+    "llm_s": 2.516,
+    "tts_first_s": 2.781,
+    "tts_s": 3.448,
+    "total_s": 5.97,
+    "wait_s": 5.3
+   },
+   "llm": {
+    "ttft_s": 2.497,
+    "total_s": 2.516,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1831,
+    "cost": 0
+   },
+   "asks_about": [
+    "name",
+    "age",
+    "class_or_year",
+    "village",
+    "district",
+    "last_marks",
+    "family_income"
+   ],
+   "changes": [
+    "family_income"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते. माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे.",
+   "turn": 9
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे कॉलेज शिवाजी विद्यालय, कोरेगाव आहे. तुमच्याकडे आधार कार्ड, उत्पन्न प्रमाणपत्र, जाती प्रमाणपत्र, बँक खाते आणि गुणपत्रिका यापैकी कोणते कागदपत्रे आहेत?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-210229-9c7b/k10.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.863,
+    "first_audio_s": 1.251,
+    "sentences": 2,
+    "duration": 12.47,
+    "sample_rate": 24000,
+    "rss_mb": 46,
+    "commit_mb": 126,
+    "peak_commit_mb": 130
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 3.619,
+    "llm_s": 3.623,
+    "tts_first_s": 1.251,
+    "tts_s": 3.863,
+    "total_s": 7.52,
+    "wait_s": 4.87
+   },
+   "llm": {
+    "ttft_s": 3.619,
+    "total_s": 3.623,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 2065,
+    "cost": 0
+   },
+   "asks_about": [
+    "documents"
+   ],
+   "changes": [
+    "institution",
+    "village",
+    "district"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "ho maha kade",
+   "turn": 11
+  },
+  {
+   "role": "kaabil",
+   "text": "मला समजले नाही. आधार कार्ड, उत्पन्न प्रमाणपत्र, जाती प्रमाणपत्र, बँक खाते आणि गुणपत्रिका यापैकी कोणते कागदपत्रे तुमच्याकडे आहेत?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-210229-9c7b/k12.flac",
+   "tts": {
+    "ok": true,
+    "secs": 4.11,
+    "first_audio_s": 0.828,
+    "sentences": 2,
+    "duration": 10.85,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 130
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.991,
+    "llm_s": 1.992,
+    "tts_first_s": 0.828,
+    "tts_s": 4.11,
+    "total_s": 6.11,
+    "wait_s": 2.82
+   },
+   "llm": {
+    "ttft_s": 1.991,
+    "total_s": 1.992,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1977,
+    "cost": 0
+   },
+   "asks_about": [
+    "documents"
+   ],
+   "changes": [],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "mr",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Priya Jadhav",
+    "confidence": 0.95,
+    "evidence": "माझं नाव प्रिया जाधव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "16",
+    "confidence": 0.95,
+    "evidence": "मी सोळा वर्षांची आहे",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 11",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "शिवाजी विद्यालय, कोरेगाव",
+    "confidence": 0.9,
+    "evidence": "माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahimatpur",
+    "confidence": 0.9,
+    "evidence": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Satara",
+    "confidence": 0.9,
+    "evidence": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "74%",
+    "confidence": 0.8,
+    "evidence": "दहावीला चौऱ्याऐंशी टक्के",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Biology and Drawing",
+    "confidence": 0.9,
+    "evidence": "मला जीवशास्त्र आणि चित्रकला आवडते",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "stitching, goat care, teaching siblings",
+    "confidence": 0.9,
+    "evidence": "घरी मी आईबरोबर शिवणकाम करते, शेळ्या सांभाळते आणि लहान भावंडांना शिकवते",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "nurse",
+    "confidence": 0.9,
+    "evidence": "नर्स व्हायचंय",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "filled",
+    "value": "120000",
+    "confidence": 0.8,
+    "evidence": "घरचं वर्षाचं उत्पन्न साधारण एक लाख वीस हजार रुपये आहे",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Priya Jadhav, 16, Class 11 Science, Rahimatpur, Satara. 74% in Class 10. Likes Biology and Drawing. Stitches, cares for goats, teaches siblings. Wants to be a nurse. Family income about 120000 rupees per year. Studies at शिवाजी विद्यालय, Koregaon.",
+  "events": [
+   {
+    "turn": 1,
+    "type": "off_track",
+    "field": "-",
+    "say": "तुमचं नाव प्रिया जाधव आहे, वय 16 वर्षे आणि तुम्ही अकरावी सायन्सला शिकता. हे बरोबर आहे का?"
+   },
+   {
+    "turn": 3,
+    "type": "overwrite",
+    "field": "daily_life_skills",
+    "old": "stitching, goat care",
+    "new": "stitching, goat care, teaching siblings"
+   },
+   {
+    "turn": 3,
+    "type": "off_track",
+    "field": "-",
+    "say": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर सातारा, दहावीला 74 टक्के. हे बरोबर आहे का?"
+   }
+  ],
+  "cost": 0.0,
+  "student_turns": 6
+ },
+ "card": {
+  "name": "Priya Jadhav",
+  "age": "16",
+  "class_or_year": "Class 11",
+  "village": "Rahimatpur",
+  "district": "Satara",
+  "last_marks": "74%",
+  "daily_life_skills": "stitching, goat care, teaching siblings",
+  "aspiration": "nurse",
+  "favourite_subjects": "Biology and Drawing",
+  "family_income": "120000",
+  "institution": "शिवाजी विद्यालय, कोरेगाव",
+  "_confirmed": false
+ }
+}

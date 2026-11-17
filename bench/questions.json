@@ -1,0 +1,33 @@
+{
+  "_comment": "Follow-up questions in the style the Profile Agent produces (one question, numbers as words, English words in Devanagari). Used to time and score the Voice inside the memory cap. bench/run_pairs.py also adds real questions from saved conversations in outputs/convos/ once the LLM has been used.",
+  "hi": [
+    "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "आप आगे चलकर क्या बनना चाहते हैं?",
+    "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?"
+  ],
+  "mr": [
+    "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "दहावीला तुला किती टक्के मिळाले होते?",
+    "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "तुला पुढे काय व्हायचं आहे?",
+    "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?"
+  ],
+  "en": [
+    "Great, Anil. Which village do you live in?",
+    "How many percent did you get in your last exam?",
+    "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "What would you like to become in the future?",
+    "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?"
+  ]
+}

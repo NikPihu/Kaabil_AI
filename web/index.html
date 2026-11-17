@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaabil voice prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Figtree:wght@400;500;600&family=Hind:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --panel:#fafafa; --panel2:#f4f4f5; --line:#e7e7e9; --line2:#d4d4d8;
+  --ink:#111113; --dim:#5b5b63; --faint:#8e8e96;
+  --gold:#b45309; --teal:#047857; --coral:#b91c1c; --sky:#1d4ed8;
+  --serif:"IBM Plex Sans","Hind","Segoe UI",sans-serif; --body:"IBM Plex Sans","Hind","Nirmala UI","Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+button,select,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+::selection{background:#dbeafe;color:#111}
+
+header{display:flex;align-items:flex-end;gap:28px;padding:22px 32px 0;border-bottom:1px solid var(--line)}
+.brand{padding-bottom:14px}
+.brand h1{font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:-.01em;margin:0;line-height:1.2}
+.brand h1 i{font-style:normal;color:var(--dim);font-weight:400}
+.brand p{margin:5px 0 0;color:var(--dim);font-size:12.5px;font-family:var(--mono);letter-spacing:.02em}
+nav{display:flex;gap:2px;margin-left:auto}
+nav button{background:none;border:0;border-bottom:3px solid transparent;padding:12px 18px 13px;color:var(--dim);
+  font-family:var(--body);font-size:14px;letter-spacing:0}
+nav button:hover{color:var(--ink)}
+nav button.on{color:var(--ink);border-bottom-color:var(--ink)}
+
+main{display:none;padding:26px 32px 80px;max-width:1500px;margin:0 auto}
+main.on{display:block}
+
+/* ------- listen ------- */
+.split{display:grid;grid-template-columns:270px 1fr;gap:30px;align-items:start}
+.side{position:sticky;top:18px}
+.seg{display:flex;border:1px solid var(--line2);border-radius:8px;overflow:hidden;margin-bottom:16px}
+.seg button{flex:1;background:none;border:0;padding:8px 6px;color:var(--dim);font-weight:600;border-right:1px solid var(--line2)}
+.seg button:last-child{border-right:0}
+.seg button.on{background:var(--ink);color:#fff}
+.scn{display:block;width:100%;text-align:left;background:none;border:0;border-left:2px solid var(--line);
+  padding:8px 12px;color:var(--dim);font-size:14px;line-height:1.3}
+.scn:hover{color:var(--ink);border-left-color:var(--line2)}
+.scn.on{color:var(--ink);border-left-color:var(--gold);background:linear-gradient(90deg,rgba(243,167,18,.09),transparent)}
+.scn small{display:block;font-family:var(--mono);font-size:10.5px;color:var(--faint);letter-spacing:.04em}
+.blind{display:flex;align-items:center;gap:9px;margin-top:18px;padding:11px 12px;border:1px dashed var(--line2);border-radius:8px;
+  font-size:13px;color:var(--dim);cursor:pointer;user-select:none}
+.blind input{accent-color:var(--gold);width:16px;height:16px}
+.blind b{color:var(--ink);font-weight:600}
+
+.head h2{font-family:var(--serif);font-weight:600;font-size:34px;letter-spacing:-.02em;margin:0 0 4px;line-height:1.1}
+.head .tests{color:var(--dim);max-width:820px;margin:0 0 14px}
+.script{border-left:3px solid var(--gold);background:var(--panel);padding:13px 18px;border-radius:0 8px 8px 0;font-size:17px;
+  line-height:1.6;max-width:980px;white-space:pre-wrap}
+.script .meta{display:block;font-family:var(--mono);font-size:11px;color:var(--faint);letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.script.alt{border-left-color:var(--line2);font-size:14px;color:var(--dim);margin-top:6px}
+
+.rows{margin-top:22px;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:210px 1fr 250px;gap:20px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.who .nm{font-weight:600;font-size:15.5px;line-height:1.25}
+.who .vc{font-family:var(--mono);font-size:11px;color:var(--dim);margin-top:2px}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.tag{font-family:var(--mono);font-size:10px;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:99px;border:1px solid var(--line2);color:var(--dim)}
+.tag.local{color:var(--teal);border-color:rgba(84,214,184,.4)}
+.tag.cloud{color:var(--sky);border-color:rgba(127,183,255,.4)}
+.tag.exp{color:var(--coral);border-color:rgba(255,111,89,.5)}
+
+.player{display:flex;align-items:center;gap:12px;min-width:0;padding-right:52px}
+.play{flex:none;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--c,var(--gold));background:none;color:var(--c,var(--gold));
+  display:grid;place-items:center;transition:.15s}
+.play:hover{background:var(--c,var(--gold));color:#fff}
+.play.playing{background:var(--c,var(--gold));color:#fff}
+.play svg{width:15px;height:15px;fill:currentColor}
+.lane{flex:1;min-width:0;position:relative;height:56px;background:
+  repeating-linear-gradient(90deg,transparent 0 calc(var(--sec) - 1px),rgba(255,255,255,.045) calc(var(--sec) - 1px) var(--sec))}
+.wave{position:absolute;left:0;top:0;height:100%;cursor:pointer;border-right:1px solid var(--line2)}
+.wave canvas{width:100%;height:100%;display:block}
+.cursor{position:absolute;top:0;bottom:0;width:2px;background:var(--ink);left:0;opacity:0;pointer-events:none}
+.dur{position:absolute;top:2px;font-family:var(--mono);font-size:10.5px;color:var(--faint);padding-left:6px;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:8px;font-family:var(--mono);font-size:11.5px;color:var(--dim)}
+.chips b{color:var(--ink);font-weight:600}
+.chips .good b{color:var(--teal)} .chips .mid b{color:var(--gold)} .chips .bad b{color:var(--coral)}
+.asr{margin-top:8px;font-size:13.5px;color:var(--dim);border-left:2px solid var(--line2);padding-left:10px}
+.asr span{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);display:block}
+.err{color:var(--coral);font-family:var(--mono);font-size:12px}
+
+.rate{display:grid;grid-template-columns:62px 1fr;gap:6px 8px;align-items:center;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.dots{display:flex;gap:4px}
+.dots button{width:26px;height:22px;border-radius:5px;border:1px solid var(--line2);background:none;color:var(--faint);font-family:var(--mono);font-size:11px;padding:0}
+.dots button:hover{border-color:var(--gold);color:var(--gold)}
+.dots button.on{background:var(--gold);border-color:var(--gold);color:#17130a;font-weight:600}
+.rate input{grid-column:1/-1;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:5px 8px;font-family:var(--body);font-size:13px;width:100%}
+.rate input:focus,textarea:focus,select:focus{outline:1px solid var(--gold);border-color:var(--gold)}
+.hint{color:var(--faint);font-size:12.5px;margin-top:14px;max-width:900px}
+
+/* ------- live ------- */
+.bench{display:grid;grid-template-columns:minmax(380px,520px) 1fr;gap:34px;align-items:start}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+.card h3{font-family:var(--serif);font-size:20px;font-weight:600;margin:0 0 10px}
+textarea{width:100%;min-height:150px;background:var(--bg);border:1px solid var(--line2);border-radius:8px;padding:12px;font-size:16px;line-height:1.55;resize:vertical}
+.ctl{display:flex;flex-wrap:wrap;gap:14px 18px;align-items:center;margin:12px 0;font-size:13px;color:var(--dim)}
+.ctl label{display:flex;align-items:center;gap:8px}
+.ctl output{font-family:var(--mono);color:var(--gold);min-width:42px}
+input[type=range]{accent-color:var(--gold);width:140px}
+input[type=checkbox]{accent-color:var(--gold)}
+select{background:var(--bg);border:1px solid var(--line2);border-radius:6px;padding:4px 8px;max-width:190px}
+.eng{display:grid;grid-template-columns:20px 1fr 170px;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--line);font-size:14px}
+.eng.off{opacity:.45}
+.eng small{display:block;color:var(--faint);font-size:11.5px;font-family:var(--mono)}
+.go{background:var(--ink);color:#fff;border:0;border-radius:6px;padding:10px 20px;font-weight:500;font-size:14px;margin-top:14px}
+.go:hover{filter:brightness(1.08)} .go:disabled{opacity:.5;cursor:wait}
+.mini{background:none;border:1px solid var(--line2);border-radius:6px;padding:3px 10px;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.mini:hover{color:var(--gold);border-color:var(--gold)}
+.presets{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+
+/* ------- tables / findings ------- */
+h2.sec{font-family:var(--serif);font-weight:600;font-size:28px;letter-spacing:-.015em;margin:34px 0 4px}
+h2.sec:first-child{margin-top:0}
+p.lede{color:var(--dim);max-width:900px;margin:0 0 16px}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);text-align:left;padding:8px 12px 8px 0;border-bottom:1px solid var(--line2);font-weight:400;vertical-align:bottom}
+td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.n{font-family:var(--mono);white-space:nowrap}
+td b{font-weight:600}
+td small{color:var(--dim);display:block;font-size:12px}
+.yes{color:var(--teal)} .no{color:var(--faint)} .meh{color:var(--gold)} .warn{color:var(--coral)}
+.pick{border:1px solid var(--gold);border-radius:14px;padding:22px 26px;background:linear-gradient(135deg,rgba(243,167,18,.1),transparent 55%);margin-bottom:26px}
+.pick .k{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold)}
+.pick h2{font-family:var(--serif);font-size:32px;font-weight:800;letter-spacing:-.02em;margin:4px 0 8px;line-height:1.12}
+.pick ul{margin:8px 0 0;padding-left:20px;max-width:1000px}
+.pick li{margin:4px 0}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(430px,1fr));gap:18px}
+.f{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.f h3{font-family:var(--serif);font-size:21px;font-weight:600;margin:0}
+.f .v{color:var(--gold);font-size:14px;margin:4px 0 10px}
+.f h4{font-family:var(--mono);font-size:10.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--faint);margin:12px 0 4px;font-weight:400}
+.f ul{margin:0;padding-left:18px;font-size:14px}
+.f li{margin:3px 0}
+.note{border-left:3px solid var(--coral);padding:10px 16px;background:var(--panel);color:var(--dim);border-radius:0 8px 8px 0;max-width:1000px;margin:14px 0;font-size:14px}
+.empty{color:var(--dim);padding:40px 0;font-family:var(--mono);font-size:13px}
+@media(max-width:1100px){.split,.bench{grid-template-columns:1fr}.side{position:static}.row{grid-template-columns:1fr}}
+</style>
+<link rel="stylesheet" href="/web/talk.css?v=3">
+<link rel="stylesheet" href="/web/theme.css?v=3">
+</head>
+<body>
+<header>
+  <div class="brand">
+    <h1>Kaabil <i>voice</i></h1>
+    <p>English · हिन्दी · मराठी</p>
+  </div>
+  <nav id="nav">
+    <button data-tab="talk" class="on">Conversation</button>
+    <button data-tab="live">Live bench</button>
+  </nav>
+</header>
+
+<main id="talk" class="on"></main>
+<main id="live"></main>
+
+<script>
+const LANGS = {en:"English", hi:"हिन्दी", mr:"मराठी"};
+const HUES = {piper:"#047857", kokoro:"#b45309", supertonic:"#6d28d9", mms:"#c2410c", kitten:"#be185d", edge:"#1d4ed8",
+  "kokoro-int8":"#a16207", "supertonic-int8":"#7c3aed", elevenlabs:"#111113", sarvam:"#15803d", "indic-tts":"#0e7490", "indic-parler":"#92400e"};
+const S = {st:null, lang:"hi", scn:null, blind:false, live:[], liveSel:{}, liveLang:"hi"};
+const ICON = {play:'<svg viewBox="0 0 16 16"><path d="M4 2.5v11l9-5.5z"/></svg>', pause:'<svg viewBox="0 0 16 16"><path d="M3.5 2.5h3v11h-3zM9.5 2.5h3v11h-3z"/></svg>'};
+
+function h(tag, attrs, ...kids){
+  const e = document.createElement(tag);
+  for(const [k,v] of Object.entries(attrs||{})){
+    if(v==null||v===false) continue;
+    if(k==="class") e.className=v; else if(k==="html") e.innerHTML=v;
+    else if(k.startsWith("on")) e.addEventListener(k.slice(2),v);
+    else if(k==="style") e.style.cssText=v; else e.setAttribute(k,v===true?"":v);
+  }
+  for(const k of kids.flat(Infinity)){ if(k==null||k===false) continue; e.append(k.nodeType?k:document.createTextNode(k)); }
+  return e;
+}
+const eng = id => S.st.engines.find(e=>e.id===id);
+const pct = x => (x*100).toFixed(0)+"%";
+async function post(url, body){
+  const r = await fetch(url,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(body)});
+  const j = await r.json().catch(()=>({}));
+  if(!r.ok) throw new Error(j.detail||r.statusText);
+  return j;
+}
+
+/* ---------------- audio + waveform ---------------- */
+let actx, current=null; const peaksCache = new Map();
+async function peaks(url){
+  if(peaksCache.has(url)) return peaksCache.get(url);
+  const p = (async()=>{
+    actx = actx || new (window.AudioContext||window.webkitAudioContext)();
+    const buf = await actx.decodeAudioData(await (await fetch(url)).arrayBuffer());
+    const N = 900, out = new Float32Array(N*2), step = buf.length/N;
+    const chans = Array.from({length:buf.numberOfChannels},(_,i)=>buf.getChannelData(i));
+    for(let i=0;i<N;i++){
+      let lo=0,hi=0; const a=Math.floor(i*step), b=Math.min(buf.length,Math.floor((i+1)*step));
+      for(let j=a;j<b;j+=2){ let v=0; for(const c of chans) v+=c[j]; v/=chans.length; if(v<lo)lo=v; if(v>hi)hi=v; }
+      out[2*i]=lo; out[2*i+1]=hi;
+    }
+    return {pk:out, dur:buf.duration};
+  })();
+  peaksCache.set(url,p); return p;
+}
+async function draw(canvas, url, color){
+  try{
+    const {pk} = await peaks(url);
+    const dpr = window.devicePixelRatio||1, w = canvas.clientWidth, hgt = canvas.clientHeight;
+    if(!w) return;
+    canvas.width=w*dpr; canvas.height=hgt*dpr;
+    const g = canvas.getContext("2d"); g.scale(dpr,dpr); g.fillStyle=color;
+    const N = pk.length/2, mid=hgt/2, bar=Math.max(1,w/N);
+    for(let x=0;x<w;x+=2){
+      const i=Math.min(N-1,Math.floor(x/w*N));
+      const top=mid-pk[2*i+1]*mid*1.9, bot=mid-pk[2*i]*mid*1.9;
+      g.fillRect(x,Math.min(top,mid-.5),1.4,Math.max(1,bot-top));
+    }
+  }catch(e){ console.warn("waveform",url,e); }
+}
+function player(url, dur, maxDur, color){
+  const audio = new Audio(); audio.preload="none"; audio.src=url;
+  const btn = h("button",{class:"play",style:`--c:${color}`,html:ICON.play,title:"Play / pause"});
+  const cur = h("div",{class:"cursor"});
+  const canvas = h("canvas");
+  const w = Math.max(4, dur/maxDur*100);
+  const wave = h("div",{class:"wave",style:`width:${w}%`}, canvas, cur);
+  const lane = h("div",{class:"lane",style:`--sec:${100/maxDur}%`}, wave,
+    h("span",{class:"dur",style:`left:${w}%`}, dur.toFixed(1)+" s"));
+  let raf;
+  const place=()=>{ cur.style.left=(audio.currentTime/(audio.duration||dur)*100)+"%"; };
+  const tick=()=>{ place(); raf=requestAnimationFrame(tick); };
+  audio.addEventListener("timeupdate",place);
+  const stop=()=>{ audio.pause(); };
+  audio.addEventListener("play",()=>{ if(current&&current!==stop) current(); current=stop; btn.innerHTML=ICON.pause; btn.classList.add("playing"); cur.style.opacity=1; tick(); });
+  audio.addEventListener("pause",()=>{ btn.innerHTML=ICON.play; btn.classList.remove("playing"); cancelAnimationFrame(raf); });
+  audio.addEventListener("ended",()=>{ cur.style.opacity=0; audio.currentTime=0; });
+  btn.onclick=()=> audio.paused ? audio.play() : audio.pause();
+  wave.onclick=e=>{ const r=wave.getBoundingClientRect(); audio.currentTime=(e.clientX-r.left)/r.width*(audio.duration||dur); if(audio.paused) audio.play(); };
+  setTimeout(()=>draw(canvas,url,color),0);
+  return h("div",{class:"player"}, btn, lane);
+}
+
+/* ---------------- shared row ---------------- */
+function chips(c, refCer){
+  const out=[];
+  if(c.rtf!=null){ const x=1/c.rtf; out.push(h("span",{class:x>=3?"good":x>=1.2?"mid":"bad",title:`Generated ${c.duration}s of audio in ${c.gen_time}s on this laptop's CPU. Below 1x means the listener waits longer than the audio lasts.`}, h("b",{},x>=10?x.toFixed(0):x.toFixed(1),"x")," real time")); }
+  if(c.cer!=null){ const cls=c.cer<.08?"good":c.cer<.2?"mid":"bad"; out.push(h("span",{class:cls,title:"Whisper heard this clip and its transcript differs from the script by this share of characters. Lower is clearer."+(refCer!=null?` Cloud reference on this sentence: ${pct(refCer)}.`:"")}, "ASR error ",h("b",{},pct(c.cer)))); }
+  if(c.f0_std_st!=null) out.push(h("span",{title:"Pitch movement in semitones (standard deviation). Under ~2 tends to sound flat; 3-5 is lively."}, "pitch ±",h("b",{},c.f0_std_st)," st"));
+  if(c.pause_count!=null) out.push(h("span",{title:"Silences of 150 ms or longer inside the clip"}, h("b",{},c.pause_count)," pauses · ",c.pause_total,"s"));
+  if(c.bandwidth_hz) out.push(h("span",{title:"Highest frequency carrying real energy. 8 kHz sounds like a phone line; 11 kHz+ sounds open."}, h("b",{},(c.bandwidth_hz/1000).toFixed(1))," kHz"));
+  if(c.distinct_voices) out.push(h("span",{class:c.distinct_voices>=c.speakers?"good":"bad",title:"Different voices available for the speakers in this conversation"}, h("b",{},c.distinct_voices),"/",c.speakers," voices"));
+  return h("div",{class:"chips"}, out);
+}
+function rating(key){
+  const r = S.st.ratings[key] || (S.st.ratings[key]={});
+  const scale=(field,label,tip)=>{
+    const box=h("div",{class:"dots"});
+    for(let i=1;i<=5;i++) box.append(h("button",{class:r[field]===i?"on":"",onclick:async()=>{
+      r[field]=i; [...box.children].forEach((b,j)=>b.classList.toggle("on",j===i-1)); await post("/api/rate",{key,field,value:i}); }},String(i)));
+    return [h("span",{title:tip},label), box];
+  };
+  const note=h("input",{placeholder:"what did you hear?",value:r.note||""});
+  note.addEventListener("change",()=>{ r.note=note.value; post("/api/rate",{key,field:"note",value:note.value}); });
+  return h("div",{class:"rate"}, scale("natural","natural","1 = robot, 5 = could be a person"), scale("clear","clear","1 = hard to follow, 5 = every word lands"), note);
+}
+
+/* ---------------- LISTEN ---------------- */
+function shuffled(arr, seed){ let s=0; for(const ch of seed) s=(s*31+ch.charCodeAt(0))>>>0;
+  const a=[...arr]; for(let i=a.length-1;i>0;i--){ s=(s*1664525+1013904223)>>>0; const j=s%(i+1); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function renderListen(){
+  const root=document.getElementById("listen"); root.innerHTML="";
+  const scs=S.st.scenarios, clips=S.st.manifest.clips;
+  if(!S.scn) S.scn=scs[0].id;
+  const sc=scs.find(s=>s.id===S.scn);
+  const side=h("div",{class:"side"},
+    h("div",{class:"seg"}, Object.entries(LANGS).map(([k,v])=>h("button",{class:S.lang===k?"on":"",onclick:()=>{S.lang=k;renderListen();}},v))),
+    scs.map((s,i)=>h("button",{class:"scn"+(s.id===S.scn?" on":""),onclick:()=>{S.scn=s.id;renderListen();}}, h("small",{},String(i+1).padStart(2,"0")+(s.speed&&s.speed!==1?` · ${s.speed}x`:"")), s.title)),
+    h("label",{class:"blind"}, h("input",{type:"checkbox",checked:S.blind,onchange:e=>{S.blind=e.target.checked;renderListen();}}), h("span",{}, h("b",{},"Blind test"), " — hide names and numbers, shuffle the order")));
+  const has = (sc.turns||sc.text)[S.lang];
+  const text = !has ? "This scenario has no "+LANGS[S.lang]+" version. Pick हिन्दी or मराठी." : sc.turns ? sc.turns[S.lang].map(t=>`${t.who}:  ${t.text}`).join("\n") : sc.text[S.lang];
+  const spoken = sc.spoken && sc.spoken[S.lang];
+  let rows = Object.values(clips).filter(c=>c.scenario===sc.id && c.lang===S.lang);
+  const order=S.st.engines.map(e=>e.id);
+  rows.sort((a,b)=>order.indexOf(a.engine)-order.indexOf(b.engine));
+  if(S.blind) rows=shuffled(rows, sc.id+S.lang);
+  const ok=rows.filter(c=>c.file), maxDur=Math.max(4,...ok.map(c=>c.duration))*1.06;
+  const ref=clips[`${sc.id}/${S.lang}/edge`];
+  const body=h("div",{},
+    h("div",{class:"head"}, h("h2",{},sc.title), h("p",{class:"tests"},sc.tests),
+      h("div",{class:"script"}, h("span",{class:"meta"},`script · ${LANGS[S.lang]} · speed ${sc.speed||1}x`), text),
+      spoken && h("div",{class:"script alt"}, h("span",{class:"meta"},"a correct reading sounds like"), spoken)),
+    h("div",{class:"rows"}, rows.length? rows.map((c,i)=>{
+      const e=eng(c.engine)||{name:c.engine,kind:"local",disk_mb:{}}, key=`${c.scenario}/${c.lang}/${c.engine}`;
+      const color=S.blind?"#ece7d8":(HUES[c.engine]||"#ccc");
+      const who = S.blind ? h("div",{class:"who"}, h("div",{class:"nm"},"Voice "+String.fromCharCode(65+i)), h("div",{class:"vc"},"identity hidden"))
+        : h("div",{class:"who"}, h("div",{class:"nm"},e.name), h("div",{class:"vc"},c.voice||""),
+            h("div",{class:"tags"}, h("span",{class:"tag "+e.kind},e.kind), e.disk_mb&&e.disk_mb[c.lang]&&h("span",{class:"tag"},Math.round(e.disk_mb[c.lang])+" MB"), c.experimental&&h("span",{class:"tag exp",title:"This model was not trained on this language. Included to show what happens."},"not trained for "+c.lang)));
+      if(!c.file) return h("div",{class:"row"}, who, h("div",{class:"err"},c.error||"no audio"), h("div"));
+      return h("div",{class:"row"}, who,
+        h("div",{style:"min-width:0"}, player("/audio/"+c.file, c.duration, maxDur, color),
+          !S.blind && chips(c, ref&&ref!==c?ref.cer:null),
+          !S.blind && c.asr_text && h("div",{class:"asr"}, h("span",{},"what whisper heard"+((sc.no_cer||[]).includes(c.lang)?" · not auto-scored here, compare it with the script yourself":"")), c.asr_text)),
+        rating(key));
+    }) : h("div",{class:"empty"},"No clips yet for this scenario. Run:  python rig/generate.py")),
+    h("p",{class:"hint"},"All clips are loudness-matched and drawn on one time axis (grid lines = 1 second), so you can see who rushes, who drags and where the pauses fall before you press play. Ratings save to outputs/ratings.json and feed the leaderboard on the Findings tab."));
+  root.append(h("div",{class:"split"}, side, body));
+}
+
+/* ---------------- LIVE ---------------- */
+const PRESETS = {
+  hi:[["Form help","कृपया अपना मोबाइल नंबर बताइए। मैं उसे फ़ॉर्म में भर दूँगी।"],["Dialogue","A: नमस्ते, मुझे नौकरी के बारे में पूछना था।\nB: जी बोलिए, कौन सी नौकरी?\nA: वही इलेक्ट्रीशियन वाली, पुणे में।\nC: अरे सुनो, पहले पूछो फ़ीस तो नहीं लगेगी!"]],
+  mr:[["Form help","कृपया तुमचा मोबाईल नंबर सांगा. मी तो फॉर्ममध्ये भरते."],["Dialogue","A: नमस्कार, मला नोकरीबद्दल विचारायचं होतं.\nB: हो बोला, कोणती नोकरी?\nA: तीच इलेक्ट्रिशियनची, पुण्यातली.\nC: अहो ऐका, आधी विचारा फी तर लागणार नाही ना!"]],
+  en:[["Form help","Please tell me your mobile number. I will fill it in the form for you."],["Dialogue","A: Hello, I wanted to ask about the job.\nB: Yes, tell me, which job?\nA: The electrician one, in Pune.\nC: Hey listen, first ask if there is any fee!"]],
+};
+function renderLive(){
+  const root=document.getElementById("live"); root.innerHTML="";
+  const L=S.liveLang;
+  const ta=h("textarea",{id:"ltext",placeholder:"Type or paste anything: a form field label, an SMS, a government reply…"}, S.liveText ?? PRESETS[L][0][1]);
+  ta.addEventListener("input",()=>S.liveText=ta.value);
+  const speed=h("input",{type:"range",min:"0.6",max:"1.6",step:"0.05",value:S.liveSpeed||1});
+  const so=h("output",{},(+speed.value).toFixed(2)+"x"); speed.oninput=()=>{S.liveSpeed=+speed.value;so.textContent=(+speed.value).toFixed(2)+"x";};
+  const dlg=h("input",{type:"checkbox",checked:S.liveDlg});
+  const ov=h("input",{type:"range",min:"-0.4",max:"2",step:"0.1",value:S.liveOv??0.8});
+  const oo=h("output",{},(+ov.value).toFixed(1)+"s"); ov.oninput=()=>{S.liveOv=+ov.value;oo.textContent=(+ov.value).toFixed(1)+"s";};
+  dlg.onchange=()=>{S.liveDlg=dlg.checked; if(dlg.checked&&!/^\s*[A-E]\s*:/m.test(ta.value)){ta.value=PRESETS[L][1][1];S.liveText=ta.value;}};
+  const engs=S.st.engines.filter(e=>e.voices[L]);
+  const list=engs.map(e=>{
+    const sel=S.liveSel[e.id] ?? (S.liveSel[e.id]={on:e.available&&e.in_matrix,voice:{}});
+    const cb=h("input",{type:"checkbox",checked:sel.on&&e.available,disabled:!e.available,onchange:ev=>sel.on=ev.target.checked});
+    const vs=h("select",{disabled:!e.available,onchange:ev=>sel.voice[L]=ev.target.value}, e.voices[L].map(v=>h("option",{value:v.id,selected:sel.voice[L]===v.id},`${v.label} · ${v.gender}`)));
+    return h("div",{class:"eng"+(e.available?"":" off")}, cb, h("div",{}, e.name, e.experimental.includes(L)&&h("span",{class:"tag exp",style:"margin-left:8px"},"experimental"), h("small",{}, e.available? `${e.kind}${e.disk_mb[L]?" · "+Math.round(e.disk_mb[L])+" MB":""}` : e.unavailable_reason)), vs);
+  });
+  const go=h("button",{class:"go"},"Synthesise");
+  const results=h("div",{class:"rows",style:"margin-top:0"});
+  const paint=()=>{ results.innerHTML="";
+    if(!S.live.length){ results.append(h("div",{class:"empty"},"Results appear here. Tick the engines you want, type a sentence, press Synthesise.")); return; }
+    const maxDur=Math.max(4,...S.live.filter(c=>c.url).map(c=>c.duration))*1.06;
+    for(const c of S.live){
+      const e=eng(c.engine);
+      const who=h("div",{class:"who"}, h("div",{class:"nm"},e.name), h("div",{class:"vc"},c.voiceLabel||""), h("div",{class:"tags"},h("span",{class:"tag "+e.kind},e.kind)));
+      if(!c.url){ results.append(h("div",{class:"row",style:"grid-template-columns:210px 1fr"}, who, h("div",{class:"err"},c.error||"working…"))); continue; }
+      const asrBox=h("div");
+      if(c.asr_text) asrBox.append(h("div",{class:"asr"},h("span",{},"what whisper heard"+(c.cer!=null?` · error ${pct(c.cer)}`:"")),c.asr_text));
+      else asrBox.append(h("button",{class:"mini",style:"margin-top:8px",title:"Runs Whisper on this clip. First use loads a 1.6 GB model (about 20 s).",onclick:async ev=>{
+        ev.target.disabled=true; ev.target.textContent="listening…";
+        try{ Object.assign(c, await post("/api/transcribe",{file:c.file,lang:c.lang,reference:c.dialogue?"":c.text})); }catch(x){ c.asr_text="ASR failed: "+x.message; }
+        paint(); }},"check with Whisper"));
+      results.append(h("div",{class:"row",style:"grid-template-columns:210px 1fr"}, who, h("div",{style:"min-width:0"}, player(c.url,c.duration,maxDur,HUES[c.engine]||"#ccc"), chips(c), asrBox)));
+    }};
+  go.onclick=async()=>{
+    const picks=engs.filter(e=>e.available&&S.liveSel[e.id].on);
+    if(!picks.length||!ta.value.trim()) return;
+    go.disabled=true; S.live=[];
+    for(const e of picks){
+      const voice=S.liveSel[e.id].voice[L]||e.voices[L][0].id;
+      const slot={engine:e.id,lang:L,text:ta.value,dialogue:dlg.checked,voiceLabel:dlg.checked?"multi-voice mix":voice}; S.live.push(slot); paint();
+      go.textContent=`Synthesising ${e.name}…`;
+      try{ Object.assign(slot, await post("/api/synth",{engine:e.id,lang:L,text:ta.value,voice,speed:+speed.value,dialogue:dlg.checked,overlap:+ov.value})); }
+      catch(x){ slot.error=x.message; }
+      paint();
+    }
+    go.disabled=false; go.textContent="Synthesise";
+  };
+  root.append(h("div",{class:"bench"},
+    h("div",{class:"card"}, h("h3",{},"Your text"),
+      h("div",{class:"seg"}, Object.entries(LANGS).map(([k,v])=>h("button",{class:L===k?"on":"",onclick:()=>{S.liveLang=k;S.liveText=null;renderLive();}},v))),
+      h("div",{class:"presets"}, PRESETS[L].map(([n,t])=>h("button",{class:"mini",onclick:()=>{ta.value=t;S.liveText=t;dlg.checked=n==="Dialogue";S.liveDlg=dlg.checked;}},n)),
+        S.st.scenarios.filter(s=>s.text&&s.text[L]).slice(0,6).map(s=>h("button",{class:"mini",onclick:()=>{ta.value=s.text[L];S.liveText=ta.value;dlg.checked=false;S.liveDlg=false;speed.value=s.speed||1;speed.oninput();}},s.title))),
+      ta,
+      h("div",{class:"ctl"}, h("label",{},"speed",speed,so), h("label",{title:"Write lines as  A: …  B: …  C: …  Each speaker gets a different voice."},dlg,"dialogue mix"), h("label",{title:"How long each turn starts before the previous one ends. Negative = polite gap."},"overlap",ov,oo)),
+      h("h3",{style:"margin-top:8px"},"Engines"), list, go),
+    h("div",{}, h("h2",{class:"sec"},"Output"), h("p",{class:"lede"},"Timing is measured on this machine. Local engines run entirely offline; cloud engines send the text to their provider."), results)));
+  paint();
+}
+
+/* ---------------- MODELS ---------------- */
+function agg(engineId, lang){
+  const cs=Object.values(S.st.manifest.clips).filter(c=>c.engine===engineId&&c.lang===lang&&c.cer!=null&&!["numbers_raw","crosstalk","codeswitch"].includes(c.scenario));
+  if(!cs.length) return null; return cs.reduce((a,c)=>a+c.cer,0)/cs.length;
+}
+function renderModels(){
+  const root=document.getElementById("models"); root.innerHTML="";
+  const st=S.st.manifest.engines||{}, F=S.st.findings||{};
+  const langCell=(e,l)=>{ if(!e.voices[l]) return h("td",{class:"n no"},"—"); const a=agg(e.id,l);
+    const exp=e.experimental.includes(l);
+    return h("td",{class:"n"}, h("span",{class:exp?"warn":"yes"},exp?"untrained":`${e.voices[l].length} voice${e.voices[l].length>1?"s":""}`), a!=null&&h("small",{title:"Mean Whisper character error over the single-speaker scenarios"},"ASR err "+pct(a))); };
+  const tested=S.st.engines.filter(e=>st[e.id]||e.available);
+  root.append(h("div",{},
+    h("h2",{class:"sec"},"Engines in this rig"),
+    h("p",{class:"lede"},"Measured on this laptop (i5-13500H, CPU only, 4 threads). Download size is what one language costs on a phone; RAM is the whole Python process with one voice loaded, so treat it as an upper bound."),
+    h("table",{}, h("thead",{},h("tr",{},["Model","Params","Download","RAM","Cold start","Speed","English","हिन्दी","मराठी","Licence"].map(x=>h("th",{},x)))),
+      h("tbody",{}, tested.map(e=>{ const s=st[e.id]||{}; const d=e.disk_mb||{}; const sizes=[...new Set(Object.values(d).map(Math.round))];
+        return h("tr",{}, h("td",{}, h("b",{style:`color:${HUES[e.id]||"inherit"}`},e.name), h("small",{},e.maker+" · "+e.arch), !e.available&&h("small",{class:"warn"},e.unavailable_reason)),
+          h("td",{class:"n"},e.params), h("td",{class:"n"}, sizes.length?sizes.join(" / ")+" MB":"—"),
+          h("td",{class:"n"}, s.ram_one_voice_mb&&e.kind==="local"?s.ram_one_voice_mb+" MB":"—"),
+          h("td",{class:"n"}, s.cold_start_s?Math.max(...Object.values(s.cold_start_s)).toFixed(1)+" s":"—"),
+          h("td",{class:"n"}, s.rtf_median?(1/s.rtf_median).toFixed(1)+"x":"—", s.rtf_median&&h("small",{},e.kind==="cloud"?"incl. network":"real time")),
+          langCell(e,"en"), langCell(e,"hi"), langCell(e,"mr"), h("td",{}, h("small",{style:"color:var(--ink)"},e.license))); }))),
+    (F.landscape||[]).map(g=>[h("h2",{class:"sec"},g.title), h("p",{class:"lede"},g.lede),
+      g.items.length && h("table",{}, h("thead",{},h("tr",{},["Model","What it is","Hindi / Marathi","Runs where","Why it matters for Kaabil"].map(x=>h("th",{},x)))),
+        h("tbody",{}, g.items.map(m=>h("tr",{}, h("td",{},h("b",{},m.name),h("small",{},m.maker)), h("td",{},m.what), h("td",{},m.indic), h("td",{},m.runs), h("td",{},m.note)))))]),
+    F.sources && h("p",{class:"hint"},"Sources: ", F.sources.map((s,i)=>[i?" · ":"", h("a",{href:s.url,target:"_blank",rel:"noopener",style:"color:var(--dim)"},s.name)]))));
+}
+
+/* ---------------- FINDINGS ---------------- */
+function renderFindings(){
+  const root=document.getElementById("findings"); root.innerHTML="";
+  const F=S.st.findings||{};
+  if(!F.pick){ root.append(h("div",{class:"empty"},"findings.json not written yet.")); return; }
+  root.append(h("div",{class:"pick"}, h("div",{class:"k"},F.pick.kicker), h("h2",{},F.pick.title), h("div",{},F.pick.body), h("ul",{},F.pick.points.map(p=>h("li",{html:p})))));
+  if(F.caveat) root.append(h("div",{class:"note"},F.caveat));
+  // your ratings
+  const R=S.st.ratings, tally={};
+  for(const [key,r] of Object.entries(R)){ const [,lang,e]=key.split("/"); if(!r.natural&&!r.clear) continue;
+    const t=tally[e+"/"+lang]||(tally[e+"/"+lang]={e,lang,n:0,nat:0,nn:0,clr:0,nc:0}); t.n++;
+    if(r.natural){t.nat+=r.natural;t.nn++;} if(r.clear){t.clr+=r.clear;t.nc++;} }
+  const rowsT=Object.values(tally).sort((a,b)=>(b.nat/(b.nn||1)+b.clr/(b.nc||1))-(a.nat/(a.nn||1)+a.clr/(a.nc||1)));
+  root.append(h("h2",{class:"sec"},"Your ears"), h("p",{class:"lede"},"Averages of the ratings you give on the Listen tab. This is the score that should decide the model: nothing above replaces a native Hindi or Marathi listener."),
+    rowsT.length? h("table",{style:"max-width:760px"}, h("thead",{},h("tr",{},["Model","Language","Natural","Clear","Clips rated"].map(x=>h("th",{},x)))),
+      h("tbody",{}, rowsT.map(t=>h("tr",{}, h("td",{},h("b",{},(eng(t.e)||{name:t.e}).name)), h("td",{},LANGS[t.lang]), h("td",{class:"n"},t.nn?(t.nat/t.nn).toFixed(1):"—"), h("td",{class:"n"},t.nc?(t.clr/t.nc).toFixed(1):"—"), h("td",{class:"n"},t.n)))))
+      : h("div",{class:"empty",style:"padding:10px 0"},"No ratings yet. Turn on Blind test on the Listen tab and score a few clips."));
+  root.append(h("h2",{class:"sec"},"Model by model"), h("p",{class:"lede"},F.method||""),
+    h("div",{class:"fgrid"}, Object.entries(F.engines||{}).map(([id,f])=>h("div",{class:"f"},
+      h("h3",{style:`color:${HUES[id]||"inherit"}`},(eng(id)||{name:id}).name), h("div",{class:"v"},f.verdict),
+      h("h4",{},"What works"), h("ul",{},f.good.map(x=>h("li",{},x))),
+      h("h4",{},"Where it falls down"), h("ul",{},f.bad.map(x=>h("li",{},x))),
+      h("h4",{},"How to improve it"), h("ul",{},f.fix.map(x=>h("li",{},x)))))));
+  (F.sections||[]).forEach(s=>root.append(h("h2",{class:"sec"},s.title), h("p",{class:"lede"},s.lede||""), h("ul",{style:"max-width:1000px"},s.points.map(p=>h("li",{html:p,style:"margin:6px 0"})))));
+}
+
+/* ---------------- boot ---------------- */
+const RENDER={live:renderLive};
+document.getElementById("nav").addEventListener("click",async e=>{
+  const t=e.target.dataset.tab; if(!t) return;
+  if(current) current();
+  document.querySelectorAll("nav button").forEach(b=>b.classList.toggle("on",b===e.target));
+  document.querySelectorAll("main").forEach(m=>m.classList.toggle("on",m.id===t));
+  if(t==="findings"||t==="models"){ const live=S.st.ratings; S.st=await (await fetch("/api/state")).json(); S.st.ratings=Object.assign(S.st.ratings,live); }
+  RENDER[t]();
+});
+(async()=>{
+  try{ S.st=await (await fetch("/api/state")).json(); renderTalk(); }
+  catch(e){ document.getElementById("listen").append(h("div",{class:"empty"},"Could not reach the rig server: "+e.message)); }
+})();
+</script>
+<script src="/web/talk.js?v=3"></script>
+</body>
+</html>

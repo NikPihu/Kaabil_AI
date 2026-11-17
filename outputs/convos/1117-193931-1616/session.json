@@ -1,0 +1,505 @@
+{
+ "cfg": {
+  "lang": "mr",
+  "stt": "sarvam-stt",
+  "tts": "sarvam",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्कार! मी काबिल आहे. मी तुमची प्रोफाइल बनवायला मदत करेन. तुमच्याबद्दल सांगा: तुमचं नाव काय, तुम्ही कुठे राहता, आणि कोणत्या वर्गात शिकता?",
+   "audio": "/audio/convos/1117-193931-1616/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 4.875,
+    "first_audio_s": 0.779,
+    "sentences": 4,
+    "duration": 10.52,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "text": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचं गाव कोणतं आहे आणि जिल्हा कोणता? तुमच्या शाळेचं नाव काय?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-193931-1616/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.12,
+    "first_audio_s": 1.281,
+    "sentences": 2,
+    "duration": 4.45,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.371,
+    "llm_s": 1.872,
+    "tts_first_s": 1.281,
+    "tts_s": 3.12,
+    "total_s": 4.99,
+    "wait_s": 3.15
+   },
+   "llm": {
+    "ttft_s": 1.371,
+    "total_s": 1.872,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1413,
+    "cost": 0.00030295
+   },
+   "asks_about": [
+    "village",
+    "district",
+    "institution"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते. माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे.",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमची शाळा शिवाजी विद्यालय, कोरेगाव आणि गाव रहिमतपूर, जिल्हा सातारा असे बरोबर आहे का?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-193931-1616/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.722,
+    "first_audio_s": 2.699,
+    "sentences": 1,
+    "duration": 6.83,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 0.984,
+    "llm_s": 1.483,
+    "tts_first_s": 2.699,
+    "tts_s": 2.722,
+    "total_s": 4.21,
+    "wait_s": 4.18
+   },
+   "llm": {
+    "ttft_s": 0.984,
+    "total_s": 1.483,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1562,
+    "cost": 0.00032646
+   },
+   "asks_about": [
+    "institution",
+    "village",
+    "district"
+   ],
+   "changes": [
+    "village",
+    "district",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-193931-1616/s05.wav",
+   "audio_s": 2.65,
+   "text": "बरं आहे.",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "बरं आहे. तुमची शेवटची परीक्षेची टक्केवारी काय आहे?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-193931-1616/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.575,
+    "first_audio_s": 0.558,
+    "sentences": 2,
+    "duration": 3.76,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.945,
+    "llm_ttft_s": 1.379,
+    "llm_s": 2.355,
+    "tts_first_s": 0.558,
+    "tts_s": 1.575,
+    "total_s": 4.91,
+    "wait_s": 3.86
+   },
+   "llm": {
+    "ttft_s": 1.379,
+    "total_s": 2.355,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1728,
+    "cost": 0.00038765
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "stream_or_course",
+    "institution",
+    "village",
+    "district",
+    "state"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "दहावीला मला चौऱ्याऐंशी टक्के मिळाले.",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "तुम्हाला कोणते विषय आवडतात? तुम्ही घरी किंवा गावात काय काम करता?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-193931-1616/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.96,
+    "first_audio_s": 0.932,
+    "sentences": 2,
+    "duration": 4.45,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 0.96,
+    "llm_s": 2.572,
+    "tts_first_s": 0.932,
+    "tts_s": 1.96,
+    "total_s": 4.54,
+    "wait_s": 3.5
+   },
+   "llm": {
+    "ttft_s": 0.96,
+    "total_s": 2.572,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1621,
+    "cost": 0.0002203
+   },
+   "asks_about": [
+    "favourite_subjects",
+    "daily_life_skills"
+   ],
+   "changes": [
+    "last_marks"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मला जीवशास्त्र आणि चित्रकला आवडते. घरी मी आईबरोबर शिवणकाम करते, शेळ्या सांभाळते आणि लहान भावंडांना शिकवते.",
+   "turn": 9
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमची इच्छा काय आहे की मोठे होऊन काय बनणं? तुमच्याकडे आधार कार्ड, उत्पन्न प्रमाणपत्र, जाती प्रमाणपत्र, बँक खाते आणि गुणपत्रिका यापैकी कोणते कागदपत्र आहेत?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-193931-1616/k10.flac",
+   "tts": {
+    "ok": true,
+    "secs": 4.136,
+    "first_audio_s": 1.001,
+    "sentences": 2,
+    "duration": 10.76,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.263,
+    "llm_s": 3.228,
+    "tts_first_s": 1.001,
+    "tts_s": 4.136,
+    "total_s": 7.37,
+    "wait_s": 4.23
+   },
+   "llm": {
+    "ttft_s": 1.263,
+    "total_s": 3.228,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1836,
+    "cost": 0.0002802
+   },
+   "asks_about": [
+    "aspiration",
+    "documents"
+   ],
+   "changes": [
+    "favourite_subjects",
+    "daily_life_skills"
+   ],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "mr",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Priya Jadhav",
+    "confidence": 0.9,
+    "evidence": "माझं नाव प्रिया जाधव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "16",
+    "confidence": 0.9,
+    "evidence": "मी सोळा वर्षांची आहे",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 11",
+    "confidence": 0.9,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Science",
+    "confidence": 0.9,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Shivaji Vidyalaya, Koregaon",
+    "confidence": 0.9,
+    "evidence": "माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahimatpur",
+    "confidence": 0.9,
+    "evidence": "रहिमतपूर गावात राहते",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Satara",
+    "confidence": 0.9,
+    "evidence": "सातारा जिल्ह्यात",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Maharashtra",
+    "confidence": 0.9,
+    "evidence": "सातारा जिल्हा",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "74",
+    "confidence": 0.9,
+    "evidence": "दहावीला मला चौऱ्याऐंशी टक्के मिळाले.",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Biology and drawing",
+    "confidence": 0.9,
+    "evidence": "मला जीवशास्त्र आणि चित्रकला आवडते",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Sewing with mother, goat care, teaching younger siblings",
+    "confidence": 0.9,
+    "evidence": "घरी मी आईबरोबर शिवणकाम करते, शेळ्या सांभाळते आणि लहान भावंडांना शिकवते",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Priya Jadhav, 16, Class 11 Science, Rahimatpur, Satara, Shivaji Vidyalaya Koregaon, 74% in Class 10. Likes Biology and drawing. Does sewing, goat care and teaches siblings. Still need aspiration, income, documents.",
+  "events": [],
+  "cost": 0.00152,
+  "student_turns": 5
+ },
+ "card": {
+  "name": "Priya Jadhav",
+  "age": "16",
+  "class_or_year": "Class 11",
+  "village": "Rahimatpur",
+  "district": "Satara",
+  "institution": "Shivaji Vidyalaya, Koregaon",
+  "stream_or_course": "Science",
+  "state": "Maharashtra",
+  "last_marks": "74",
+  "favourite_subjects": "Biology and drawing",
+  "daily_life_skills": "Sewing with mother, goat care, teaching younger siblings",
+  "_confirmed": false
+ }
+}

@@ -1,0 +1,631 @@
+{
+ "hi/sarvam": {
+  "lang": "hi",
+  "tts": "sarvam",
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_cloud\\hi\\sarvam\\q0.flac",
+    "secs": 1.0,
+    "duration": 2.47,
+    "asr": "बहुत बड़े अराहूल, आप किस गाउने रहते हैं?",
+    "cer": 0.268
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_cloud\\hi\\sarvam\\q1.flac",
+    "secs": 0.91,
+    "duration": 1.96,
+    "asr": "आपके दस्वी में कितने प्रतिश्वत नुम्बर आये थे?",
+    "cer": 0.231
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_cloud\\hi\\sarvam\\q2.flac",
+    "secs": 1.6,
+    "duration": 5.38,
+    "asr": "घर पर या गाओं में आप कौन से काम करते हैं? जैसे खेती, दुकान या पर मरम्मत का काम?",
+    "cer": 0.065
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_cloud\\hi\\sarvam\\q3.flac",
+    "secs": 1.82,
+    "duration": 6.14,
+    "asr": "आप में कहा दो से तीन लाख, क्या आप बता सकते हैं कि साल के आमदनी धाई लाख के आसपास है? चाहें तो ये छोड़ भी सकते हैं.",
+    "cer": 0.06
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_cloud\\hi\\sarvam\\q4.flac",
+    "secs": 1.35,
+    "duration": 3.67,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.2
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_cloud\\hi\\sarvam\\q5.flac",
+    "secs": 2.57,
+    "duration": 9.47,
+    "asr": "मैं एक बार पढ़ कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारवी कॉमर्स में हैं, रामपूर बारा बंकी से हैं, दसवी में 72 प्रतिश्चत आये थे, क्या ये सब सही है?",
+    "cer": 0.146
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_cloud\\hi\\sarvam\\q6.flac",
+    "secs": 0.9,
+    "duration": 1.96,
+    "asr": "आप आगे चल कर क्या बनना चाहते हैं?",
+    "cer": 0.032
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_cloud\\hi\\sarvam\\q7.flac",
+    "secs": 1.51,
+    "duration": 4.69,
+    "asr": "आपके पास कौन से कार्याज हैं? जैसे आधार कार्ड, आय प्रमान वत्र या बान खाता?",
+    "cer": 0.132
+   }
+  ],
+  "judge_cer": 0.142,
+  "secs_median": 1.43,
+  "errors": 0
+ },
+ "mr/sarvam": {
+  "lang": "mr",
+  "tts": "sarvam",
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_cloud\\mr\\sarvam\\q0.flac",
+    "secs": 0.89,
+    "duration": 2.22,
+    "asr": "चान प्रिया, तो कौन ते गावात रहाद इस?",
+    "cer": 0.353
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_cloud\\mr\\sarvam\\q1.flac",
+    "secs": 0.96,
+    "duration": 2.22,
+    "asr": "दहावी लातुला किती टक्के मिलाले होती",
+    "cer": 0.114
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_cloud\\mr\\sarvam\\q2.flac",
+    "secs": 2.01,
+    "duration": 6.66,
+    "asr": "घरी किमा गावा तु कोंती काम करतेस, जास शेती, शिवन काम किमा जनावरांची काल जी?",
+    "cer": 0.189
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_cloud\\mr\\sarvam\\q3.flac",
+    "secs": 2.37,
+    "duration": 5.89,
+    "asr": "तु मनालीस एक ते गीड लाख वर्षाचा उत्पन्न सवा लाखाचा आसपास आहेका। हवा तरहे सोडूंदे।",
+    "cer": 0.176
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_cloud\\mr\\sarvam\\q4.flac",
+    "secs": 1.37,
+    "duration": 4.27,
+    "asr": "आधी तु अकरावी महालीस, आता बारावी, तु नक्की कोंते वर्गा ताहेस।",
+    "cer": 0.177
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_cloud\\mr\\sarvam\\q5.flac",
+    "secs": 2.65,
+    "duration": 9.98,
+    "asr": "मी एकदा वाचुन दाखवतो, तुझे नाव प्रिया जाधाव, तु अकरावी सायंस मध्य आहेश, रहिमपूर, साता रा, दहाविला चौर्य अनिशे टक्के, ए सगल बरोबर आहे का?",
+    "cer": 0.169
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_cloud\\mr\\sarvam\\q6.flac",
+    "secs": 0.9,
+    "duration": 1.79,
+    "asr": "तुला पुढे काई भाईचा है",
+    "cer": 0.32
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_cloud\\mr\\sarvam\\q7.flac",
+    "secs": 2.42,
+    "duration": 6.4,
+    "asr": "तुझा कडे कोंती कागद पत्रा आहेत जसर आधार कार्ड उत्पन्नाचा दाखला क्यों वाँ बैंक खाता।",
+    "cer": 0.182
+   }
+  ],
+  "judge_cer": 0.21,
+  "secs_median": 1.69,
+  "errors": 0
+ },
+ "en/sarvam": {
+  "lang": "en",
+  "tts": "sarvam",
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_cloud\\en\\sarvam\\q0.flac",
+    "secs": 1.06,
+    "duration": 2.22,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_cloud\\en\\sarvam\\q1.flac",
+    "secs": 1.34,
+    "duration": 1.88,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_cloud\\en\\sarvam\\q2.flac",
+    "secs": 1.78,
+    "duration": 4.69,
+    "asr": "What work do you do at home in the village, like farming, repairs or helping at a shop?",
+    "cer": 0.034
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_cloud\\en\\sarvam\\q3.flac",
+    "secs": 2.31,
+    "duration": 6.14,
+    "asr": "You said maybe 1 lakh. Is your family income closer to 90,000 or 1 lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_cloud\\en\\sarvam\\q4.flac",
+    "secs": 1.6,
+    "duration": 3.33,
+    "asr": "Earlier you said 15, now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_cloud\\en\\sarvam\\q5.flac",
+    "secs": 2.74,
+    "duration": 8.28,
+    "asr": "Let me read it back, your name is Anil Kumar, you are in class 10, from Mozart in Nashik district, and you got 68%, is that all correct?",
+    "cer": 0.119
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_cloud\\en\\sarvam\\q6.flac",
+    "secs": 4.14,
+    "duration": 1.79,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_cloud\\en\\sarvam\\q7.flac",
+    "secs": 3.33,
+    "duration": 4.78,
+    "asr": "Which documents do you have, like an Adhaar card, an income certificate, or a bank account?",
+    "cer": 0.011
+   }
+  ],
+  "judge_cer": 0.05,
+  "secs_median": 2.04,
+  "errors": 0
+ },
+ "hi/elevenlabs": {
+  "lang": "hi",
+  "tts": "elevenlabs",
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q0.flac",
+    "secs": 2.99,
+    "duration": 2.48,
+    "asr": "बहुत बढ़िया राहुल, आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q1.flac",
+    "secs": 2.46,
+    "duration": 2.4,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q2.flac",
+    "secs": 3.02,
+    "duration": 5.92,
+    "asr": "गर पर या गाउं में आप कौन से काम करते हैं? जैसे खेती, दुकान या कोई मरम्मत का काम.",
+    "cer": 0.039
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_cloud\\hi\\elevenlabs\\q3.flac",
+    "secs": 4.08,
+    "duration": 8.16,
+    "asr": "आपने कहा दो से तीन लाख, क्या आप बता सकते हैं कि साल की आमदनी धाई लाख के आसपास है? चाहें तो ये छोड़ भी सकते हैं.",
+    "cer": 0.02
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q4.flac",
+    "secs": 4.55,
+    "duration": 5.2,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.2
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q5.flac",
+    "secs": 6.63,
+    "duration": 10.72,
+    "asr": "मैं एक बार पढ़ कर सुनाता हूँ. आपका नाम राहुल यादव है. आप बारवी कॉमर्स में हैं, रामपुर बारा बंकी से हैं, दसवी में 72 प्रतिशत आये थे. क्या ये सब सही है?",
+    "cer": 0.125
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q6.flac",
+    "secs": 1.97,
+    "duration": 1.76,
+    "asr": "आप आगे चल कर क्या बनना चाहते हैं?",
+    "cer": 0.032
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_cloud\\hi\\elevenlabs\\q7.flac",
+    "secs": 2.97,
+    "duration": 5.52,
+    "asr": "आपके पास कौन से कागज हैं, जैसे आधार कार्ड, आय प्रमान पत्र या बैंक खाता?",
+    "cer": 0.015
+   }
+  ],
+  "judge_cer": 0.073,
+  "secs_median": 3.0,
+  "errors": 0
+ },
+ "mr/elevenlabs": {
+  "lang": "mr",
+  "tts": "elevenlabs",
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q0.flac",
+    "secs": 2.25,
+    "duration": 2.64,
+    "asr": "छान प्रिया, तु कोंट्या गावात रातेश?",
+    "cer": 0.147
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q1.flac",
+    "secs": 1.96,
+    "duration": 2.0,
+    "asr": "दहावीला तुला किती टक्के मिलाले होते?",
+    "cer": 0.029
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q2.flac",
+    "secs": 3.55,
+    "duration": 6.48,
+    "asr": "गरी कीमा गावात्तु कुंती काम करतेश? जस शेती, शिवन काम, कीमा जनावरांची कारजी?",
+    "cer": 0.23
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_cloud\\mr\\elevenlabs\\q3.flac",
+    "secs": 4.2,
+    "duration": 8.0,
+    "asr": "तु मनालीज, एक ते दीड लाख वर्षाच उत्पन्न सववा लाखाचे आसपास आहेका? हवतर हे सोडूं दे।",
+    "cer": 0.165
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q4.flac",
+    "secs": 4.03,
+    "duration": 4.88,
+    "asr": "आधी तु आक्रावी मनालेज, अता बारावी. तु नक्की कुल्टे वर्गाताहेज?",
+    "cer": 0.29
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q5.flac",
+    "secs": 6.5,
+    "duration": 12.64,
+    "asr": "मी एकदा वाचुन दाखोतू। तुजनाव प्रिया जाधव। तु अक्रावी सायंस मध्याहेस। रहिमतपूर सातारा। दाहविला चवरेंशी टक्के। हे सर्ण बरोवरा हेका।",
+    "cer": 0.231
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q6.flac",
+    "secs": 2.02,
+    "duration": 2.4,
+    "asr": "तुला पुरहे काई वाइचा है?",
+    "cer": 0.36
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_cloud\\mr\\elevenlabs\\q7.flac",
+    "secs": 4.63,
+    "duration": 7.68,
+    "asr": "तुझा खड़े कोंतिक आगत्पत्र आहित, जैस आधरकार्ड, उत्पन्नाचा दाखला, क्यों आ बैंक खत?",
+    "cer": 0.325
+   }
+  ],
+  "judge_cer": 0.222,
+  "secs_median": 3.79,
+  "errors": 0
+ },
+ "en/elevenlabs": {
+  "lang": "en",
+  "tts": "elevenlabs",
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_cloud\\en\\elevenlabs\\q0.flac",
+    "secs": 1.76,
+    "duration": 2.64,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_cloud\\en\\elevenlabs\\q1.flac",
+    "secs": 2.41,
+    "duration": 2.48,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_cloud\\en\\elevenlabs\\q2.flac",
+    "secs": 2.8,
+    "duration": 5.44,
+    "asr": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_cloud\\en\\elevenlabs\\q3.flac",
+    "secs": 4.11,
+    "duration": 8.64,
+    "asr": "You said maybe one lakh. Is your family income closer to 90,000 or one lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_cloud\\en\\elevenlabs\\q4.flac",
+    "secs": 2.83,
+    "duration": 4.88,
+    "asr": "Earlier you said 15, now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_cloud\\en\\elevenlabs\\q5.flac",
+    "secs": 4.3,
+    "duration": 10.88,
+    "asr": "Let me read it back. Your name is Anil Kumar. You're in Class 10 from Ozar in Nashik District, and you got 68%. Is that all correct?",
+    "cer": 0.111
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_cloud\\en\\elevenlabs\\q6.flac",
+    "secs": 2.75,
+    "duration": 2.0,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_cloud\\en\\elevenlabs\\q7.flac",
+    "secs": 4.49,
+    "duration": 6.0,
+    "asr": "Which documents do you have, like an Aadhaar card, an income certificate, or a bank account?",
+    "cer": 0.0
+   }
+  ],
+  "judge_cer": 0.043,
+  "secs_median": 2.81,
+  "errors": 0
+ },
+ "hi/edge": {
+  "lang": "hi",
+  "tts": "edge",
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_cloud\\hi\\edge\\q0.flac",
+    "secs": 1.75,
+    "duration": 5.38,
+    "asr": "बहुत बढ़िया राहुल आप किस गाव में रहते हैं?",
+    "cer": 0.024
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_cloud\\hi\\edge\\q1.flac",
+    "secs": 2.01,
+    "duration": 3.96,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.077
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_cloud\\hi\\edge\\q2.flac",
+    "secs": 2.63,
+    "duration": 7.44,
+    "asr": "घर पर या गाव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "cer": 0.013
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_cloud\\hi\\edge\\q3.flac",
+    "secs": 3.5,
+    "duration": 12.34,
+    "asr": "आपने कहा दो से तीन लाक। क्या आप बता सकते हैं कि साल की आमदनी धाई लाक के आसपास है। चाहे तो यह छोड़ भी सकते हैं।",
+    "cer": 0.04
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_cloud\\hi\\edge\\q4.flac",
+    "secs": 2.09,
+    "duration": 7.68,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.2
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_cloud\\hi\\edge\\q5.flac",
+    "secs": 3.59,
+    "duration": 14.81,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारवी कॉमर्स में हैं, रामपुर, बारा बंकी से हैं, दसवी में 72 प्रतिशत आये थे, क्या यह सब सही है?",
+    "cer": 0.111
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_cloud\\hi\\edge\\q6.flac",
+    "secs": 1.71,
+    "duration": 3.38,
+    "asr": "आप आगे चल कर क्या बनना चाहते हैं?",
+    "cer": 0.032
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_cloud\\hi\\edge\\q7.flac",
+    "secs": 2.73,
+    "duration": 7.32,
+    "asr": "आपके पास कौन से कागज हैं, जैसे आधार काड आए प्रमाण पत्रिया बैंक खाता।",
+    "cer": 0.059
+   }
+  ],
+  "judge_cer": 0.07,
+  "secs_median": 2.36,
+  "errors": 0
+ },
+ "mr/edge": {
+  "lang": "mr",
+  "tts": "edge",
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_cloud\\mr\\edge\\q0.flac",
+    "secs": 1.69,
+    "duration": 4.68,
+    "asr": "छान प्रिया, तू कोड़त्या गावात रहतेस।",
+    "cer": 0.059
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_cloud\\mr\\edge\\q1.flac",
+    "secs": 3.32,
+    "duration": 3.7,
+    "asr": "दहावीला तुला किती टक्के मेले होते?",
+    "cer": 0.086
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_cloud\\mr\\edge\\q2.flac",
+    "secs": 2.47,
+    "duration": 7.82,
+    "asr": "घरी किम्मा गावात तु कोणती काम करतेस। जसंग शेती शिवनकाम किम्मा जनावरांची कायजी।",
+    "cer": 0.149
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_cloud\\mr\\edge\\q3.flac",
+    "secs": 2.62,
+    "duration": 9.7,
+    "asr": "तू महनालीस एक ते देड लाख, वर्षाचा उत्पन्न सववा लाखाचा आसपास आहेका, हवं तर हे सोडूंदे.",
+    "cer": 0.118
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_cloud\\mr\\edge\\q4.flac",
+    "secs": 2.07,
+    "duration": 7.13,
+    "asr": "आधी तु अक्रावी भणालेश, आता बारावी, तु नक्की कोर्त्या वर्गाता हैस।",
+    "cer": 0.21
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_cloud\\mr\\edge\\q5.flac",
+    "secs": 4.58,
+    "duration": 13.49,
+    "asr": "मी एकदा वाचून दाखो तो तुझनाव प्रिया जाधव। तु अक्रावी सायन समध्य आहेस। रहिम्तपूर। सातारा दहावीला चव्याइशी टक्के हैं सगर बरोबर आहेका।",
+    "cer": 0.138
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_cloud\\mr\\edge\\q6.flac",
+    "secs": 1.8,
+    "duration": 2.83,
+    "asr": "तुला पोधे काई भाय चाहे?",
+    "cer": 0.4
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_cloud\\mr\\edge\\q7.flac",
+    "secs": 2.46,
+    "duration": 7.7,
+    "asr": "तुझा कड़े कोड़ती काग्दपत्रन आहे जसन आधारकार्ण उत्पन्नाचा दाखला किम्वा बंक खात.",
+    "cer": 0.169
+   }
+  ],
+  "judge_cer": 0.166,
+  "secs_median": 2.46,
+  "errors": 0
+ },
+ "en/edge": {
+  "lang": "en",
+  "tts": "edge",
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_cloud\\en\\edge\\q0.flac",
+    "secs": 1.57,
+    "duration": 4.54,
+    "asr": "Great, Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "error": "ClientConnectorDNSError: Cannot connect to host speech.platform.bing.com:443 ssl:<ssl.SSLContext object at 0x000001EA9246D450> [getaddrinfo failed]"
+   }
+  ],
+  "judge_cer": 0.0,
+  "secs_median": 1.57,
+  "errors": 7
+ }
+}

@@ -1,0 +1,304 @@
+{
+ "cfg": {
+  "lang": "mr",
+  "stt": "sarvam-stt",
+  "tts": "indic-tts",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्कार! मी काबिल आहे. मी तुमची प्रोफाइल बनवायला मदत करेन. तुमच्याबद्दल सांगा: तुमचं नाव काय, तुम्ही कुठे राहता, आणि कोणत्या वर्गात शिकता?",
+   "audio": "/audio/convos/1117-211532-6d56/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 12.947,
+    "first_audio_s": 0.927,
+    "sentences": 4,
+    "duration": 15.37,
+    "sample_rate": 22050,
+    "rss_mb": 726,
+    "commit_mb": 1061,
+    "peak_commit_mb": 1467
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "text": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स बरोबर आहे का? तुमचा गाव कोणता?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स बरोबर आहे का? तुमचा गाव कोणता?",
+   "audio": "/audio/convos/1117-211532-6d56/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 8.25,
+    "first_audio_s": 6.616,
+    "sentences": 2,
+    "duration": 9.1,
+    "sample_rate": 22050,
+    "rss_mb": 643,
+    "commit_mb": 989,
+    "peak_commit_mb": 1467
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.664,
+    "llm_s": 2.665,
+    "tts_first_s": 6.616,
+    "tts_s": 8.25,
+    "total_s": 10.92,
+    "wait_s": 9.28
+   },
+   "llm": {
+    "ttft_s": 2.664,
+    "total_s": 2.665,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1447,
+    "cost": 0
+   },
+   "asks_about": [
+    "village"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course"
+   ],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "mr",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Priya Jadhav",
+    "confidence": 0.95,
+    "evidence": "माझं नाव प्रिया जाधव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "16",
+    "confidence": 0.95,
+    "evidence": "मी सोळा वर्षांची आहे",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 11",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Science",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Priya Jadhav, 16 years old, Class 11 Science student.",
+  "events": [],
+  "cost": 0.0,
+  "student_turns": 1
+ },
+ "card": {
+  "name": "Priya Jadhav",
+  "age": "16",
+  "class_or_year": "Class 11",
+  "stream_or_course": "Science",
+  "_confirmed": false
+ }
+}

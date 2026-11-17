@@ -1,0 +1,4128 @@
+{
+ "hi/shruti/piper/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.148,
+    "secs": 0.266,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.131,
+    "secs": 1.83,
+    "duration": 3.48,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\piper\\q2.flac",
+    "first_s": 0.776,
+    "secs": 0.785,
+    "duration": 7.02,
+    "asr": "घर पर या गाउं में आप कौन से काम करते हैं जैसे खेती, दुकान या कोई मरम्मत का काम",
+    "cer": 0.026
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\piper\\q3.flac",
+    "first_s": 0.079,
+    "secs": 0.47,
+    "duration": 10.02,
+    "asr": "आपने कहा दो से तीन लाख, क्या आप बता सकते हैं कि साल की आमनी धाई लाख के आसपास है, चाहे तो यह छोड़ भी सकते हैं।",
+    "cer": 0.03
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\piper\\q4.flac",
+    "first_s": 0.143,
+    "secs": 0.234,
+    "duration": 6.15,
+    "asr": "पहले आपने सत्रह साल बताया था, अभी उन्निस कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.015
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\piper\\q5.flac",
+    "first_s": 0.362,
+    "secs": 0.449,
+    "duration": 12.74,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादद है। आप बारहवी कॉमर्स में हैं, रामपुर बारा बंकी से हैं, दस्मी में बहतर प्रतिशत आई थे। क्या यह सब सही है?",
+    "cer": 0.083
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q6.flac",
+    "first_s": 0.108,
+    "secs": 0.123,
+    "duration": 3.03,
+    "asr": "आप आगी चल कर क्या बनना चाहते हैं।",
+    "cer": 0.065
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\piper\\q7.flac",
+    "first_s": 0.22,
+    "secs": 0.236,
+    "duration": 6.73,
+    "asr": "आपकी पास कौन से कागस हैं? जैसे आधार, कौर्ड, आई, प्रमान, पत्री या बैंक खाता.",
+    "cer": 0.088
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.609,
+    "commit_mb": 250
+   },
+   "tts": {
+    "secs": 1.637,
+    "commit_mb": 257
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 607,
+  "peak_commit_mb": 786,
+  "done": true,
+  "first_s_median": 0.15,
+  "x_realtime": 12.1,
+  "judge_cer": 0.054
+ },
+ "hi/whisper-small/piper/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.072,
+    "secs": 0.181,
+    "duration": 3.8,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.127,
+    "secs": 0.133,
+    "duration": 3.37,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.226,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 1.587,
+    "commit_mb": 256
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 762,
+  "peak_commit_mb": 2960,
+  "done": true,
+  "first_s_median": 0.1,
+  "x_realtime": 22.8,
+  "judge_cer": 0.063
+ },
+ "hi/vosk/piper/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.083,
+    "secs": 0.205,
+    "duration": 3.94,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.132,
+    "secs": 0.145,
+    "duration": 3.55,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.205,
+    "commit_mb": 1306
+   },
+   "tts": {
+    "secs": 1.48,
+    "commit_mb": 256
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 486,
+  "peak_commit_mb": 1703,
+  "done": true,
+  "first_s_median": 0.11,
+  "x_realtime": 21.4,
+  "judge_cer": 0.063
+ },
+ "hi/shruti/kokoro/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 1.006,
+    "secs": 2.041,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.592,
+    "secs": 1.598,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\kokoro\\q2.flac",
+    "first_s": 2.805,
+    "secs": 2.814,
+    "duration": 6.4,
+    "asr": "घर पर या गाम्व में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "cer": 0.026
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\kokoro\\q3.flac",
+    "first_s": 1.067,
+    "secs": 4.236,
+    "duration": 9.38,
+    "asr": "आपने कहा दो से तीन लाख, क्या आप बता सकते हैं कि साल की आमदनी धाई लाख के आसपास है, चाहे तो यहाँ छोड़ भी सकते हैं.",
+    "cer": 0.04
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\kokoro\\q4.flac",
+    "first_s": 1.73,
+    "secs": 2.721,
+    "duration": 5.98,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.2
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\kokoro\\q5.flac",
+    "first_s": 4.318,
+    "secs": 5.192,
+    "duration": 12.11,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारहवी कॉमर्स में हैं, रामपुर बारा बंकी से हैं, दसवी में 72 प्रतिशत आये थे, क्या यह सब सही है?",
+    "cer": 0.104
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q6.flac",
+    "first_s": 1.323,
+    "secs": 1.336,
+    "duration": 2.71,
+    "asr": "आप आगी चल कर क्या बनना चाहते हैं?",
+    "cer": 0.065
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\kokoro\\q7.flac",
+    "first_s": 2.617,
+    "secs": 2.632,
+    "duration": 5.89,
+    "asr": "आपकी पास कौन सी कागज है जैसे आधारकार आई प्रमान पत्र या बेंक खाता।",
+    "cer": 0.132
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.5,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 2.524,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 862,
+  "peak_commit_mb": 1022,
+  "done": true,
+  "first_s_median": 1.66,
+  "x_realtime": 2.2,
+  "judge_cer": 0.081
+ },
+ "hi/whisper-small/kokoro/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 0.952,
+    "secs": 1.985,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.65,
+    "secs": 1.667,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.937,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 2.541,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1033,
+  "peak_commit_mb": 3193,
+  "done": true,
+  "first_s_median": 1.3,
+  "x_realtime": 2.0,
+  "judge_cer": 0.038
+ },
+ "hi/vosk/kokoro/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 0.904,
+    "secs": 1.895,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.53,
+    "secs": 1.543,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.173,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 2.473,
+    "commit_mb": 527
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 730,
+  "peak_commit_mb": 1297,
+  "done": true,
+  "first_s_median": 1.22,
+  "x_realtime": 2.1,
+  "judge_cer": 0.038
+ },
+ "hi/shruti/kokoro-int8/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.846,
+    "secs": 1.716,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.382,
+    "secs": 1.396,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q2.flac",
+    "first_s": 2.447,
+    "secs": 2.464,
+    "duration": 6.38,
+    "asr": "घर पर या गांव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q3.flac",
+    "first_s": 1.033,
+    "secs": 3.882,
+    "duration": 9.43,
+    "asr": "आपने कहा दो से तीन लाख, क्या आप बता सकते हैं कि साल की आमदनी धाई लाख के आसपास है, चाहे तो यहाँ छोड़ भी सकते हैं.",
+    "cer": 0.04
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q4.flac",
+    "first_s": 1.547,
+    "secs": 2.413,
+    "duration": 5.96,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्रक्चा है.",
+    "cer": 0.231
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q5.flac",
+    "first_s": 3.958,
+    "secs": 4.695,
+    "duration": 12.04,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारहवी कॉमर्स में हैं, रामपुर बारा बंकी से हैं, दसवी में 72 प्रतिशत आई थे, क्या यह सब सही है?",
+    "cer": 0.097
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q6.flac",
+    "first_s": 1.17,
+    "secs": 1.183,
+    "duration": 2.73,
+    "asr": "आप आगी चल कर क्या बनना चाहती हैं?",
+    "cer": 0.097
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q7.flac",
+    "first_s": 2.372,
+    "secs": 2.379,
+    "duration": 5.82,
+    "asr": "आपके पास कौन से कागज है जैसे आधारकार, आई प्रमान पत्री या बेंग खाता।",
+    "cer": 0.132
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.494,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 2.047,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 667,
+  "peak_commit_mb": 807,
+  "done": true,
+  "first_s_median": 1.46,
+  "x_realtime": 2.5,
+  "judge_cer": 0.081
+ },
+ "hi/whisper-small/kokoro-int8/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.831,
+    "secs": 1.669,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.374,
+    "secs": 1.386,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.122,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 2.056,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 828,
+  "peak_commit_mb": 2982,
+  "done": true,
+  "first_s_median": 1.1,
+  "x_realtime": 2.4,
+  "judge_cer": 0.025
+ },
+ "hi/vosk/kokoro-int8/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.853,
+    "secs": 1.751,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.348,
+    "secs": 1.363,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.054,
+    "commit_mb": 794
+   },
+   "tts": {
+    "secs": 2.061,
+    "commit_mb": 314
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 525,
+  "peak_commit_mb": 1212,
+  "done": true,
+  "first_s_median": 1.1,
+  "x_realtime": 2.3,
+  "judge_cer": 0.025
+ },
+ "hi/shruti/supertonic-int8/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.942,
+    "secs": 1.863,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.276,
+    "secs": 1.291,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q2.flac",
+    "first_s": 1.814,
+    "secs": 1.828,
+    "duration": 5.93,
+    "asr": "घर पर या गाव में आप कौन से काम करते हैं? जैसे खेती, दुकान या कोई मरम्मत का काम.",
+    "cer": 0.013
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q3.flac",
+    "first_s": 0.908,
+    "secs": 3.396,
+    "duration": 9.25,
+    "asr": "आपने कहा 2-3 लाख. क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो ये छोड़ भी सकते हैं.",
+    "cer": 0.04
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q4.flac",
+    "first_s": 1.361,
+    "secs": 2.198,
+    "duration": 6.11,
+    "asr": "पहले आपने सत्रे साल बताया था अभी उन्नीस कहा आपकी सैयूमर क्या है?",
+    "cer": 0.092
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q5.flac",
+    "first_s": 2.803,
+    "secs": 3.628,
+    "duration": 12.49,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारहवी कॉमर्स में हैं, रामपूर, बाराबंकी से हैं, दसवी में 72 प्रतिशत आये थे। क्या ये सब सही है?",
+    "cer": 0.09
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q6.flac",
+    "first_s": 1.118,
+    "secs": 1.132,
+    "duration": 2.41,
+    "asr": "आप आगे चल कर क्या बनना चाहते हैं?",
+    "cer": 0.032
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q7.flac",
+    "first_s": 1.765,
+    "secs": 1.785,
+    "duration": 6.01,
+    "asr": "आपके पास कौन से काग्ज हैं, जैसे आधार कार्ड, आय प्रमान पत्रिया बैंक खाता?",
+    "cer": 0.044
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.447,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.86,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 551,
+  "peak_commit_mb": 760,
+  "done": true,
+  "first_s_median": 1.32,
+  "x_realtime": 2.9,
+  "judge_cer": 0.058
+ },
+ "hi/whisper-small/supertonic-int8/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.934,
+    "secs": 1.852,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.298,
+    "secs": 1.308,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.833,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.799,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 847,
+  "peak_commit_mb": 2995,
+  "done": true,
+  "first_s_median": 1.12,
+  "x_realtime": 2.3,
+  "judge_cer": 0.076
+ },
+ "hi/vosk/supertonic-int8/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.878,
+    "secs": 1.791,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.065,
+    "secs": 1.071,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.103,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 1.889,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 540,
+  "peak_commit_mb": 1094,
+  "done": true,
+  "first_s_median": 0.97,
+  "x_realtime": 2.5,
+  "judge_cer": 0.076
+ },
+ "hi/shruti/mms/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.359,
+    "secs": 0.952,
+    "duration": 3.26,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.863,
+    "secs": 0.875,
+    "duration": 3.12,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\mms\\q2.flac",
+    "first_s": 1.508,
+    "secs": 1.513,
+    "duration": 5.92,
+    "asr": "घर पर या गाओं में आप कौन से काम करते हैं, जैसे खिती दुकान या कोई मरमत का काम?",
+    "cer": 0.065
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\mms\\q3.flac",
+    "first_s": 0.597,
+    "secs": 2.226,
+    "duration": 9.11,
+    "asr": "आपने कहा, दो से तीन लाख, क्या आप बता सकते हैं कि साल की आमदनी धाई लाख के आसपास है? चाहे तो ये छोड़ भी सकते हैं.",
+    "cer": 0.03
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\mms\\q4.flac",
+    "first_s": 0.897,
+    "secs": 1.411,
+    "duration": 5.18,
+    "asr": "पहले आपने 17 सार बताया था, अभी 19 कहा, आपकी सही उम्म क्या है?",
+    "cer": 0.231
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\mms\\q5.flac",
+    "first_s": 2.458,
+    "secs": 2.929,
+    "duration": 11.35,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुर यादग है, आप बारहमी कौमस में हैं, राम उर्बारा बर्की से हैं, दसमी में बहत्तर प्रतिशत आये थे, क्यार ये सब सही है?",
+    "cer": 0.132
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q6.flac",
+    "first_s": 0.658,
+    "secs": 0.661,
+    "duration": 2.61,
+    "asr": "आग आगे चल कर क्या बनना चाहते हैं",
+    "cer": 0.065
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\mms\\q7.flac",
+    "first_s": 1.584,
+    "secs": 1.597,
+    "duration": 5.44,
+    "asr": "आपके पास कौन से कागस हैं जैसे आधार, कारडाय, परमान, पत्र या वेंखाता",
+    "cer": 0.147
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.574,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.215,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 583,
+  "peak_commit_mb": 824,
+  "done": true,
+  "first_s_median": 0.88,
+  "x_realtime": 3.8,
+  "judge_cer": 0.137
+ },
+ "hi/whisper-small/mms/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.36,
+    "secs": 0.933,
+    "duration": 3.34,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.793,
+    "secs": 0.806,
+    "duration": 3.04,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.946,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.248,
+    "commit_mb": 291
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 800,
+  "peak_commit_mb": 2929,
+  "done": true,
+  "first_s_median": 0.58,
+  "x_realtime": 3.7,
+  "judge_cer": 0.212
+ },
+ "hi/vosk/mms/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.35,
+    "secs": 0.905,
+    "duration": 3.1,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.894,
+    "secs": 0.898,
+    "duration": 3.23,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.214,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 1.197,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 497,
+  "peak_commit_mb": 1031,
+  "done": true,
+  "first_s_median": 0.62,
+  "x_realtime": 3.5,
+  "judge_cer": 0.212
+ },
+ "hi/shruti/indic-tts/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "indic-tts",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\indic-tts\\q0.flac",
+    "first_s": 0.992,
+    "secs": 1.864,
+    "duration": 4.43,
+    "asr": "बहुत बढ़िया, राहुल, आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\indic-tts\\q1.flac",
+    "first_s": 1.546,
+    "secs": 1.559,
+    "duration": 3.25,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   },
+   {
+    "q": "घर पर या गाँव में आप कौन से काम करते हैं, जैसे खेती, दुकान या कोई मरम्मत का काम?",
+    "file": "bench_pairs\\hi\\indic-tts\\q2.flac",
+    "first_s": 3.294,
+    "secs": 3.309,
+    "duration": 6.1,
+    "asr": "घर पर या गाउं में आप कौन से काम करते हैं? जैसे खेती, दुकान या कोई मरम्मत का काम.",
+    "cer": 0.026
+   },
+   {
+    "q": "आपने कहा दो से तीन लाख। क्या आप बता सकते हैं कि साल की आमदनी ढाई लाख के आसपास है? चाहें तो यह छोड़ भी सकते हैं।",
+    "file": "bench_pairs\\hi\\indic-tts\\q3.flac",
+    "first_s": 0.943,
+    "secs": 4.044,
+    "duration": 8.95,
+    "asr": "आपने कहा दो से तीन लाग क्या आप बता सकते हैं कि साल की आमधनी धाई लाग के आसपास है? चाहें तो यह छोड़ भी सकते हैं.",
+    "cer": 0.04
+   },
+   {
+    "q": "पहले आपने सत्रह साल बताया था, अभी उन्नीस कहा। आपकी सही उम्र क्या है?",
+    "file": "bench_pairs\\hi\\indic-tts\\q4.flac",
+    "first_s": 1.988,
+    "secs": 2.804,
+    "duration": 6.09,
+    "asr": "पहले आपने 17 साल बताया था, अभी 19 कहा, आपकी सही उम्र क्या है?",
+    "cer": 0.2
+   },
+   {
+    "q": "मैं एक बार पढ़कर सुनाता हूँ: आपका नाम राहुल यादव है, आप बारहवीं कॉमर्स में हैं, रामपुर, बाराबंकी से हैं, दसवीं में बहत्तर प्रतिशत आए थे। क्या यह सब सही है?",
+    "file": "bench_pairs\\hi\\indic-tts\\q5.flac",
+    "first_s": 5.281,
+    "secs": 5.975,
+    "duration": 12.05,
+    "asr": "मैं एक बार पढ़कर सुनाता हूँ, आपका नाम राहुल यादव है, आप बारहवी कॉमर्स में हैं, रामपुर, बारा बंकी से हैं, दसवी में 72 प्रतिशत आये थे। क्या यह सब सही है?",
+    "cer": 0.104
+   },
+   {
+    "q": "आप आगे चलकर क्या बनना चाहते हैं?",
+    "file": "bench_pairs\\hi\\indic-tts\\q6.flac",
+    "first_s": 1.162,
+    "secs": 1.166,
+    "duration": 2.53,
+    "asr": "आप आगे चल कर क्या बनना चाहते हैं?",
+    "cer": 0.032
+   },
+   {
+    "q": "आपके पास कौन से कागज़ हैं, जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "file": "bench_pairs\\hi\\indic-tts\\q7.flac",
+    "first_s": 3.09,
+    "secs": 3.104,
+    "duration": 5.72,
+    "asr": "आपके पास कौन से कागज हैं? जैसे आधार कार्ड, आय प्रमाण पत्र या बैंक खाता?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.487,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 8.289,
+    "commit_mb": 952
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1359,
+  "peak_commit_mb": 1711,
+  "done": true,
+  "first_s_median": 1.77,
+  "x_realtime": 2.1,
+  "judge_cer": 0.069
+ },
+ "hi/whisper-small/indic-tts/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "indic-tts",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\indic-tts\\q0.flac",
+    "first_s": 1.011,
+    "secs": 1.844,
+    "duration": 4.43,
+    "asr": "बहुत बढ़िया, राहुल, आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\indic-tts\\q1.flac",
+    "first_s": 1.518,
+    "secs": 1.53,
+    "duration": 3.25,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.997,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 7.428,
+    "commit_mb": 975
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1570,
+  "peak_commit_mb": 3928,
+  "done": true,
+  "first_s_median": 1.26,
+  "x_realtime": 2.3,
+  "judge_cer": 0.076
+ },
+ "hi/vosk/indic-tts/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "indic-tts",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\indic-tts\\q0.flac",
+    "first_s": 1.067,
+    "secs": 1.935,
+    "duration": 4.43,
+    "asr": "बहुत बढ़िया, राहुल, आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\indic-tts\\q1.flac",
+    "first_s": 1.581,
+    "secs": 1.585,
+    "duration": 3.25,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.121,
+    "commit_mb": 538
+   },
+   "tts": {
+    "secs": 7.421,
+    "commit_mb": 974
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1372,
+  "peak_commit_mb": 1997,
+  "done": true,
+  "first_s_median": 1.32,
+  "x_realtime": 2.2,
+  "judge_cer": 0.076
+ },
+ "hi/shruti/indic-tts-full/2048": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "indic-tts-full",
+  "limit_mb": 2048,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 2048 MB: resident memory reached 2093 MB, over the 2048 MB cap",
+  "peak_mb": 2093,
+  "peak_commit_mb": 2590,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/whisper-small/indic-tts-full/2048": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "indic-tts-full",
+  "limit_mb": 2048,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 2048 MB: resident memory reached 2131 MB, over the 2048 MB cap",
+  "peak_mb": 2131,
+  "peak_commit_mb": 4602,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/vosk/indic-tts-full/2048": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "indic-tts-full",
+  "limit_mb": 2048,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 2048 MB: resident memory reached 2108 MB, over the 2048 MB cap",
+  "peak_mb": 2108,
+  "peak_commit_mb": 3646,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/shruti/piper/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.159,
+    "secs": 0.295,
+    "duration": 3.8,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.14,
+    "secs": 0.154,
+    "duration": 3.51,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.697,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 1.485,
+    "commit_mb": 255
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 470,
+  "peak_commit_mb": 650,
+  "done": true,
+  "first_s_median": 0.15,
+  "x_realtime": 16.3,
+  "judge_cer": 0.063
+ },
+ "hi/whisper-small/piper/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.102,
+    "secs": 0.228,
+    "duration": 3.84,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.157,
+    "secs": 0.17,
+    "duration": 3.47,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.015,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.465,
+    "commit_mb": 256
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 790,
+  "peak_commit_mb": 2960,
+  "done": true,
+  "first_s_median": 0.13,
+  "x_realtime": 18.4,
+  "judge_cer": 0.063
+ },
+ "hi/vosk/piper/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\piper\\q0.flac",
+    "first_s": 0.078,
+    "secs": 0.25,
+    "duration": 3.8,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं।",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\piper\\q1.flac",
+    "first_s": 0.122,
+    "secs": 0.135,
+    "duration": 3.46,
+    "asr": "आपके दस्मी में कितने प्रतिशत नंबर आए थे।",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.108,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 1.515,
+    "commit_mb": 256
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 480,
+  "peak_commit_mb": 1060,
+  "done": true,
+  "first_s_median": 0.1,
+  "x_realtime": 18.9,
+  "judge_cer": 0.063
+ },
+ "hi/shruti/kokoro/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 1.043,
+    "secs": 1.988,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.501,
+    "secs": 1.514,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.443,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 2.457,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 717,
+  "peak_commit_mb": 887,
+  "done": true,
+  "first_s_median": 1.27,
+  "x_realtime": 2.1,
+  "judge_cer": 0.038
+ },
+ "hi/whisper-small/kokoro/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 0.988,
+    "secs": 2.029,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.504,
+    "secs": 1.509,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.015,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 2.344,
+    "commit_mb": 529
+   }
+  },
+  "fits": false,
+  "error": "resident memory reached 1037 MB, over the 1024 MB cap",
+  "peak_mb": 1037,
+  "peak_commit_mb": 3197,
+  "done": true,
+  "first_s_median": 1.25,
+  "x_realtime": 2.1,
+  "judge_cer": 0.038
+ },
+ "hi/vosk/kokoro/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro\\q0.flac",
+    "first_s": 0.906,
+    "secs": 1.894,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro\\q1.flac",
+    "first_s": 1.633,
+    "secs": 1.639,
+    "duration": 3.43,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आई थे?",
+    "cer": 0.077
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.076,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 2.363,
+    "commit_mb": 529
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 730,
+  "peak_commit_mb": 1297,
+  "done": true,
+  "first_s_median": 1.27,
+  "x_realtime": 2.1,
+  "judge_cer": 0.038
+ },
+ "hi/shruti/kokoro-int8/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.807,
+    "secs": 1.662,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.353,
+    "secs": 1.361,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.404,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 2.009,
+    "commit_mb": 312
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 509,
+  "peak_commit_mb": 673,
+  "done": true,
+  "first_s_median": 1.08,
+  "x_realtime": 2.4,
+  "judge_cer": 0.025
+ },
+ "hi/whisper-small/kokoro-int8/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.846,
+    "secs": 1.746,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.325,
+    "secs": 1.339,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.118,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.877,
+    "commit_mb": 312
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 828,
+  "peak_commit_mb": 2980,
+  "done": true,
+  "first_s_median": 1.09,
+  "x_realtime": 2.3,
+  "judge_cer": 0.025
+ },
+ "hi/vosk/kokoro-int8/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q0.flac",
+    "first_s": 0.854,
+    "secs": 1.709,
+    "duration": 3.87,
+    "asr": "बहुत बढ़िया राहुल, आप किस गांव में रहते हैं?",
+    "cer": 0.0
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\kokoro-int8\\q1.flac",
+    "first_s": 1.351,
+    "secs": 1.363,
+    "duration": 3.37,
+    "asr": "आपके दसवी में कितने प्रतिशत नंबर आई थे।",
+    "cer": 0.051
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.082,
+    "commit_mb": 666
+   },
+   "tts": {
+    "secs": 1.972,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 524,
+  "peak_commit_mb": 1084,
+  "done": true,
+  "first_s_median": 1.1,
+  "x_realtime": 2.4,
+  "judge_cer": 0.025
+ },
+ "hi/shruti/supertonic-int8/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.946,
+    "secs": 1.991,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.144,
+    "secs": 1.15,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.43,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.892,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 527,
+  "peak_commit_mb": 685,
+  "done": true,
+  "first_s_median": 1.04,
+  "x_realtime": 2.3,
+  "judge_cer": 0.076
+ },
+ "hi/whisper-small/supertonic-int8/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.846,
+    "secs": 1.822,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.078,
+    "secs": 1.092,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.926,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 1.814,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 847,
+  "peak_commit_mb": 2994,
+  "done": true,
+  "first_s_median": 0.96,
+  "x_realtime": 2.5,
+  "judge_cer": 0.076
+ },
+ "hi/vosk/supertonic-int8/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q0.flac",
+    "first_s": 0.901,
+    "secs": 1.908,
+    "duration": 4.16,
+    "asr": "बहुत बढ़िया राहुल आप किस गाउं में रहते हैं?",
+    "cer": 0.049
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\supertonic-int8\\q1.flac",
+    "first_s": 1.119,
+    "secs": 1.134,
+    "duration": 3.11,
+    "asr": "आपके दस्वी में कितने प्रतिशत नंबर आये थे?",
+    "cer": 0.103
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.125,
+    "commit_mb": 795
+   },
+   "tts": {
+    "secs": 1.853,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 541,
+  "peak_commit_mb": 1223,
+  "done": true,
+  "first_s_median": 1.01,
+  "x_realtime": 2.4,
+  "judge_cer": 0.076
+ },
+ "hi/shruti/mms/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.389,
+    "secs": 0.956,
+    "duration": 3.12,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.932,
+    "secs": 0.944,
+    "duration": 3.23,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.476,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.182,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 483,
+  "peak_commit_mb": 620,
+  "done": true,
+  "first_s_median": 0.66,
+  "x_realtime": 3.3,
+  "judge_cer": 0.212
+ },
+ "hi/whisper-small/mms/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.392,
+    "secs": 1.035,
+    "duration": 3.4,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.816,
+    "secs": 0.82,
+    "duration": 3.29,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.928,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.221,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 776,
+  "peak_commit_mb": 2931,
+  "done": true,
+  "first_s_median": 0.6,
+  "x_realtime": 3.6,
+  "judge_cer": 0.212
+ },
+ "hi/vosk/mms/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "बहुत बढ़िया, राहुल। आप किस गाँव में रहते हैं?",
+    "file": "bench_pairs\\hi\\mms\\q0.flac",
+    "first_s": 0.366,
+    "secs": 0.964,
+    "duration": 3.27,
+    "asr": "तो बहुत बढ़िया रहो आप किस डाउंग में रहते हैं?",
+    "cer": 0.22
+   },
+   {
+    "q": "आपके दसवीं में कितने प्रतिशत नंबर आए थे?",
+    "file": "bench_pairs\\hi\\mms\\q1.flac",
+    "first_s": 0.818,
+    "secs": 0.822,
+    "duration": 3.28,
+    "asr": "आपके दस्मी में कितने परतिशित मंबर आये थे।",
+    "cer": 0.205
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 1.06,
+    "commit_mb": 793
+   },
+   "tts": {
+    "secs": 1.212,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 493,
+  "peak_commit_mb": 1160,
+  "done": true,
+  "first_s_median": 0.59,
+  "x_realtime": 3.7,
+  "judge_cer": 0.212
+ },
+ "hi/shruti/indic-tts/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "indic-tts",
+  "limit_mb": 1024,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 1024 MB: resident memory reached 1025 MB, over the 1024 MB cap",
+  "peak_mb": 1025,
+  "peak_commit_mb": 1274,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/whisper-small/indic-tts/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "indic-tts",
+  "limit_mb": 1024,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 1024 MB: resident memory reached 1066 MB, over the 1024 MB cap",
+  "peak_mb": 1066,
+  "peak_commit_mb": 3286,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/vosk/indic-tts/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "indic-tts",
+  "limit_mb": 1024,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 1024 MB: resident memory reached 1105 MB, over the 1024 MB cap",
+  "peak_mb": 1105,
+  "peak_commit_mb": 2138,
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/shruti/indic-tts-full/1024": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "indic-tts-full",
+  "limit_mb": 1024,
+  "fits": false,
+  "error": "did not fit in 2048 MB",
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/whisper-small/indic-tts-full/1024": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "indic-tts-full",
+  "limit_mb": 1024,
+  "fits": false,
+  "error": "did not fit in 2048 MB",
+  "done": true,
+  "judge_cer": null
+ },
+ "hi/vosk/indic-tts-full/1024": {
+  "lang": "hi",
+  "stt": "vosk",
+  "tts": "indic-tts-full",
+  "limit_mb": 1024,
+  "fits": false,
+  "error": "did not fit in 2048 MB",
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/shruti/piper/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\piper\\q0.flac",
+    "first_s": 0.056,
+    "secs": 0.183,
+    "duration": 3.43,
+    "asr": "चान तिया, तू कोंट्या गवत राते?",
+    "cer": 0.294
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\piper\\q1.flac",
+    "first_s": 0.099,
+    "secs": 0.106,
+    "duration": 2.47,
+    "asr": "तहाविला तुला किती टक्के मेले होते?",
+    "cer": 0.143
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\piper\\q2.flac",
+    "first_s": 0.222,
+    "secs": 0.234,
+    "duration": 6.13,
+    "asr": "खरी किम्वा गावात्तु कोंटी काम करतेश जस शेती, शिवण काम किम्वा जनावरांची काजी.",
+    "cer": 0.189
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\piper\\q3.flac",
+    "first_s": 0.074,
+    "secs": 0.278,
+    "duration": 7.67,
+    "asr": "तू मनालीस एक तेद्धी ड्लात, परशाच उत्पन्न सवाल अखचा आसपास आहे का? हवत तरहे सोडून दे.",
+    "cer": 0.271
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\piper\\q4.flac",
+    "first_s": 0.266,
+    "secs": 0.371,
+    "duration": 5.33,
+    "asr": "आधीतु अकरावी मनालेस अता बारावी। तूना की कोंट्या वर्गत आहे।",
+    "cer": 0.226
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\piper\\q5.flac",
+    "first_s": 0.336,
+    "secs": 0.441,
+    "duration": 11.76,
+    "asr": "मी एकदा वाचुन दाखवतो, तुझे नव प्रिया जादव, तु अक्रावी सायंस मदे आहेस रहिमत पूर्त सातारा दाविला चौर्याईंशी तक्के। ही सक्ळ बरोबर आहेका?",
+    "cer": 0.192
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\piper\\q6.flac",
+    "first_s": 0.074,
+    "secs": 0.078,
+    "duration": 1.94,
+    "asr": "तुला पूढी काई भायचा है?",
+    "cer": 0.36
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\piper\\q7.flac",
+    "first_s": 0.203,
+    "secs": 0.218,
+    "duration": 6.3,
+    "asr": "तुझ्जा कड़े कोंटी कागदपत्र आहे, जसा अधारकाड उत्पनाचा दाखला किमवा बंक खातो।",
+    "cer": 0.195
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.507,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 1.202,
+    "commit_mb": 263
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 593,
+  "peak_commit_mb": 793,
+  "done": true,
+  "first_s_median": 0.15,
+  "x_realtime": 23.6,
+  "judge_cer": 0.234
+ },
+ "mr/whisper-small/piper/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\piper\\q0.flac",
+    "first_s": 0.073,
+    "secs": 0.197,
+    "duration": 3.29,
+    "asr": "चान तिया, तू कोंट्या गवत राते?",
+    "cer": 0.294
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\piper\\q1.flac",
+    "first_s": 0.1,
+    "secs": 0.112,
+    "duration": 2.59,
+    "asr": "तहाविला तुला किती टक्के मेले होते?",
+    "cer": 0.143
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.963,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.137,
+    "commit_mb": 263
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 767,
+  "peak_commit_mb": 2899,
+  "done": true,
+  "first_s_median": 0.09,
+  "x_realtime": 19.0,
+  "judge_cer": 0.218
+ },
+ "mr/shruti/kokoro/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro\\q0.flac",
+    "first_s": 0.66,
+    "secs": 1.887,
+    "duration": 3.55,
+    "asr": "जान प्रिया, तू को नत्या गावात राहतेस।",
+    "cer": 0.088
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro\\q1.flac",
+    "first_s": 1.358,
+    "secs": 1.362,
+    "duration": 2.84,
+    "asr": "दहावीला तुला किती चक्की म्याले होते।",
+    "cer": 0.114
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\kokoro\\q2.flac",
+    "first_s": 2.921,
+    "secs": 2.937,
+    "duration": 6.89,
+    "asr": "घरी कीवा गावाद तू कोंती कामन करतेस, जसन शेती, शिवनकाम कीवा जनावरांची काजी.",
+    "cer": 0.135
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\kokoro\\q3.flac",
+    "first_s": 1.111,
+    "secs": 3.888,
+    "duration": 8.57,
+    "asr": "तू महनालीस एकते दीर लाख, विर्शाचन उत्पन्न सव्व लाखाच्या आसपास आहीका, हवं तर हे सोडून दे.",
+    "cer": 0.129
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\kokoro\\q4.flac",
+    "first_s": 1.535,
+    "secs": 2.828,
+    "duration": 6.03,
+    "asr": "आधी तू अक्रावी महनालीस आता बारावी, तू नकी कोनत्या वर्गात आहेस।",
+    "cer": 0.097
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\kokoro\\q5.flac",
+    "first_s": 4.042,
+    "secs": 5.094,
+    "duration": 12.11,
+    "asr": "मी एकता वाचून दाखवतो, तुझे नाव प्रिया जाधव, तु अक्रावी सायन समधे आहेस, रहिमतपूर सातारा, दहावीला चावर्याईशी टक्के। हे सगरन बरोबर आहे का।",
+    "cer": 0.108
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\kokoro\\q6.flac",
+    "first_s": 1.096,
+    "secs": 1.101,
+    "duration": 2.24,
+    "asr": "तुला पुढ़ी काई भायचन आहे।",
+    "cer": 0.24
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\kokoro\\q7.flac",
+    "first_s": 2.97,
+    "secs": 2.987,
+    "duration": 7.08,
+    "asr": "तुझ्याक्टी कोंटी कागदपत्रन आहेत जसन आधारकार उत्पन्नाचा दाखला कीवा बंक खातन।",
+    "cer": 0.169
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.452,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 2.429,
+    "commit_mb": 529
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 854,
+  "peak_commit_mb": 1023,
+  "done": true,
+  "first_s_median": 1.45,
+  "x_realtime": 2.2,
+  "judge_cer": 0.135
+ },
+ "mr/whisper-small/kokoro/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro\\q0.flac",
+    "first_s": 0.641,
+    "secs": 1.794,
+    "duration": 3.55,
+    "asr": "जान प्रिया, तू को नत्या गावात राहतेस।",
+    "cer": 0.088
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro\\q1.flac",
+    "first_s": 1.321,
+    "secs": 1.326,
+    "duration": 2.84,
+    "asr": "दहावीला तुला किती चक्की म्याले होते।",
+    "cer": 0.114
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.911,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 2.435,
+    "commit_mb": 529
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1030,
+  "peak_commit_mb": 3197,
+  "done": true,
+  "first_s_median": 0.98,
+  "x_realtime": 2.0,
+  "judge_cer": 0.101
+ },
+ "mr/shruti/kokoro-int8/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q0.flac",
+    "first_s": 0.589,
+    "secs": 1.711,
+    "duration": 3.55,
+    "asr": "जान प्रिया तू कोनत्या गावात राहतेस।",
+    "cer": 0.059
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q1.flac",
+    "first_s": 1.243,
+    "secs": 1.255,
+    "duration": 2.88,
+    "asr": "दहावीला तुला किती टक्के मियाले होते",
+    "cer": 0.029
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q2.flac",
+    "first_s": 2.775,
+    "secs": 2.782,
+    "duration": 6.87,
+    "asr": "घरी कीवा गावाद तू कोंती कामन करतेस, जसन शेती, शिवनकाम कीवा जनावरांची काजी.",
+    "cer": 0.135
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q3.flac",
+    "first_s": 1.028,
+    "secs": 3.527,
+    "duration": 8.57,
+    "asr": "तू महनालीस एकते दीड लाख, विर्शाचन उत्पन्न सव्व लाखाच्या आसपास आहीका, हवं तर हे सोडून दे.",
+    "cer": 0.118
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q4.flac",
+    "first_s": 1.445,
+    "secs": 2.594,
+    "duration": 6.05,
+    "asr": "आधी तू अक्रावी महनालीस आता बारावी, तू नकी कोनत्या वर्गात आहेस।",
+    "cer": 0.097
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q5.flac",
+    "first_s": 3.863,
+    "secs": 4.87,
+    "duration": 12.11,
+    "asr": "मी एक्ता वाचून दाखवतो, तुझन नाव प्रिया जाधव, तु अक्रावी सायन समधे आहेस, रहिमतपूर, सातारा, दहावीला चावर्याइशी टक्के। हे सगरन बरोबर आही का।",
+    "cer": 0.123
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q6.flac",
+    "first_s": 1.004,
+    "secs": 1.017,
+    "duration": 2.22,
+    "asr": "तुला पुढही काई भायचन आहे।",
+    "cer": 0.28
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q7.flac",
+    "first_s": 2.689,
+    "secs": 2.705,
+    "duration": 7.06,
+    "asr": "तुझ्याक्टी कोंटी कागदपत्रन आहेत, जसन आधार कार, उत्पन्नाचा दाखला कीवा बंग खातन।",
+    "cer": 0.169
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.41,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 2.03,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 654,
+  "peak_commit_mb": 808,
+  "done": true,
+  "first_s_median": 1.34,
+  "x_realtime": 2.4,
+  "judge_cer": 0.126
+ },
+ "mr/whisper-small/kokoro-int8/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q0.flac",
+    "first_s": 0.523,
+    "secs": 1.594,
+    "duration": 3.55,
+    "asr": "जान प्रिया तू कोनत्या गावात राहतेस।",
+    "cer": 0.059
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q1.flac",
+    "first_s": 1.245,
+    "secs": 1.257,
+    "duration": 2.88,
+    "asr": "दहावीला तुला किती टक्के मियाले होते",
+    "cer": 0.029
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.128,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 2.012,
+    "commit_mb": 312
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 817,
+  "peak_commit_mb": 2979,
+  "done": true,
+  "first_s_median": 0.88,
+  "x_realtime": 2.3,
+  "judge_cer": 0.044
+ },
+ "mr/shruti/supertonic-int8/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q0.flac",
+    "first_s": 0.804,
+    "secs": 1.994,
+    "duration": 3.91,
+    "asr": "छान, तू कोणतिया गावात रहतेस।",
+    "cer": 0.265
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q1.flac",
+    "first_s": 1.033,
+    "secs": 1.04,
+    "duration": 2.64,
+    "asr": "तहावीला तुला किती टक्के मिराले होते",
+    "cer": 0.057
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q2.flac",
+    "first_s": 2.031,
+    "secs": 2.046,
+    "duration": 6.88,
+    "asr": "घरी किमवा गावात्तु कोंती कामकरतेस, जसंशेती, शिवनकाम किमवा जनावरांची काजी.",
+    "cer": 0.135
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q3.flac",
+    "first_s": 1.023,
+    "secs": 3.362,
+    "duration": 8.67,
+    "asr": "तू महनाली सेकते दीड लाख वर्शाच उत्पन्न सववा लाखाच्या आसपास आहे का हवंतरह सोडून दे",
+    "cer": 0.129
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q4.flac",
+    "first_s": 1.317,
+    "secs": 2.354,
+    "duration": 6.12,
+    "asr": "आधी तु अकरावी महनालीस आता बारावी, तु नक्की कोणत्या वर्गाता हेस।",
+    "cer": 0.097
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q5.flac",
+    "first_s": 3.02,
+    "secs": 3.905,
+    "duration": 12.9,
+    "asr": "मी एकदा वाचून दाखवतो, तुझा नाव प्रिया जाधव, तु अकरावी साइंस्वंद्य आहेस, रहीमतपूर, सातारा, दहावीला चौड याएंशी टक्के। है सगंबर उबर आहेका।",
+    "cer": 0.146
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q6.flac",
+    "first_s": 1.096,
+    "secs": 1.102,
+    "duration": 2.25,
+    "asr": "तुला पुडे काई बहाँ चाहे?",
+    "cer": 0.32
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q7.flac",
+    "first_s": 1.892,
+    "secs": 1.915,
+    "duration": 6.5,
+    "asr": "तुझ्याकडे कोंती कागपत्रा आहेत, जसन आधार कार्ड, उत्पन्नाचा दाखला किमा बखातन?",
+    "cer": 0.13
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.402,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.847,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 550,
+  "peak_commit_mb": 755,
+  "done": true,
+  "first_s_median": 1.21,
+  "x_realtime": 2.8,
+  "judge_cer": 0.16
+ },
+ "mr/whisper-small/supertonic-int8/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q0.flac",
+    "first_s": 0.839,
+    "secs": 1.962,
+    "duration": 3.91,
+    "asr": "छान, तू कोणतिया गावात रहतेस।",
+    "cer": 0.265
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q1.flac",
+    "first_s": 1.067,
+    "secs": 1.082,
+    "duration": 2.64,
+    "asr": "तहावीला तुला किती टक्के मिराले होते",
+    "cer": 0.057
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.881,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 1.891,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 834,
+  "peak_commit_mb": 2993,
+  "done": true,
+  "first_s_median": 0.95,
+  "x_realtime": 2.2,
+  "judge_cer": 0.161
+ },
+ "mr/shruti/mms/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\mms\\q0.flac",
+    "first_s": 0.307,
+    "secs": 0.853,
+    "duration": 2.82,
+    "asr": "जान प्रिया, तू कुंत्या गावात रहतेस्?",
+    "cer": 0.147
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\mms\\q1.flac",
+    "first_s": 0.734,
+    "secs": 0.746,
+    "duration": 2.72,
+    "asr": "दाहविला तुला कितिक ठक्के मिलाले होते",
+    "cer": 0.2
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\mms\\q2.flac",
+    "first_s": 1.52,
+    "secs": 1.526,
+    "duration": 6.24,
+    "asr": "धरी किवा गावाद तो कुन्ती कामन करतेश जस्थन शेती शिवन काम किवा जनावरंची कालजी",
+    "cer": 0.23
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\mms\\q3.flac",
+    "first_s": 0.773,
+    "secs": 1.964,
+    "duration": 7.36,
+    "asr": "तू मनाली एक ते दीड लाक वर्षयाचन उत्पन्य सवालाकाच्या असपासा ही का गवंतर ही सोडूंदेई",
+    "cer": 0.259
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\mms\\q4.flac",
+    "first_s": 0.863,
+    "secs": 1.456,
+    "duration": 4.95,
+    "asr": "आधी तू आक्राडी महना लेश आता बारावी तू ना की कुंत्या वर्गाता हैश",
+    "cer": 0.258
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\mms\\q5.flac",
+    "first_s": 2.214,
+    "secs": 2.711,
+    "duration": 10.84,
+    "asr": "मी एक दा वाचुन दाखोतू तुझा नाप्रिया जादोतू आक्रावी साइनसमदे आहे स्रहिमत्पूर सातारा दाविला सोले विशी तक्की ये सगवन बुर्बराहे का",
+    "cer": 0.308
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\mms\\q6.flac",
+    "first_s": 0.456,
+    "secs": 0.46,
+    "duration": 1.61,
+    "asr": "तुलापुडे काई भाचना है?",
+    "cer": 0.44
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\mms\\q7.flac",
+    "first_s": 1.397,
+    "secs": 1.402,
+    "duration": 5.32,
+    "asr": "तुल्या कड़े कोंती कादप पत्रवाहेत जसल आधार कारड उत्पन्नाचा दाखला क्यूमा बग खातन।",
+    "cer": 0.234
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.565,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 1.245,
+    "commit_mb": 291
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 551,
+  "peak_commit_mb": 690,
+  "done": true,
+  "first_s_median": 0.82,
+  "x_realtime": 3.8,
+  "judge_cer": 0.26
+ },
+ "mr/whisper-small/mms/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\mms\\q0.flac",
+    "first_s": 0.34,
+    "secs": 0.874,
+    "duration": 2.79,
+    "asr": "जान प्रिया, तू कुंत्या गावात रहतेस्?",
+    "cer": 0.147
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\mms\\q1.flac",
+    "first_s": 0.759,
+    "secs": 0.765,
+    "duration": 2.66,
+    "asr": "दाहविला तुला कितिक ठक्के मिलाले होते",
+    "cer": 0.2
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.064,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.175,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 794,
+  "peak_commit_mb": 2927,
+  "done": true,
+  "first_s_median": 0.55,
+  "x_realtime": 3.3,
+  "judge_cer": 0.173
+ },
+ "mr/shruti/indic-tts/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "indic-tts",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\indic-tts\\q0.flac",
+    "first_s": 0.68,
+    "secs": 1.753,
+    "duration": 4.55,
+    "asr": "चान प्रिया, तु कुणत्या गावाद रहतेस्ट।",
+    "cer": 0.206
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\indic-tts\\q1.flac",
+    "first_s": 1.62,
+    "secs": 1.624,
+    "duration": 3.56,
+    "asr": "लहावीला तुला किती टक्के मिलाले होते हैं",
+    "cer": 0.171
+   },
+   {
+    "q": "घरी किंवा गावात तू कोणती कामं करतेस, जसं शेती, शिवणकाम किंवा जनावरांची काळजी?",
+    "file": "bench_pairs\\mr\\indic-tts\\q2.flac",
+    "first_s": 4.425,
+    "secs": 4.444,
+    "duration": 9.32,
+    "asr": "घरी किम्मा गावात तू कोणती काम करतेस। जस शेती शिवण काम किम्मा जनावरांची कालजी गावात।",
+    "cer": 0.216
+   },
+   {
+    "q": "तू म्हणालीस एक ते दीड लाख. वर्षाचं उत्पन्न सव्वा लाखाच्या आसपास आहे का? हवं तर हे सोडून दे.",
+    "file": "bench_pairs\\mr\\indic-tts\\q3.flac",
+    "first_s": 1.305,
+    "secs": 4.458,
+    "duration": 10.22,
+    "asr": "तू महनालीस, एक ते दीन लाख, वर्षाचा उत्पन्न सववा लाखाचा आसपास आहे का हुआ, हववा तरहे सोडून दे.",
+    "cer": 0.165
+   },
+   {
+    "q": "आधी तू अकरावी म्हणालीस, आता बारावी. तू नक्की कोणत्या वर्गात आहेस?",
+    "file": "bench_pairs\\mr\\indic-tts\\q4.flac",
+    "first_s": 2.065,
+    "secs": 3.288,
+    "duration": 7.62,
+    "asr": "आधी तू अकरावी मनालीश आता बारावी तू नक्की कुणत्य वर्गात आहेश",
+    "cer": 0.113
+   },
+   {
+    "q": "मी एकदा वाचून दाखवतो: तुझं नाव प्रिया जाधव, तू अकरावी सायन्समध्ये आहेस, रहिमतपूर, सातारा, दहावीला चौऱ्याऐंशी टक्के. हे सगळं बरोबर आहे का?",
+    "file": "bench_pairs\\mr\\indic-tts\\q5.flac",
+    "first_s": 6.396,
+    "secs": 7.546,
+    "duration": 16.34,
+    "asr": "मी एकदा वाचुन दाखवतो, तुझा नाव प्रिया जाधव, तु अकरावी सायंस मध्याहेस, रहिमत पूर, सातारा, दाहावीला चवर्या इंशी टक्के, हे सगलव बरोबर आहे का,",
+    "cer": 0.131
+   },
+   {
+    "q": "तुला पुढे काय व्हायचं आहे?",
+    "file": "bench_pairs\\mr\\indic-tts\\q6.flac",
+    "first_s": 1.042,
+    "secs": 1.047,
+    "duration": 2.54,
+    "asr": "तूला पुढ़े काय भाईचा आहे?",
+    "cer": 0.24
+   },
+   {
+    "q": "तुझ्याकडे कोणती कागदपत्रं आहेत, जसं आधार कार्ड, उत्पन्नाचा दाखला किंवा बँक खातं?",
+    "file": "bench_pairs\\mr\\indic-tts\\q7.flac",
+    "first_s": 4.446,
+    "secs": 4.459,
+    "duration": 9.43,
+    "asr": "तुझा कड़े कोणती कागद पत्र आहेत, जिसा आधार काड उत्पन्नाचा दाखला, किमा बायंग खातर मुझादागाई",
+    "cer": 0.325
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.413,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 8.242,
+    "commit_mb": 958
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1359,
+  "peak_commit_mb": 1712,
+  "done": true,
+  "first_s_median": 1.84,
+  "x_realtime": 2.2,
+  "judge_cer": 0.196
+ },
+ "mr/whisper-small/indic-tts/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "indic-tts",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\indic-tts\\q0.flac",
+    "first_s": 0.692,
+    "secs": 1.753,
+    "duration": 4.55,
+    "asr": "चान प्रिया, तु कुणत्या गावाद रहतेस्ट।",
+    "cer": 0.206
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\indic-tts\\q1.flac",
+    "first_s": 1.577,
+    "secs": 1.583,
+    "duration": 3.56,
+    "asr": "लहावीला तुला किती टक्के मिलाले होते हैं",
+    "cer": 0.171
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.058,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 7.603,
+    "commit_mb": 967
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1568,
+  "peak_commit_mb": 3929,
+  "done": true,
+  "first_s_median": 1.13,
+  "x_realtime": 2.4,
+  "judge_cer": 0.189
+ },
+ "mr/shruti/indic-tts-full/2048": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "indic-tts-full",
+  "limit_mb": 2048,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 2048 MB: resident memory reached 2093 MB, over the 2048 MB cap",
+  "peak_mb": 2093,
+  "peak_commit_mb": 2591,
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/whisper-small/indic-tts-full/2048": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "indic-tts-full",
+  "limit_mb": 2048,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 2048 MB: resident memory reached 2157 MB, over the 2048 MB cap",
+  "peak_mb": 2157,
+  "peak_commit_mb": 4634,
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/shruti/piper/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\piper\\q0.flac",
+    "first_s": 0.077,
+    "secs": 0.185,
+    "duration": 3.34,
+    "asr": "चान तिया, तू कोंट्या गवत राते?",
+    "cer": 0.294
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\piper\\q1.flac",
+    "first_s": 0.1,
+    "secs": 0.114,
+    "duration": 2.51,
+    "asr": "तहाविला तुला किती टक्के मेले होते?",
+    "cer": 0.143
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.658,
+    "commit_mb": 250
+   },
+   "tts": {
+    "secs": 1.276,
+    "commit_mb": 263
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 446,
+  "peak_commit_mb": 590,
+  "done": true,
+  "first_s_median": 0.09,
+  "x_realtime": 19.6,
+  "judge_cer": 0.218
+ },
+ "mr/whisper-small/piper/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\piper\\q0.flac",
+    "first_s": 0.056,
+    "secs": 0.205,
+    "duration": 3.34,
+    "asr": "चान तिया, तू कोंट्या गवत राते?",
+    "cer": 0.294
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\piper\\q1.flac",
+    "first_s": 0.111,
+    "secs": 0.116,
+    "duration": 2.52,
+    "asr": "तहाविला तुला किती टक्के मेले होते?",
+    "cer": 0.143
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.042,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 1.184,
+    "commit_mb": 264
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 764,
+  "peak_commit_mb": 2895,
+  "done": true,
+  "first_s_median": 0.08,
+  "x_realtime": 18.3,
+  "judge_cer": 0.218
+ },
+ "mr/shruti/kokoro/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro\\q0.flac",
+    "first_s": 0.641,
+    "secs": 1.792,
+    "duration": 3.55,
+    "asr": "जान प्रिया, तू को नत्या गावात राहतेस।",
+    "cer": 0.088
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro\\q1.flac",
+    "first_s": 1.32,
+    "secs": 1.333,
+    "duration": 2.84,
+    "asr": "दहावीला तुला किती चक्की म्याले होते।",
+    "cer": 0.114
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.537,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 2.403,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 710,
+  "peak_commit_mb": 888,
+  "done": true,
+  "first_s_median": 0.98,
+  "x_realtime": 2.0,
+  "judge_cer": 0.101
+ },
+ "mr/whisper-small/kokoro/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro\\q0.flac",
+    "first_s": 0.681,
+    "secs": 1.867,
+    "duration": 3.55,
+    "asr": "जान प्रिया, तू को नत्या गावात राहतेस।",
+    "cer": 0.088
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro\\q1.flac",
+    "first_s": 1.319,
+    "secs": 1.325,
+    "duration": 2.84,
+    "asr": "दहावीला तुला किती चक्की म्याले होते।",
+    "cer": 0.114
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.169,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 2.518,
+    "commit_mb": 528
+   }
+  },
+  "fits": false,
+  "error": "resident memory reached 1030 MB, over the 1024 MB cap",
+  "peak_mb": 1030,
+  "peak_commit_mb": 3197,
+  "done": true,
+  "first_s_median": 1.0,
+  "x_realtime": 2.0,
+  "judge_cer": 0.101
+ },
+ "mr/shruti/kokoro-int8/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q0.flac",
+    "first_s": 0.555,
+    "secs": 1.613,
+    "duration": 3.55,
+    "asr": "जान प्रिया तू कोनत्या गावात राहतेस।",
+    "cer": 0.059
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q1.flac",
+    "first_s": 1.233,
+    "secs": 1.245,
+    "duration": 2.88,
+    "asr": "दहावीला तुला किती टक्के मियाले होते",
+    "cer": 0.029
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.501,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 2.07,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 499,
+  "peak_commit_mb": 671,
+  "done": true,
+  "first_s_median": 0.89,
+  "x_realtime": 2.2,
+  "judge_cer": 0.044
+ },
+ "mr/whisper-small/kokoro-int8/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q0.flac",
+    "first_s": 0.556,
+    "secs": 1.588,
+    "duration": 3.55,
+    "asr": "जान प्रिया तू कोनत्या गावात राहतेस।",
+    "cer": 0.059
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\kokoro-int8\\q1.flac",
+    "first_s": 1.229,
+    "secs": 1.241,
+    "duration": 2.88,
+    "asr": "दहावीला तुला किती टक्के मियाले होते",
+    "cer": 0.029
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.049,
+    "commit_mb": 2456
+   },
+   "tts": {
+    "secs": 2.158,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 820,
+  "peak_commit_mb": 2981,
+  "done": true,
+  "first_s_median": 0.89,
+  "x_realtime": 2.3,
+  "judge_cer": 0.044
+ },
+ "mr/shruti/supertonic-int8/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q0.flac",
+    "first_s": 0.842,
+    "secs": 1.896,
+    "duration": 3.91,
+    "asr": "छान, तू कोणतिया गावात रहतेस।",
+    "cer": 0.265
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q1.flac",
+    "first_s": 1.117,
+    "secs": 1.125,
+    "duration": 2.64,
+    "asr": "तहावीला तुला किती टक्के मिराले होते",
+    "cer": 0.057
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.459,
+    "commit_mb": 252
+   },
+   "tts": {
+    "secs": 1.883,
+    "commit_mb": 389
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 517,
+  "peak_commit_mb": 687,
+  "done": true,
+  "first_s_median": 0.98,
+  "x_realtime": 2.2,
+  "judge_cer": 0.161
+ },
+ "mr/whisper-small/supertonic-int8/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q0.flac",
+    "first_s": 0.855,
+    "secs": 1.997,
+    "duration": 3.91,
+    "asr": "छान, तू कोणतिया गावात रहतेस।",
+    "cer": 0.265
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\supertonic-int8\\q1.flac",
+    "first_s": 1.048,
+    "secs": 1.055,
+    "duration": 2.64,
+    "asr": "तहावीला तुला किती टक्के मिराले होते",
+    "cer": 0.057
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.09,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 1.935,
+    "commit_mb": 388
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 834,
+  "peak_commit_mb": 2993,
+  "done": true,
+  "first_s_median": 0.95,
+  "x_realtime": 2.1,
+  "judge_cer": 0.161
+ },
+ "mr/shruti/mms/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\mms\\q0.flac",
+    "first_s": 0.292,
+    "secs": 0.766,
+    "duration": 2.79,
+    "asr": "जान प्रिया, तू कुंत्या गावात रहतेस्?",
+    "cer": 0.147
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\mms\\q1.flac",
+    "first_s": 0.636,
+    "secs": 0.65,
+    "duration": 2.67,
+    "asr": "दाहविला तुला कितिक ठक्के मिलाले होते",
+    "cer": 0.2
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 2.504,
+    "commit_mb": 251
+   },
+   "tts": {
+    "secs": 1.255,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 475,
+  "peak_commit_mb": 620,
+  "done": true,
+  "first_s_median": 0.46,
+  "x_realtime": 3.9,
+  "judge_cer": 0.173
+ },
+ "mr/whisper-small/mms/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "छान, प्रिया. तू कोणत्या गावात राहतेस?",
+    "file": "bench_pairs\\mr\\mms\\q0.flac",
+    "first_s": 0.283,
+    "secs": 0.807,
+    "duration": 2.9,
+    "asr": "जान प्रिया, तू कुंत्या गावात रहतेस्?",
+    "cer": 0.147
+   },
+   {
+    "q": "दहावीला तुला किती टक्के मिळाले होते?",
+    "file": "bench_pairs\\mr\\mms\\q1.flac",
+    "first_s": 0.712,
+    "secs": 0.716,
+    "duration": 2.66,
+    "asr": "दाहविला तुला कितिक ठक्के मिलाले होते",
+    "cer": 0.2
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 6.117,
+    "commit_mb": 2459
+   },
+   "tts": {
+    "secs": 1.269,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 798,
+  "peak_commit_mb": 2931,
+  "done": true,
+  "first_s_median": 0.5,
+  "x_realtime": 3.7,
+  "judge_cer": 0.173
+ },
+ "mr/shruti/indic-tts/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "indic-tts",
+  "limit_mb": 1024,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 1024 MB: resident memory reached 1112 MB, over the 1024 MB cap",
+  "peak_mb": 1112,
+  "peak_commit_mb": 1371,
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/whisper-small/indic-tts/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "indic-tts",
+  "limit_mb": 1024,
+  "items": [],
+  "fits": false,
+  "error": "does not fit in 1024 MB: resident memory reached 1056 MB, over the 1024 MB cap",
+  "peak_mb": 1056,
+  "peak_commit_mb": 3253,
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/shruti/indic-tts-full/1024": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "indic-tts-full",
+  "limit_mb": 1024,
+  "fits": false,
+  "error": "did not fit in 2048 MB",
+  "done": true,
+  "judge_cer": null
+ },
+ "mr/whisper-small/indic-tts-full/1024": {
+  "lang": "mr",
+  "stt": "whisper-small",
+  "tts": "indic-tts-full",
+  "limit_mb": 1024,
+  "fits": false,
+  "error": "did not fit in 2048 MB",
+  "done": true,
+  "judge_cer": null
+ },
+ "en/whisper-small/piper/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\piper\\q0.flac",
+    "first_s": 0.118,
+    "secs": 0.224,
+    "duration": 3.73,
+    "asr": "Great Anil. Which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\piper\\q1.flac",
+    "first_s": 0.124,
+    "secs": 0.131,
+    "duration": 3.44,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\piper\\q2.flac",
+    "first_s": 0.202,
+    "secs": 0.21,
+    "duration": 5.9,
+    "asr": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\piper\\q3.flac",
+    "first_s": 0.081,
+    "secs": 0.345,
+    "duration": 9.23,
+    "asr": "You said maybe 1 lakh. Is your family income closer to 90,000 or 1 lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\piper\\q4.flac",
+    "first_s": 0.112,
+    "secs": 0.204,
+    "duration": 5.4,
+    "asr": "Earlier you said 15 now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\piper\\q5.flac",
+    "first_s": 0.309,
+    "secs": 0.405,
+    "duration": 10.76,
+    "asr": "Let me read it back. Your name is Anil Kumar. You are in class 10 from Azar in Nashik district, and you got 68%. Is that all correct?",
+    "cer": 0.111
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\piper\\q6.flac",
+    "first_s": 0.097,
+    "secs": 0.104,
+    "duration": 2.71,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\piper\\q7.flac",
+    "first_s": 0.179,
+    "secs": 0.195,
+    "duration": 5.79,
+    "asr": "Which documents do you have, like an Adhar card, an income certificate, or a bank account?",
+    "cer": 0.023
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.538,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.288,
+    "commit_mb": 251
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 867,
+  "peak_commit_mb": 3060,
+  "done": true,
+  "first_s_median": 0.12,
+  "x_realtime": 25.8,
+  "judge_cer": 0.046
+ },
+ "en/whisper-small/kokoro/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kokoro\\q0.flac",
+    "first_s": 0.618,
+    "secs": 1.433,
+    "duration": 2.65,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kokoro\\q1.flac",
+    "first_s": 1.207,
+    "secs": 1.212,
+    "duration": 2.52,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\kokoro\\q2.flac",
+    "first_s": 2.279,
+    "secs": 2.294,
+    "duration": 5.12,
+    "asr": "What work do you do at home or in the village, like farming, repairs, or helping at a shop?",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\kokoro\\q3.flac",
+    "first_s": 0.737,
+    "secs": 3.449,
+    "duration": 7.21,
+    "asr": "You said maybe one lakh. Is your family income closer to 90,000 or one lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\kokoro\\q4.flac",
+    "first_s": 1.122,
+    "secs": 1.829,
+    "duration": 3.72,
+    "asr": "Earlier you said 15, now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\kokoro\\q5.flac",
+    "first_s": 3.327,
+    "secs": 4.011,
+    "duration": 9.37,
+    "asr": "Let me read it back. Your name is Anil Kumar. You are in Class 10 from Azar in Nashik District, and you got 68%. Is that all correct?",
+    "cer": 0.111
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\kokoro\\q6.flac",
+    "first_s": 0.948,
+    "secs": 0.953,
+    "duration": 1.86,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\kokoro\\q7.flac",
+    "first_s": 2.299,
+    "secs": 2.306,
+    "duration": 5.25,
+    "asr": "Which documents do you have, like an Adhar card, an income certificate, or a bank account?",
+    "cer": 0.023
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.45,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 2.299,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1133,
+  "peak_commit_mb": 3330,
+  "done": true,
+  "first_s_median": 1.16,
+  "x_realtime": 2.2,
+  "judge_cer": 0.046
+ },
+ "en/whisper-small/kokoro-int8/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q0.flac",
+    "first_s": 0.608,
+    "secs": 1.307,
+    "duration": 2.63,
+    "asr": "Great Anil. Which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q1.flac",
+    "first_s": 1.094,
+    "secs": 1.107,
+    "duration": 2.56,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q2.flac",
+    "first_s": 2.054,
+    "secs": 2.062,
+    "duration": 5.03,
+    "asr": "What work do you do at home or in the village, like farming, repairs, or helping at a shop?",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\kokoro-int8\\q3.flac",
+    "first_s": 0.684,
+    "secs": 2.972,
+    "duration": 7.19,
+    "asr": "You said maybe one lack. Is your family income closer to 90,000 or one lack a year? You can skip this if you like.",
+    "cer": 0.107
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q4.flac",
+    "first_s": 0.964,
+    "secs": 1.559,
+    "duration": 3.7,
+    "asr": "Earlier you said 15, now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q5.flac",
+    "first_s": 3.148,
+    "secs": 3.762,
+    "duration": 9.33,
+    "asr": "Let me read it back. Your name is Anil Kumar, you are in Class 10, from Azar and Nashik District, and you got 68%. Is that all correct?",
+    "cer": 0.126
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q6.flac",
+    "first_s": 0.831,
+    "secs": 0.842,
+    "duration": 1.9,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q7.flac",
+    "first_s": 2.093,
+    "secs": 2.108,
+    "duration": 5.23,
+    "asr": "Which documents do you have, like an Adhar card, an income certificate, or a bank account?",
+    "cer": 0.023
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.569,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.911,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 934,
+  "peak_commit_mb": 3113,
+  "done": true,
+  "first_s_median": 1.03,
+  "x_realtime": 2.4,
+  "judge_cer": 0.053
+ },
+ "en/whisper-small/supertonic-int8/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q0.flac",
+    "first_s": 0.817,
+    "secs": 1.766,
+    "duration": 3.59,
+    "asr": "Great Enil. Which village do you live in?",
+    "cer": 0.026
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q1.flac",
+    "first_s": 1.21,
+    "secs": 1.217,
+    "duration": 3.03,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q2.flac",
+    "first_s": 1.843,
+    "secs": 1.864,
+    "duration": 5.73,
+    "asr": "What work do you do at home or in the village, like farming, repairs, or helping at a shop?",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\supertonic-int8\\q3.flac",
+    "first_s": 0.803,
+    "secs": 3.211,
+    "duration": 8.79,
+    "asr": "You said maybe one lakh. Is your family income closer to 90,000 or one lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q4.flac",
+    "first_s": 1.092,
+    "secs": 2.001,
+    "duration": 4.8,
+    "asr": "Earlier you said 15, now 18. What is your correct age?",
+    "cer": 0.167
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q5.flac",
+    "first_s": 2.394,
+    "secs": 3.255,
+    "duration": 10.77,
+    "asr": "Let me read it back. Your name is Enokumar. You are in class 10 from Ozark in Nashik district, and you got 68%. Is that all correct?",
+    "cer": 0.141
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q6.flac",
+    "first_s": 1.06,
+    "secs": 1.074,
+    "duration": 2.73,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q7.flac",
+    "first_s": 1.922,
+    "secs": 1.944,
+    "duration": 6.03,
+    "asr": "Which documents do you have, like an AIDAR card, an income certificate, or a bank account?",
+    "cer": 0.034
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.488,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.917,
+    "commit_mb": 389
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 855,
+  "peak_commit_mb": 3000,
+  "done": true,
+  "first_s_median": 1.15,
+  "x_realtime": 2.8,
+  "judge_cer": 0.054
+ },
+ "en/whisper-small/mms/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\mms\\q0.flac",
+    "first_s": 0.378,
+    "secs": 0.855,
+    "duration": 3.53,
+    "asr": "great enno which village do you live in",
+    "cer": 0.077
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\mms\\q1.flac",
+    "first_s": 0.82,
+    "secs": 0.824,
+    "duration": 3.3,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\mms\\q2.flac",
+    "first_s": 1.319,
+    "secs": 1.324,
+    "duration": 5.63,
+    "asr": "What work do you do at home or in the village like farming repairs or helping at a shuck?",
+    "cer": 0.034
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\mms\\q3.flac",
+    "first_s": 0.642,
+    "secs": 2.388,
+    "duration": 8.98,
+    "asr": "QSED made one lake. Is your family income closer to 90,000 or one lake a year? You can skip this if you like.",
+    "cer": 0.165
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\mms\\q4.flac",
+    "first_s": 0.786,
+    "secs": 1.174,
+    "duration": 4.64,
+    "asr": "Earlier, you said 15, now 18. What is your correct data?",
+    "cer": 0.222
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\mms\\q5.flac",
+    "first_s": 2.228,
+    "secs": 2.646,
+    "duration": 10.46,
+    "asr": "let me read it back your name is ann o kimar you are in class ten from ozer and nashik district and you got sixty eight person'd yist that all correct",
+    "cer": 0.096
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\mms\\q6.flac",
+    "first_s": 0.676,
+    "secs": 0.688,
+    "duration": 2.52,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\mms\\q7.flac",
+    "first_s": 1.586,
+    "secs": 1.592,
+    "duration": 5.81,
+    "asr": "Which documents do you have like an ad hair card, an income certificate, or a bank account?",
+    "cer": 0.034
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.581,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.283,
+    "commit_mb": 291
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 868,
+  "peak_commit_mb": 2996,
+  "done": true,
+  "first_s_median": 0.8,
+  "x_realtime": 3.9,
+  "judge_cer": 0.079
+ },
+ "en/whisper-small/kitten/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kitten",
+  "limit_mb": 2048,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kitten\\q0.flac",
+    "first_s": 0.278,
+    "secs": 0.664,
+    "duration": 5.43,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kitten\\q1.flac",
+    "first_s": 0.522,
+    "secs": 0.536,
+    "duration": 5.07,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   },
+   {
+    "q": "What work do you do at home or in the village, like farming, repairs or helping at a shop?",
+    "file": "bench_pairs\\en\\kitten\\q2.flac",
+    "first_s": 0.785,
+    "secs": 0.796,
+    "duration": 8.23,
+    "asr": "what work do you do at home or in the village like farming repairs or helping at a shop",
+    "cer": 0.0
+   },
+   {
+    "q": "You said maybe one lakh. Is your family income closer to ninety thousand or one lakh a year? You can skip this if you like.",
+    "file": "bench_pairs\\en\\kitten\\q3.flac",
+    "first_s": 0.304,
+    "secs": 1.332,
+    "duration": 12.3,
+    "asr": "You said maybe one lakh. Is your family income closer to 90,000 or one lakh a year? You can skip this if you like.",
+    "cer": 0.068
+   },
+   {
+    "q": "Earlier you said fifteen, now eighteen. What is your correct age?",
+    "file": "bench_pairs\\en\\kitten\\q4.flac",
+    "first_s": 0.427,
+    "secs": 0.774,
+    "duration": 7.37,
+    "asr": "earlier you said fifteen now eighteen what is your correct age",
+    "cer": 0.0
+   },
+   {
+    "q": "Let me read it back: your name is Anil Kumar, you are in Class ten, from Ozar in Nashik district, and you got sixty eight percent. Is that all correct?",
+    "file": "bench_pairs\\en\\kitten\\q5.flac",
+    "first_s": 1.158,
+    "secs": 1.492,
+    "duration": 14.96,
+    "asr": "let me read it back your name is anil kumar you are in class x from azar in nashik district and you got sixty-eight per cent is that all correct",
+    "cer": 0.03
+   },
+   {
+    "q": "What would you like to become in the future?",
+    "file": "bench_pairs\\en\\kitten\\q6.flac",
+    "first_s": 0.424,
+    "secs": 0.43,
+    "duration": 3.9,
+    "asr": "What would you like to become in the future?",
+    "cer": 0.0
+   },
+   {
+    "q": "Which documents do you have, like an Aadhaar card, an income certificate or a bank account?",
+    "file": "bench_pairs\\en\\kitten\\q7.flac",
+    "first_s": 0.837,
+    "secs": 0.848,
+    "duration": 8.52,
+    "asr": "Which documents do you have, like an Adhar card, an income certificate, or a bank account?",
+    "cer": 0.023
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.444,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.587,
+    "commit_mb": 243
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 793,
+  "peak_commit_mb": 2946,
+  "done": true,
+  "first_s_median": 0.47,
+  "x_realtime": 9.6,
+  "judge_cer": 0.015
+ },
+ "en/whisper-small/piper/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\piper\\q0.flac",
+    "first_s": 0.074,
+    "secs": 0.192,
+    "duration": 3.71,
+    "asr": "Great Anil. Which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\piper\\q1.flac",
+    "first_s": 0.125,
+    "secs": 0.132,
+    "duration": 3.4,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.461,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.159,
+    "commit_mb": 251
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 778,
+  "peak_commit_mb": 2951,
+  "done": true,
+  "first_s_median": 0.1,
+  "x_realtime": 21.9,
+  "judge_cer": 0.0
+ },
+ "en/whisper-small/kokoro/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kokoro",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kokoro\\q0.flac",
+    "first_s": 0.638,
+    "secs": 1.43,
+    "duration": 2.65,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kokoro\\q1.flac",
+    "first_s": 1.231,
+    "secs": 1.243,
+    "duration": 2.52,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.441,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 2.32,
+    "commit_mb": 528
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 1013,
+  "peak_commit_mb": 3193,
+  "done": true,
+  "first_s_median": 0.93,
+  "x_realtime": 1.9,
+  "judge_cer": 0.0
+ },
+ "en/whisper-small/kokoro-int8/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kokoro-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q0.flac",
+    "first_s": 0.621,
+    "secs": 1.436,
+    "duration": 2.63,
+    "asr": "Great Anil. Which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kokoro-int8\\q1.flac",
+    "first_s": 1.138,
+    "secs": 1.144,
+    "duration": 2.56,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.6,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.987,
+    "commit_mb": 313
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 806,
+  "peak_commit_mb": 2978,
+  "done": true,
+  "first_s_median": 0.88,
+  "x_realtime": 2.0,
+  "judge_cer": 0.0
+ },
+ "en/whisper-small/supertonic-int8/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "supertonic-int8",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q0.flac",
+    "first_s": 0.806,
+    "secs": 1.685,
+    "duration": 3.59,
+    "asr": "Great Enil. Which village do you live in?",
+    "cer": 0.026
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\supertonic-int8\\q1.flac",
+    "first_s": 1.236,
+    "secs": 1.244,
+    "duration": 3.03,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 3.607,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 1.982,
+    "commit_mb": 389
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 834,
+  "peak_commit_mb": 2990,
+  "done": true,
+  "first_s_median": 1.02,
+  "x_realtime": 2.3,
+  "judge_cer": 0.013
+ },
+ "en/whisper-small/mms/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "mms",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\mms\\q0.flac",
+    "first_s": 0.414,
+    "secs": 0.931,
+    "duration": 3.64,
+    "asr": "great enno which village do you live in",
+    "cer": 0.077
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\mms\\q1.flac",
+    "first_s": 0.862,
+    "secs": 0.867,
+    "duration": 3.12,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 5.137,
+    "commit_mb": 2455
+   },
+   "tts": {
+    "secs": 1.443,
+    "commit_mb": 292
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 796,
+  "peak_commit_mb": 2927,
+  "done": true,
+  "first_s_median": 0.64,
+  "x_realtime": 3.8,
+  "judge_cer": 0.038
+ },
+ "en/whisper-small/kitten/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "kitten",
+  "limit_mb": 1024,
+  "items": [
+   {
+    "q": "Great, Anil. Which village do you live in?",
+    "file": "bench_pairs\\en\\kitten\\q0.flac",
+    "first_s": 0.404,
+    "secs": 0.93,
+    "duration": 5.45,
+    "asr": "Great Anil, which village do you live in?",
+    "cer": 0.0
+   },
+   {
+    "q": "How many percent did you get in your last exam?",
+    "file": "bench_pairs\\en\\kitten\\q1.flac",
+    "first_s": 0.728,
+    "secs": 0.737,
+    "duration": 5.06,
+    "asr": "How many percent did you get in your last exam?",
+    "cer": 0.0
+   }
+  ],
+  "load": {
+   "stt": {
+    "secs": 4.946,
+    "commit_mb": 2457
+   },
+   "tts": {
+    "secs": 2.098,
+    "commit_mb": 243
+   }
+  },
+  "ear_ok": true,
+  "fits": true,
+  "peak_mb": 740,
+  "peak_commit_mb": 2877,
+  "done": true,
+  "first_s_median": 0.57,
+  "x_realtime": 6.3,
+  "judge_cer": 0.0
+ },
+ "en/whisper-small/parler/2048": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "parler",
+  "limit_mb": 2048,
+  "fits": false,
+  "done": true,
+  "peak_mb": 3668,
+  "peak_commit_mb": 8535,
+  "items": [],
+  "error": "does not fit: Parler-TTS mini alone needs 3.3-3.7 GB resident and commits up to 9.3 GB while loading (measured outside the cap, 3 runs); inside the cap it crashed at the 8 GB commit backstop. Load + first sentence took 25-87 s.",
+  "measured_outside_cap": true
+ },
+ "en/whisper-small/parler/1024": {
+  "lang": "en",
+  "stt": "whisper-small",
+  "tts": "parler",
+  "limit_mb": 1024,
+  "fits": false,
+  "done": true,
+  "peak_mb": 3668,
+  "peak_commit_mb": 8535,
+  "items": [],
+  "error": "does not fit: Parler-TTS mini alone needs 3.3-3.7 GB resident and commits up to 9.3 GB while loading (measured outside the cap, 3 runs); inside the cap it crashed at the 8 GB commit backstop. Load + first sentence took 25-87 s.",
+  "measured_outside_cap": true
+ }
+}

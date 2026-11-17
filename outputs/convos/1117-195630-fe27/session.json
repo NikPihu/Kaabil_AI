@@ -1,0 +1,300 @@
+{
+ "cfg": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "piper",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्ते! मैं काबिल हूँ। मैं आपकी प्रोफ़ाइल बनाने में मदद करूँगा। अपने बारे में बताइए: आपका नाम क्या है, आप कहाँ रहते हैं, और कौन सी क्लास में पढ़ते हैं?",
+   "audio": "/audio/convos/1117-195630-fe27/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 5.151,
+    "first_audio_s": 0.632,
+    "sentences": 4,
+    "duration": 12.23,
+    "sample_rate": 22050,
+    "rss_mb": 356,
+    "commit_mb": 758,
+    "peak_commit_mb": 760
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "text": "मेरा नाम राहुल यादव है, मैं सत्रह साल का हूँ।",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "आप किस क्लास में पढ़ते हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-195630-fe27/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.354,
+    "first_audio_s": 0.345,
+    "sentences": 1,
+    "duration": 2.02,
+    "sample_rate": 22050,
+    "rss_mb": 355,
+    "commit_mb": 757,
+    "peak_commit_mb": 760
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.718,
+    "llm_s": 2.72,
+    "tts_first_s": 0.345,
+    "tts_s": 0.354,
+    "total_s": 3.07,
+    "wait_s": 3.07
+   },
+   "llm": {
+    "ttft_s": 2.718,
+    "total_s": 2.72,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1287,
+    "cost": 0
+   },
+   "asks_about": [
+    "class_or_year"
+   ],
+   "changes": [
+    "name",
+    "age"
+   ],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "hi",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahul Yadav",
+    "confidence": 0.95,
+    "evidence": "मेरा नाम राहुल यादव है",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": ",",
+    "confidence": 0.9,
+    "evidence": "मैं सत्रह साल का हूँ",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Student named Rahul Yadav, age 17.",
+  "events": [],
+  "cost": 0.0,
+  "student_turns": 1
+ },
+ "card": {
+  "name": "Rahul Yadav",
+  "age": ",",
+  "_confirmed": false
+ }
+}

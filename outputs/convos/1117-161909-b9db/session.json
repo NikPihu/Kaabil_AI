@@ -1,0 +1,406 @@
+{
+ "cfg": {
+  "lang": "mr",
+  "stt": "shruti",
+  "tts": "indic-tts",
+  "voice": "female",
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्कार! मी काबिल आहे. मी तुमची प्रोफाइल बनवायला मदत करेन. तुमच्याबद्दल सांगा: तुमचं नाव काय, तुम्ही कुठे राहता, आणि कोणत्या वर्गात शिकता?",
+   "audio": "/audio/convos/1117-161909-b9db/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 11.851,
+    "first_audio_s": 0.778,
+    "sentences": 4,
+    "duration": 15.37,
+    "sample_rate": 22050,
+    "rss_mb": 757,
+    "commit_mb": 1101,
+    "peak_commit_mb": 1468
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "audio": "/audio/examples/mr/n1.flac",
+   "audio_s": 7.68,
+   "reference": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "text": "माझं नाव प्रिया जाधव आहे मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचं नाव प्रिया जाधव, वय १६, अकरावी सायन्स. तुमचा गाव कोणता?",
+   "spoken": "तुमचं नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स. तुमचा गाव कोणता?",
+   "audio": "/audio/convos/1117-161909-b9db/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 6.454,
+    "first_audio_s": 4.9,
+    "sentences": 2,
+    "duration": 7.76,
+    "sample_rate": 22050,
+    "rss_mb": 636,
+    "commit_mb": 977,
+    "peak_commit_mb": 1468
+   },
+   "timing": {
+    "stt_s": 1.018,
+    "llm_ttft_s": 0.62,
+    "llm_s": 1.137,
+    "tts_first_s": 4.9,
+    "tts_s": 6.454,
+    "total_s": 8.61,
+    "wait_s": 7.06
+   },
+   "llm": {
+    "ttft_s": 0.62,
+    "total_s": 1.137,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1440,
+    "cost": 0.00031715
+   },
+   "asks_about": [
+    "village"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते. माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे.",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे कॉलेज शिवाजी विद्यालय कोरेगाव, गाव रहिमतपूर, जिल्हा सातारा. शेवटच्या परीक्षेत किती टक्के गुण मिळाले?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-161909-b9db/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 9.652,
+    "first_audio_s": 5.646,
+    "sentences": 2,
+    "duration": 12.17,
+    "sample_rate": 22050,
+    "rss_mb": 667,
+    "commit_mb": 1080,
+    "peak_commit_mb": 1468
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.813,
+    "llm_s": 2.515,
+    "tts_first_s": 5.646,
+    "tts_s": 9.652,
+    "total_s": 12.17,
+    "wait_s": 8.16
+   },
+   "llm": {
+    "ttft_s": 1.813,
+    "total_s": 2.515,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1562,
+    "cost": 0.00033755
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "village",
+    "district",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "दहावीला 84.2% मिळाले आणि उत्पन्न ₹1,20,000 आहे.",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमची दहावीची गुण 84.2% आणि कुटुंबाचे वार्षिक उत्पन्न 120000 रुपये आहे. हे बरोबर आहे का?",
+   "spoken": "तुमची दहावीची गुण चौऱ्याऐंशी दशांश दोन टक्के आणि कुटुंबाचे वार्षिक उत्पन्न एक लाख वीस हजार रुपये आहे. हे बरोबर आहे का?",
+   "audio": "/audio/convos/1117-161909-b9db/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 11.007,
+    "first_audio_s": 9.279,
+    "sentences": 2,
+    "duration": 13.96,
+    "sample_rate": 22050,
+    "rss_mb": 672,
+    "commit_mb": 1089,
+    "peak_commit_mb": 1468
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.237,
+    "llm_s": 1.614,
+    "tts_first_s": 9.279,
+    "tts_s": 11.007,
+    "total_s": 12.64,
+    "wait_s": 10.89
+   },
+   "llm": {
+    "ttft_s": 1.237,
+    "total_s": 1.614,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1689,
+    "cost": 0.00035695
+   },
+   "asks_about": [
+    "last_marks",
+    "family_income"
+   ],
+   "changes": [
+    "last_marks",
+    "family_income"
+   ],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "mr",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Priya Jadhav",
+    "confidence": 0.95,
+    "evidence": "माझं नाव प्रिया जाधव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "16",
+    "confidence": 0.9,
+    "evidence": "मी सोळा वर्षांची आहे",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 11",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Science",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Shivaji Vidyalaya, Koregaon",
+    "confidence": 0.9,
+    "evidence": "शिवाजी विद्यालय, कोरेगाव",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahimatpur",
+    "confidence": 0.9,
+    "evidence": "रहिमतपूर गावात राहते",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Satara",
+    "confidence": 0.9,
+    "evidence": "सातारा जिल्ह्यातल्या",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "84.2%",
+    "confidence": 0.95,
+    "evidence": "दहावीला 84.2% मिळाले",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "filled",
+    "value": "120000",
+    "confidence": 0.9,
+    "evidence": "उत्पन्न ₹1,20,000 आहे",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Priya Jadhav, 16, Class 11 Science, Rahimatpur, Satara, Shivaji Vidyalaya Koregaon, 84.2% in Class 10, family income ₹1,20,000 per year.",
+  "events": [],
+  "cost": 0.00101,
+  "student_turns": 3
+ },
+ "card": {
+  "name": "Priya Jadhav",
+  "age": "16",
+  "class_or_year": "Class 11",
+  "stream_or_course": "Science",
+  "village": "Rahimatpur",
+  "district": "Satara",
+  "institution": "Shivaji Vidyalaya, Koregaon",
+  "last_marks": "84.2%",
+  "family_income": "120000",
+  "_confirmed": false
+ }
+}

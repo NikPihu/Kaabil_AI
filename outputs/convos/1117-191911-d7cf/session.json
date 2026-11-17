@@ -1,0 +1,1124 @@
+{
+ "cfg": {
+  "lang": "hi",
+  "stt": "sarvam-stt",
+  "tts": "sarvam",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्ते! मैं काबिल हूँ। मैं आपकी प्रोफ़ाइल बनाने में मदद करूँगा। अपने बारे में बताइए: आपका नाम क्या है, आप कहाँ रहते हैं, और कौन सी क्लास में पढ़ते हैं?",
+   "audio": "/audio/convos/1117-191911-d7cf/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.777,
+    "first_audio_s": 0.628,
+    "sentences": 4,
+    "duration": 8.73,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s01.wav",
+   "audio_s": 6.14,
+   "text": "मेरा नाम निकुन स्टांगले है",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "आपकी उम्र कितनी साल है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.742,
+    "first_audio_s": 0.727,
+    "sentences": 1,
+    "duration": 1.28,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 124,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.625,
+    "llm_ttft_s": 1.158,
+    "llm_s": 1.613,
+    "tts_first_s": 0.727,
+    "tts_s": 0.742,
+    "total_s": 3.01,
+    "wait_s": 2.96
+   },
+   "llm": {
+    "ttft_s": 1.158,
+    "total_s": 1.613,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1230,
+    "cost": 0.00022034
+   },
+   "asks_about": [
+    "age"
+   ],
+   "changes": [
+    "name"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s03.wav",
+   "audio_s": 3.16,
+   "text": "मेरी उम्र 21 साल है।",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "आप किस क्लास में पढ़ते हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.758,
+    "first_audio_s": 0.751,
+    "sentences": 1,
+    "duration": 1.28,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.554,
+    "llm_ttft_s": 0.814,
+    "llm_s": 1.183,
+    "tts_first_s": 0.751,
+    "tts_s": 0.758,
+    "total_s": 2.5,
+    "wait_s": 2.49
+   },
+   "llm": {
+    "ttft_s": 0.814,
+    "total_s": 1.183,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1274,
+    "cost": 0.00022918
+   },
+   "asks_about": [
+    "class_or_year"
+   ],
+   "changes": [
+    "age"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s05.wav",
+   "audio_s": 8.53,
+   "text": "मैं अपने कॉलेज के थर्ड ईयर में हूँ और मेरा कॉलेज आर्मी इंस्टिट्यूट ऑफ टेक्नोलॉजी पुणे है।",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "आप किस विषय की पढ़ाई कर रहे हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.714,
+    "first_audio_s": 0.708,
+    "sentences": 1,
+    "duration": 1.45,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.734,
+    "llm_ttft_s": 1.116,
+    "llm_s": 1.411,
+    "tts_first_s": 0.708,
+    "tts_s": 0.714,
+    "total_s": 2.86,
+    "wait_s": 2.85
+   },
+   "llm": {
+    "ttft_s": 1.116,
+    "total_s": 1.411,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1427,
+    "cost": 0.0002858
+   },
+   "asks_about": [
+    "stream_or_course"
+   ],
+   "changes": [
+    "class_or_year",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s07.wav",
+   "audio_s": 7.85,
+   "text": "मैं इंफॉर्मेशन टेक्नोलॉजी ब्रांच में हूँ और बीटेक की डिग्री कर रहा हूँ।",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "आप कहाँ रहते हैं? कृपया अपना गाँव बताइए।",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.366,
+    "first_audio_s": 0.799,
+    "sentences": 2,
+    "duration": 2.91,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.67,
+    "llm_ttft_s": 1.761,
+    "llm_s": 2.531,
+    "tts_first_s": 0.799,
+    "tts_s": 3.366,
+    "total_s": 10.77,
+    "wait_s": 4.0
+   },
+   "llm": {
+    "ttft_s": 1.761,
+    "total_s": 2.531,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1650,
+    "cost": 0.00037175
+   },
+   "asks_about": [
+    "village"
+   ],
+   "changes": [
+    "stream_or_course",
+    "class_or_year",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s09.wav",
+   "audio_s": 4.35,
+   "text": "मैं पुणे शहर में ही रहता हूँ।",
+   "turn": 9
+  },
+  {
+   "role": "kaabil",
+   "text": "ठीक है। आपका जिला कौन सा है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k10.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.2,
+    "first_audio_s": 0.447,
+    "sentences": 2,
+    "duration": 2.06,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.508,
+    "llm_ttft_s": 0.79,
+    "llm_s": 1.254,
+    "tts_first_s": 0.447,
+    "tts_s": 1.2,
+    "total_s": 2.98,
+    "wait_s": 2.21
+   },
+   "llm": {
+    "ttft_s": 0.79,
+    "total_s": 1.254,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1453,
+    "cost": 0.00025155
+   },
+   "asks_about": [
+    "district"
+   ],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s11.wav",
+   "audio_s": 3.41,
+   "text": "जिला भी पुणे ही है।",
+   "turn": 11
+  },
+  {
+   "role": "kaabil",
+   "text": "आपके अंतिम परीक्षा में कितने प्रतिशत अंक आए?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k12.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.963,
+    "first_audio_s": 0.947,
+    "sentences": 1,
+    "duration": 2.3,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.612,
+    "llm_ttft_s": 0.962,
+    "llm_s": 1.44,
+    "tts_first_s": 0.947,
+    "tts_s": 0.963,
+    "total_s": 3.02,
+    "wait_s": 3.0
+   },
+   "llm": {
+    "ttft_s": 0.962,
+    "total_s": 1.44,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1579,
+    "cost": 0.00029989
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "village",
+    "district"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s13.wav",
+   "audio_s": 6.14,
+   "text": "मेरे सीजीपीए 9.32 थी।",
+   "turn": 13
+  },
+  {
+   "role": "kaabil",
+   "text": "आपके अंतिम सीजीपीए 9.32 दर्ज किए। क्या आपका नाम निकुन स्टांगले, बीटेक तीसरा वर्ष, पुणे, सीजीपीए 9.32 सही है?",
+   "spoken": "आपके अंतिम सीजीपीए नौ दशमलव तीन दो दर्ज किए। क्या आपका नाम निकुन स्टांगले, बीटेक तीसरा वर्ष, पुणे, सीजीपीए नौ दशमलव तीन दो सही है?",
+   "audio": "/audio/convos/1117-191911-d7cf/k14.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.188,
+    "first_audio_s": 1.297,
+    "sentences": 2,
+    "duration": 9.57,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.567,
+    "llm_ttft_s": 0.798,
+    "llm_s": 1.465,
+    "tts_first_s": 1.297,
+    "tts_s": 3.188,
+    "total_s": 5.23,
+    "wait_s": 3.33
+   },
+   "llm": {
+    "ttft_s": 0.798,
+    "total_s": 1.465,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1592,
+    "cost": 0.00030984
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "last_marks"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s15.wav",
+   "audio_s": 3.75,
+   "text": "हाँ, सब सही है।",
+   "turn": 15
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद। आपका पसंदीदा विषय कौन सा है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k16.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.414,
+    "first_audio_s": 0.543,
+    "sentences": 2,
+    "duration": 2.57,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 126,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.584,
+    "llm_ttft_s": 1.594,
+    "llm_s": 2.113,
+    "tts_first_s": 0.543,
+    "tts_s": 1.414,
+    "total_s": 4.14,
+    "wait_s": 3.24
+   },
+   "llm": {
+    "ttft_s": 1.594,
+    "total_s": 2.113,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1838,
+    "cost": 0.00041955
+   },
+   "asks_about": [
+    "favourite_subjects"
+   ],
+   "changes": [
+    "name",
+    "class_or_year",
+    "village",
+    "last_marks",
+    "family_income"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s17.wav",
+   "audio_s": 9.05,
+   "text": "मेरा पसंदीदा विषय गणित और विज्ञान है।",
+   "turn": 17
+  },
+  {
+   "role": "kaabil",
+   "text": "बहुत अच्छा। आप घर या गाँव में क्या काम करते हैं, जैसे खेती, मरम्मत, सिलाई, खाते, भाई बहन को पढ़ाना, खाना बनाना, फोन ठीक करना या जानवरों की देखभाल?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k18.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.847,
+    "first_audio_s": 0.583,
+    "sentences": 2,
+    "duration": 10.68,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.712,
+    "llm_ttft_s": 1.483,
+    "llm_s": 2.022,
+    "tts_first_s": 0.583,
+    "tts_s": 3.847,
+    "total_s": 6.63,
+    "wait_s": 3.32
+   },
+   "llm": {
+    "ttft_s": 1.483,
+    "total_s": 2.022,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1693,
+    "cost": 0.00034005
+   },
+   "asks_about": [
+    "daily_life_skills"
+   ],
+   "changes": [
+    "favourite_subjects"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s19.wav",
+   "audio_s": 5.8,
+   "text": "बता अभी तो कुछ नहीं, अभी तो मैं सिर्फ पढ़ रही हूँ।",
+   "turn": 19
+  },
+  {
+   "role": "kaabil",
+   "text": "ठीक है। आपकी क्या इच्छा है कि आप आगे क्या बनना चाहते हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k20.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.599,
+    "first_audio_s": 0.536,
+    "sentences": 2,
+    "duration": 3.42,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.699,
+    "llm_ttft_s": 1.066,
+    "llm_s": 1.302,
+    "tts_first_s": 0.536,
+    "tts_s": 1.599,
+    "total_s": 3.61,
+    "wait_s": 2.54
+   },
+   "llm": {
+    "ttft_s": 1.066,
+    "total_s": 1.302,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1622,
+    "cost": 0.00029195
+   },
+   "asks_about": [
+    "aspiration"
+   ],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s21.wav",
+   "audio_s": 5.29,
+   "text": "मैं एक इंजीनियर बनना चाहती हूँ।",
+   "turn": 21
+  },
+  {
+   "role": "kaabil",
+   "text": "बहुत अच्छा। आपके पास आधार, आय प्रमाण पत्र, जाति प्रमाण पत्र, बैंक खाता या मार्कशीट में से कौन से कागजात हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k22.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.61,
+    "first_audio_s": 0.573,
+    "sentences": 2,
+    "duration": 7.26,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 127
+   },
+   "timing": {
+    "stt_s": 0.702,
+    "llm_ttft_s": 0.953,
+    "llm_s": 1.279,
+    "tts_first_s": 0.573,
+    "tts_s": 2.61,
+    "total_s": 4.6,
+    "wait_s": 2.55
+   },
+   "llm": {
+    "ttft_s": 0.953,
+    "total_s": 1.279,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1673,
+    "cost": 0.00031655
+   },
+   "asks_about": [
+    "documents"
+   ],
+   "changes": [
+    "aspiration"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s23.wav",
+   "audio_s": 5.29,
+   "text": "वह क्यों जानना चाहते हैं? मैं नहीं बताऊंगी।",
+   "turn": 23
+  },
+  {
+   "role": "kaabil",
+   "text": "ठीक है, आप कागजात नहीं बताना चाहतीं तो कोई बात नहीं। अब बताइए, आप घर या खेत में क्या काम करती हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k24.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.381,
+    "first_audio_s": 1.298,
+    "sentences": 2,
+    "duration": 5.9,
+    "sample_rate": 24000,
+    "rss_mb": 46,
+    "commit_mb": 128,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.581,
+    "llm_ttft_s": 0.806,
+    "llm_s": 1.269,
+    "tts_first_s": 1.298,
+    "tts_s": 2.381,
+    "total_s": 4.28,
+    "wait_s": 3.15
+   },
+   "llm": {
+    "ttft_s": 0.806,
+    "total_s": 1.269,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1682,
+    "cost": 0.00031285
+   },
+   "asks_about": [
+    "daily_life_skills"
+   ],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s25.wav",
+   "audio_s": 17.75,
+   "text": "खाना नहीं खाएगी तू? बाजूला सा क्या है ना? पुलाव ना नहीं, पुलाव नहीं दाने वाला दवा। दाने वाला दवा होता है हमारे घर। मतलब पुण्या मधला काम नहीं करती, मैं सिर्फ पढ़ती हूँ।",
+   "turn": 25
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद। आपकी पढ़ाई पूरी करने के बाद आप क्या बनना चाहती हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k26.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.501,
+    "first_audio_s": 0.525,
+    "sentences": 2,
+    "duration": 3.59,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.942,
+    "llm_ttft_s": 0.777,
+    "llm_s": 1.462,
+    "tts_first_s": 0.525,
+    "tts_s": 1.501,
+    "total_s": 3.91,
+    "wait_s": 2.93
+   },
+   "llm": {
+    "ttft_s": 0.777,
+    "total_s": 1.462,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1803,
+    "cost": 0.00033925
+   },
+   "asks_about": [
+    "aspiration"
+   ],
+   "changes": [
+    "daily_life_skills"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s27.wav",
+   "audio_s": 5.12,
+   "text": "मैं सोच रही हूँ कि डॉक्टर बन जाऊँ।",
+   "turn": 27
+  },
+  {
+   "role": "kaabil",
+   "text": "आप पहले इंजीनियर बनना चाहते थे, अब डॉक्टर बनना चाहती हैं। कौन सा सही है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k28.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.686,
+    "first_audio_s": 1.049,
+    "sentences": 2,
+    "duration": 4.53,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 127,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.596,
+    "llm_ttft_s": 2.8550000000000004,
+    "llm_s": 3.547,
+    "tts_first_s": 1.049,
+    "tts_s": 1.686,
+    "total_s": 5.84,
+    "wait_s": 5.19
+   },
+   "llm": {
+    "ttft_s": 2.8550000000000004,
+    "total_s": 3.547,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1773,
+    "cost": 0.00033525
+   },
+   "asks_about": [
+    "aspiration"
+   ],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s29.wav",
+   "audio_s": 9.64,
+   "text": "मैं निकुष टाँगे की बहन कह रही हूँ और मुझे डॉक्टर बनना है।",
+   "turn": 29
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका नाम निकुन स्टांगले की बहन है और आप डॉक्टर बनना चाहती हैं। क्या यह सही है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k30.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.627,
+    "first_audio_s": 1.072,
+    "sentences": 2,
+    "duration": 4.28,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.722,
+    "llm_ttft_s": 1.13,
+    "llm_s": 1.663,
+    "tts_first_s": 1.072,
+    "tts_s": 1.627,
+    "total_s": 4.02,
+    "wait_s": 3.46
+   },
+   "llm": {
+    "ttft_s": 1.13,
+    "total_s": 1.663,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1860,
+    "cost": 0.000359
+   },
+   "asks_about": [
+    "name",
+    "aspiration"
+   ],
+   "changes": [
+    "aspiration",
+    "daily_life_skills"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s31.wav",
+   "audio_s": 8.36,
+   "text": "मेरा निकुष तन्नी की बहन नहीं है, वह तो एक रिलेशन में है। मेरा नाम गाथा टांगले है।",
+   "turn": 31
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका नाम गाथा टांगले है और आप डॉक्टर बनना चाहती हैं। क्या यह सही है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-191911-d7cf/k32.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.682,
+    "first_audio_s": 1.09,
+    "sentences": 2,
+    "duration": 4.19,
+    "sample_rate": 24000,
+    "rss_mb": 44,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.838,
+    "llm_ttft_s": 1.273,
+    "llm_s": 1.661,
+    "tts_first_s": 1.09,
+    "tts_s": 1.682,
+    "total_s": 4.19,
+    "wait_s": 3.59
+   },
+   "llm": {
+    "ttft_s": 1.273,
+    "total_s": 1.661,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1889,
+    "cost": 0.00040165
+   },
+   "asks_about": [
+    "name",
+    "aspiration"
+   ],
+   "changes": [
+    "name",
+    "daily_life_skills",
+    "aspiration"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-191911-d7cf/s33.wav",
+   "audio_s": 3.24,
+   "text": "ए टिंपू, येस इट्स करेक्ट।",
+   "turn": 33
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका नाम गाथा टांगले है, आप बी टेक तीसरे साल में हैं, पुणे में रहती हैं, सीजीपीए 9.32 है, और आप डॉक्टर बनना चाहती हैं। क्या यह सही है?",
+   "spoken": "आपका नाम गाथा टांगले है, आप बी टेक तीसरे साल में हैं, पुणे में रहती हैं, सीजीपीए नौ दशमलव तीन दो है, और आप डॉक्टर बनना चाहती हैं। क्या यह सही है?",
+   "audio": "/audio/convos/1117-191911-d7cf/k34.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.04,
+    "first_audio_s": 2.393,
+    "sentences": 2,
+    "duration": 10.25,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.619,
+    "llm_ttft_s": 0.965,
+    "llm_s": 1.436,
+    "tts_first_s": 2.393,
+    "tts_s": 3.04,
+    "total_s": 5.11,
+    "wait_s": 4.45
+   },
+   "llm": {
+    "ttft_s": 0.965,
+    "total_s": 1.436,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1832,
+    "cost": 0.00035992
+   },
+   "asks_about": [],
+   "changes": [
+    "name",
+    "aspiration"
+   ],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "hi",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Gaatha Tangale",
+    "confidence": 0.9,
+    "evidence": "ए टिंपू, येस इट्स करेक्ट।",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "21",
+    "confidence": 0.9,
+    "evidence": "मेरी उम्र 21 साल है।",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "B.Tech 3rd year",
+    "confidence": 1.0,
+    "evidence": "बीटेक तीसरा वर्ष",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Information Technology, B.Tech",
+    "confidence": 0.9,
+    "evidence": "मैं इंफॉर्मेशन टेक्नोलॉजी ब्रांच में हूँ और बीटेक की डिग्री कर रहा हूँ।",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Army Institute of Technology Pune",
+    "confidence": 0.9,
+    "evidence": "मेरा कॉलेज आर्मी इंस्टिट्यूट ऑफ टेक्नोलॉजी पुणे है।",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Pune city",
+    "confidence": 1.0,
+    "evidence": "पुणे",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Pune",
+    "confidence": 0.9,
+    "evidence": "जिला भी पुणे ही है।",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "CGPA 9.32",
+    "confidence": 1.0,
+    "evidence": "सीजीपीए 9.32",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Mathematics and Science",
+    "confidence": 0.9,
+    "evidence": "मेरा पसंदीदा विषय गणित और विज्ञान है।",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "none, only studies",
+    "confidence": 0.9,
+    "evidence": "मैं सिर्फ पढ़ती हूँ",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Doctor",
+    "confidence": 0.9,
+    "evidence": "ए टिंपू, येस इट्स करेक्ट।",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "filled",
+    "value": "not provided",
+    "confidence": 1.0,
+    "evidence": "हाँ, सब सही है",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Student confirms her name is Gaatha Tangale and she wants to become a Doctor. She studies B.Tech 3rd year at Army Institute of Technology Pune. Documents not provided.",
+  "events": [
+   {
+    "turn": 4,
+    "type": "correction",
+    "field": "class_or_year",
+    "old": "B.Com 3rd year",
+    "new": "B.Tech 3rd year"
+   },
+   {
+    "turn": 13,
+    "type": "re_ask",
+    "field": "aspiration"
+   },
+   {
+    "turn": 14,
+    "type": "contradiction",
+    "field": "aspiration",
+    "old": "Engineer",
+    "new": "Doctor"
+   },
+   {
+    "turn": 14,
+    "type": "re_ask",
+    "field": "daily_life_skills"
+   },
+   {
+    "turn": 14,
+    "type": "forced_clarify",
+    "field": "aspiration"
+   },
+   {
+    "turn": 15,
+    "type": "contradiction",
+    "field": "name",
+    "old": "निकुन स्टांगले",
+    "new": "Nikun Stangle's sister"
+   },
+   {
+    "turn": 15,
+    "type": "correction",
+    "field": "aspiration",
+    "old": "Engineer",
+    "new": "Doctor"
+   },
+   {
+    "turn": 16,
+    "type": "correction",
+    "field": "name",
+    "old": "निकुन स्टांगले",
+    "new": "Gaatha Tangale"
+   },
+   {
+    "turn": 17,
+    "type": "off_track",
+    "field": "-",
+    "say": "आपका नाम गाथा टांगले है, आप बी टेक तीसरे साल में हैं, पुणे में रहती हैं, सीजीपीए 9.32 है, और आप डॉक्टर बनना चाहती हैं। क"
+   }
+  ],
+  "cost": 0.00576,
+  "student_turns": 17
+ },
+ "card": {
+  "name": "Gaatha Tangale",
+  "age": "21",
+  "class_or_year": "B.Tech 3rd year",
+  "institution": "Army Institute of Technology Pune",
+  "stream_or_course": "Information Technology, B.Tech",
+  "village": "Pune city",
+  "district": "Pune",
+  "last_marks": "CGPA 9.32",
+  "family_income": "not provided",
+  "favourite_subjects": "Mathematics and Science",
+  "aspiration": "Doctor",
+  "daily_life_skills": "none, only studies",
+  "_confirmed": false
+ }
+}

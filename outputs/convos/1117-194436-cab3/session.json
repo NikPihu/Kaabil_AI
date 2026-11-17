@@ -1,0 +1,462 @@
+{
+ "cfg": {
+  "lang": "mr",
+  "stt": "sarvam-stt",
+  "tts": "sarvam",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्कार! मी काबिल आहे. मी तुमची प्रोफाइल बनवायला मदत करेन. तुमच्याबद्दल सांगा: तुमचं नाव काय, तुम्ही कुठे राहता, आणि कोणत्या वर्गात शिकता?",
+   "audio": "/audio/convos/1117-194436-cab3/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 14.821,
+    "first_audio_s": 0.609,
+    "sentences": 4,
+    "duration": 10.69,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "audio": "/audio/examples/mr/n1.flac",
+   "audio_s": 7.68,
+   "reference": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "text": "माझं नाव प्रिया जाधव आहे. मी सोळा वर्षांची आहे आणि अकरावी सायन्सला आहे.",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16 वर्षे, अकरावी सायन्स, बरोबर का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा वर्षे, अकरावी सायन्स, बरोबर का?",
+   "audio": "/audio/convos/1117-194436-cab3/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 7.952,
+    "first_audio_s": 7.929,
+    "sentences": 1,
+    "duration": 4.95,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.836,
+    "llm_ttft_s": 3.37,
+    "llm_s": 3.59,
+    "tts_first_s": 7.929,
+    "tts_s": 7.952,
+    "total_s": 12.39,
+    "wait_s": 12.36
+   },
+   "llm": {
+    "ttft_s": 3.37,
+    "total_s": 3.59,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1454,
+    "cost": 0
+   },
+   "asks_about": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मी सातारा जिल्ह्यातल्या रहिमतपूर गावात राहते. माझं कॉलेज शिवाजी विद्यालय, कोरेगाव आहे.",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "audio": "/audio/convos/1117-194436-cab3/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 3.145,
+    "first_audio_s": 3.116,
+    "sentences": 1,
+    "duration": 8.79,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 126,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.704,
+    "llm_s": 2.705,
+    "tts_first_s": 3.116,
+    "tts_s": 3.145,
+    "total_s": 5.85,
+    "wait_s": 5.82
+   },
+   "llm": {
+    "ttft_s": 2.704,
+    "total_s": 2.705,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1565,
+    "cost": 0
+   },
+   "asks_about": [
+    "name",
+    "age",
+    "class_or_year",
+    "village",
+    "district",
+    "institution"
+   ],
+   "changes": [
+    "village",
+    "district",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "ho",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "audio": "/audio/convos/1117-194436-cab3/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.561,
+    "first_audio_s": 2.536,
+    "sentences": 1,
+    "duration": 7.51,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.76,
+    "llm_s": 2.761,
+    "tts_first_s": 2.536,
+    "tts_s": 2.561,
+    "total_s": 5.32,
+    "wait_s": 5.3
+   },
+   "llm": {
+    "ttft_s": 2.76,
+    "total_s": 2.761,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1488,
+    "cost": 0
+   },
+   "asks_about": [],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/convos/1117-194436-cab3/s07.wav",
+   "audio_s": 3.33,
+   "text": "हो, बरोबर आहे.",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "spoken": "तुमचे नाव प्रिया जाधव, वय सोळा, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?",
+   "audio": "/audio/convos/1117-194436-cab3/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 10.057,
+    "first_audio_s": 10.039,
+    "sentences": 1,
+    "duration": 7.94,
+    "sample_rate": 24000,
+    "rss_mb": 45,
+    "commit_mb": 125,
+    "peak_commit_mb": 128
+   },
+   "timing": {
+    "stt_s": 0.85,
+    "llm_ttft_s": 1.96,
+    "llm_s": 1.979,
+    "tts_first_s": 10.039,
+    "tts_s": 10.057,
+    "total_s": 12.9,
+    "wait_s": 12.87
+   },
+   "llm": {
+    "ttft_s": 1.96,
+    "total_s": 1.979,
+    "model": "nvidia/nemotron-3.5-super-vl:free",
+    "tokens": 1551,
+    "cost": 0
+   },
+   "asks_about": [],
+   "changes": [],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "mr",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Priya Jadhav",
+    "confidence": 0.95,
+    "evidence": "माझं नाव प्रिया जाधव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "16",
+    "confidence": 0.95,
+    "evidence": "मी सोळा वर्षांची आहे",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 11",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Science",
+    "confidence": 0.95,
+    "evidence": "अकरावी सायन्सला आहे",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Shivaji Vidyalaya, Koregaon",
+    "confidence": 0.9,
+    "evidence": "शिवाजी विद्यालय, कोरेगाव आहे",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahimatpur",
+    "confidence": 0.9,
+    "evidence": "रहिमतपूर गावात राहते",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Satara",
+    "confidence": 0.9,
+    "evidence": "सातारा जिल्ह्यातल्या",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Priya Jadhav, 16, Class 11 Science, lives in Rahimatpur, Satara district, studies at Shivaji Vidyalaya Koregaon.",
+  "events": [
+   {
+    "turn": 3,
+    "type": "off_track",
+    "field": "-",
+    "say": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?"
+   },
+   {
+    "turn": 4,
+    "type": "off_track",
+    "field": "-",
+    "say": "तुमचे नाव प्रिया जाधव, वय 16, अकरावी सायन्स, रहिमतपूर, सातारा, शिवाजी विद्यालय कोरेगाव, बरोबर का?"
+   }
+  ],
+  "cost": 0.0,
+  "student_turns": 4
+ },
+ "card": {
+  "name": "Priya Jadhav",
+  "age": "16",
+  "class_or_year": "Class 11",
+  "stream_or_course": "Science",
+  "village": "Rahimatpur",
+  "district": "Satara",
+  "institution": "Shivaji Vidyalaya, Koregaon",
+  "_confirmed": false
+ }
+}

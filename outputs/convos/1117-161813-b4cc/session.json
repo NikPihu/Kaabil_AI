@@ -1,0 +1,510 @@
+{
+ "cfg": {
+  "lang": "hi",
+  "stt": "shruti",
+  "tts": "piper",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्ते! मैं काबिल हूँ। मैं आपकी प्रोफ़ाइल बनाने में मदद करूँगा। अपने बारे में बताइए: आपका नाम क्या है, आप कहाँ रहते हैं, और कौन सी क्लास में पढ़ते हैं?",
+   "audio": "/audio/convos/1117-161813-b4cc/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.804,
+    "first_audio_s": 0.056,
+    "sentences": 4,
+    "duration": 12.12,
+    "sample_rate": 22050,
+    "rss_mb": 308,
+    "commit_mb": 492,
+    "peak_commit_mb": 495
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "audio": "/audio/examples/hi/n1.flac",
+   "audio_s": 7.58,
+   "reference": "मेरा नाम राहुल यादव है। मैं सत्रह साल का हूँ और बारहवीं में पढ़ता हूँ।",
+   "text": "मेरा नाम राहुल यादव है मैं सत्रह साल का हूँ और बारहवीं में पढ़ता हूँ",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "आप किस स्कूल या कॉलेज में पढ़ते हैं?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-161813-b4cc/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.169,
+    "first_audio_s": 0.16,
+    "sentences": 1,
+    "duration": 2.61,
+    "sample_rate": 22050,
+    "rss_mb": 309,
+    "commit_mb": 491,
+    "peak_commit_mb": 495
+   },
+   "timing": {
+    "stt_s": 1.115,
+    "llm_ttft_s": 1.178,
+    "llm_s": 1.579,
+    "tts_first_s": 0.16,
+    "tts_s": 0.169,
+    "total_s": 2.87,
+    "wait_s": 2.85
+   },
+   "llm": {
+    "ttft_s": 1.178,
+    "total_s": 1.579,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1358,
+    "cost": 0.0003382
+   },
+   "asks_about": [
+    "institution"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "audio": "/audio/examples/hi/n2_phone.flac",
+   "audio_s": 8.45,
+   "reference": "मैं बाराबंकी ज़िले के रामपुर गाँव से हूँ। मेरा स्कूल राजकीय इंटर कॉलेज है, कॉमर्स स्ट्रीम।",
+   "text": "मैं बारह बंद की जिले के रामपुर का आप देखें मेरा मूलराज ये winter college है commerce train",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "आपके कॉलेज का नाम Winter College और गांव रामपुर है। आपकी पिछली परीक्षा में कितने प्रतिशत अंक आए?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-161813-b4cc/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.461,
+    "first_audio_s": 0.195,
+    "sentences": 2,
+    "duration": 7.84,
+    "sample_rate": 22050,
+    "rss_mb": 315,
+    "commit_mb": 494,
+    "peak_commit_mb": 495
+   },
+   "timing": {
+    "stt_s": 1.301,
+    "llm_ttft_s": 1.418,
+    "llm_s": 1.729,
+    "tts_first_s": 0.195,
+    "tts_s": 0.461,
+    "total_s": 3.5,
+    "wait_s": 3.23
+   },
+   "llm": {
+    "ttft_s": 1.418,
+    "total_s": 1.729,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1484,
+    "cost": 0.0003192
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "institution",
+    "village",
+    "district",
+    "stream_or_course"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "मैं ग्यारहवीं में हूँ... नहीं नहीं, माफ़ कीजिए, बारहवीं में, इसी साल बोर्ड है।",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "आपकी पिछली परीक्षा में कितने प्रतिशत अंक आए?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-161813-b4cc/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.213,
+    "first_audio_s": 0.205,
+    "sentences": 1,
+    "duration": 3.55,
+    "sample_rate": 22050,
+    "rss_mb": 315,
+    "commit_mb": 493,
+    "peak_commit_mb": 495
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.054,
+    "llm_s": 1.311,
+    "tts_first_s": 0.205,
+    "tts_s": 0.213,
+    "total_s": 1.54,
+    "wait_s": 1.52
+   },
+   "llm": {
+    "ttft_s": 1.054,
+    "total_s": 1.311,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1512,
+    "cost": 0.00028696
+   },
+   "asks_about": [
+    "last_marks"
+   ],
+   "changes": [
+    "class_or_year",
+    "stream_or_course"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "दसवीं में 72.4% आए थे, और घर की आमदनी ₹1,50,000 है।",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "आपके दसवीं में 72.4% अंक और घर की आमदनी डेढ़ लाख रुपये है। क्या यह सही है?",
+   "spoken": "आपके दसवीं में बहत्तर दशमलव चार प्रतिशत अंक और घर की आमदनी डेढ़ लाख रुपये है। क्या यह सही है?",
+   "audio": "/audio/convos/1117-161813-b4cc/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.516,
+    "first_audio_s": 0.422,
+    "sentences": 2,
+    "duration": 8.57,
+    "sample_rate": 22050,
+    "rss_mb": 323,
+    "commit_mb": 494,
+    "peak_commit_mb": 495
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.308,
+    "llm_s": 1.784,
+    "tts_first_s": 0.422,
+    "tts_s": 0.516,
+    "total_s": 2.3,
+    "wait_s": 2.21
+   },
+   "llm": {
+    "ttft_s": 1.308,
+    "total_s": 1.784,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1674,
+    "cost": 0.000354
+   },
+   "asks_about": [],
+   "changes": [
+    "last_marks",
+    "family_income"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "वैसे मैं उन्नीस साल का हूँ।",
+   "turn": 9
+  },
+  {
+   "role": "kaabil",
+   "text": "आपने उन्नीस साल बताया। क्या यह सही है? आपका जिला कौन सा है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-161813-b4cc/k10.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.386,
+    "first_audio_s": 0.133,
+    "sentences": 3,
+    "duration": 5.72,
+    "sample_rate": 22050,
+    "rss_mb": 323,
+    "commit_mb": 494,
+    "peak_commit_mb": 495
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.029,
+    "llm_s": 1.223,
+    "tts_first_s": 0.133,
+    "tts_s": 0.386,
+    "total_s": 1.61,
+    "wait_s": 1.36
+   },
+   "llm": {
+    "ttft_s": 1.029,
+    "total_s": 1.223,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1700,
+    "cost": 0.00032764
+   },
+   "asks_about": [
+    "age",
+    "district"
+   ],
+   "changes": [],
+   "phase": "collect"
+  }
+ ],
+ "state": {
+  "lang": "hi",
+  "phase": "collect",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahul Yadav",
+    "confidence": 0.95,
+    "evidence": "मेरा नाम राहुल यादव है",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "doubt",
+    "value": "17",
+    "confidence": 0.95,
+    "evidence": "मैं सत्रह साल का हूँ",
+    "doubt": "age 19 in Class 12 is unusual and may need confirmation"
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 12",
+    "confidence": 0.9,
+    "evidence": "बारहवीं में, इसी साल बोर्ड है",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Commerce",
+    "confidence": 0.8,
+    "evidence": "commerce train",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "winter college",
+    "confidence": 0.6,
+    "evidence": "winter college",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "रामपुर",
+    "confidence": 0.7,
+    "evidence": "रामपुर",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "doubt",
+    "value": "बारह बंद",
+    "confidence": 0.5,
+    "evidence": "बारह बंद",
+    "doubt": "बारह बंद sounds unclear and may be misheard"
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "72.4%",
+    "confidence": 0.9,
+    "evidence": "दसवीं में 72.4% आए थे",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "filled",
+    "value": "150000",
+    "confidence": 0.9,
+    "evidence": "घर की आमदनी ₹1,50,000 है",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Rahul Yadav, now says 19, Class 12, Winter College, Rampur, Commerce. Last marks 72.4%, family income ₹1,50,000. District unclear. Missing favourite subjects, daily skills, aspiration, documents.",
+  "events": [
+   {
+    "turn": 4,
+    "type": "off_track",
+    "field": "-",
+    "say": "आपके दसवीं में 72.4% अंक और घर की आमदनी डेढ़ लाख रुपये है। क्या यह सही है?"
+   },
+   {
+    "turn": 5,
+    "type": "contradiction",
+    "field": "age",
+    "old": "17",
+    "new": "19"
+   }
+  ],
+  "cost": 0.00163,
+  "student_turns": 5
+ },
+ "card": {
+  "name": "Rahul Yadav",
+  "age": "17",
+  "class_or_year": "Class 12",
+  "institution": "winter college",
+  "village": "रामपुर",
+  "district": "बारह बंद",
+  "stream_or_course": "Commerce",
+  "last_marks": "72.4%",
+  "family_income": "150000",
+  "_confirmed": false
+ }
+}

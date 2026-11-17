@@ -1,0 +1,653 @@
+{
+ "cfg": {
+  "lang": "hi",
+  "stt": "whisper-small",
+  "tts": "piper",
+  "voice": null,
+  "limit_mb": 2048,
+  "threads": 4,
+  "cpu_percent": null
+ },
+ "turns": [
+  {
+   "role": "kaabil",
+   "text": "नमस्ते! मैं काबिल हूँ। मैं आपकी प्रोफ़ाइल बनाने में मदद करूँगा। अपने बारे में बताइए: आपका नाम क्या है, आप कहाँ रहते हैं, और कौन सी क्लास में पढ़ते हैं?",
+   "audio": "/audio/convos/1117-185324-d8d8/k00.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.468,
+    "first_audio_s": 0.039,
+    "sentences": 4,
+    "duration": 12.18,
+    "sample_rate": 22050,
+    "rss_mb": 309,
+    "commit_mb": 494,
+    "peak_commit_mb": 496
+   },
+   "fixed_prompt": true
+  },
+  {
+   "role": "student",
+   "text": "राहुल यादव, सत्रह साल, बारहवीं कॉमर्स, रामपुर बाराबंकी, दसवीं में बहत्तर परसेंट, दुकान का हिसाब और मोबाइल रिपेयर, बैंक की नौकरी चाहिए।",
+   "turn": 1
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका नाम राहुल यादव, उम्र 17, क्लास 12 कॉमर्स, रामपुर बाराबंकी, दसवीं में 72 प्रतिशत, दुकान का हिसाब और मोबाइल रिपेयर, बैंक की नौकरी। क्या यह सही है?",
+   "spoken": "आपका नाम राहुल यादव, उम्र सत्रह, क्लास बारह कॉमर्स, रामपुर बाराबंकी, दसवीं में बहत्तर प्रतिशत, दुकान का हिसाब और मोबाइल रिपेयर, बैंक की नौकरी। क्या यह सही है?",
+   "audio": "/audio/convos/1117-185324-d8d8/k02.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.23,
+    "first_audio_s": 1.793,
+    "sentences": 2,
+    "duration": 13.42,
+    "sample_rate": 22050,
+    "rss_mb": 443,
+    "commit_mb": 759,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.151,
+    "llm_s": 2.138,
+    "tts_first_s": 1.793,
+    "tts_s": 2.23,
+    "total_s": 4.37,
+    "wait_s": 3.93
+   },
+   "llm": {
+    "ttft_s": 1.151,
+    "total_s": 2.138,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1780,
+    "cost": 0.00046188
+   },
+   "asks_about": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course",
+    "village",
+    "district",
+    "last_marks",
+    "daily_life_skills",
+    "aspiration"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course",
+    "village",
+    "district",
+    "last_marks",
+    "daily_life_skills",
+    "aspiration"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "ha",
+   "turn": 3
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद राहुल! आपके कॉलेज या स्कूल का नाम क्या है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k04.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.819,
+    "first_audio_s": 0.297,
+    "sentences": 2,
+    "duration": 4.31,
+    "sample_rate": 22050,
+    "rss_mb": 444,
+    "commit_mb": 757,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 8.797,
+    "llm_s": 9.602,
+    "tts_first_s": 0.297,
+    "tts_s": 0.819,
+    "total_s": 10.42,
+    "wait_s": 9.9
+   },
+   "llm": {
+    "ttft_s": 8.797,
+    "total_s": 9.602,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1865,
+    "cost": 0.00044647
+   },
+   "asks_about": [
+    "institution"
+   ],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course",
+    "village",
+    "district",
+    "last_marks",
+    "daily_life_skills",
+    "aspiration"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "APS Rampur",
+   "turn": 5
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका स्कूल APS Rampur है। आपका पसंदीदा विषय कौन सा है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k06.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.09,
+    "first_audio_s": 0.493,
+    "sentences": 2,
+    "duration": 5.54,
+    "sample_rate": 22050,
+    "rss_mb": 444,
+    "commit_mb": 758,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 0.799,
+    "llm_s": 1.017,
+    "tts_first_s": 0.493,
+    "tts_s": 1.09,
+    "total_s": 2.11,
+    "wait_s": 1.51
+   },
+   "llm": {
+    "ttft_s": 0.799,
+    "total_s": 1.017,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1551,
+    "cost": 0.0003624
+   },
+   "asks_about": [
+    "favourite_subjects"
+   ],
+   "changes": [
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "math aur science",
+   "turn": 7
+  },
+  {
+   "role": "kaabil",
+   "text": "आपके पसंदीदा विषय गणित और विज्ञान हैं। क्या यह सही है?",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k08.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.957,
+    "first_audio_s": 0.627,
+    "sentences": 2,
+    "duration": 4.97,
+    "sample_rate": 22050,
+    "rss_mb": 446,
+    "commit_mb": 758,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.16,
+    "llm_s": 1.838,
+    "tts_first_s": 0.627,
+    "tts_s": 0.957,
+    "total_s": 2.8,
+    "wait_s": 2.46
+   },
+   "llm": {
+    "ttft_s": 1.16,
+    "total_s": 1.838,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1648,
+    "cost": 0.0003249
+   },
+   "asks_about": [
+    "favourite_subjects"
+   ],
+   "changes": [
+    "favourite_subjects",
+    "institution"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "ha",
+   "turn": 9
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद राहुल! आपकी सालाना पारिवारिक आय कितनी है? आप इसे छोड़ भी सकते हैं।",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k10.flac",
+   "tts": {
+    "ok": true,
+    "secs": 1.457,
+    "first_audio_s": 0.342,
+    "sentences": 3,
+    "duration": 6.8,
+    "sample_rate": 22050,
+    "rss_mb": 449,
+    "commit_mb": 759,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.741,
+    "llm_s": 1.989,
+    "tts_first_s": 0.342,
+    "tts_s": 1.457,
+    "total_s": 3.48,
+    "wait_s": 2.33
+   },
+   "llm": {
+    "ttft_s": 1.741,
+    "total_s": 1.989,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1612,
+    "cost": 0.00028788
+   },
+   "asks_about": [
+    "family_income"
+   ],
+   "changes": [],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "घर की आमदनी साल की लगभग डेढ़ लाख रुपये है।",
+   "turn": 11
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद राहुल! आपके पास कौन से दस्तावेज हैं? आधार, आय प्रमाण पत्र, जाति प्रमाण पत्र, बैंक खाता या मार्कशीट। आप बता सकते हैं या छोड़ सकते हैं।",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k12.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.41,
+    "first_audio_s": 0.323,
+    "sentences": 4,
+    "duration": 12.8,
+    "sample_rate": 22050,
+    "rss_mb": 451,
+    "commit_mb": 760,
+    "peak_commit_mb": 762
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 1.188,
+    "llm_s": 1.608,
+    "tts_first_s": 0.323,
+    "tts_s": 2.41,
+    "total_s": 4.03,
+    "wait_s": 1.93
+   },
+   "llm": {
+    "ttft_s": 1.188,
+    "total_s": 1.608,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 1787,
+    "cost": 0.00035975
+   },
+   "asks_about": [
+    "documents"
+   ],
+   "changes": [
+    "family_income"
+   ],
+   "phase": "collect"
+  },
+  {
+   "role": "student",
+   "text": "sare hai",
+   "turn": 13
+  },
+  {
+   "role": "kaabil",
+   "text": "आपका नाम राहुल यादव, उम्र 17, क्लास 12 कॉमर्स, रामपुर बाराबंकी, दसवीं में 72 प्रतिशत, परिवार की सालाना आय 150000 रुपये। क्या यह सही है?",
+   "spoken": "आपका नाम राहुल यादव, उम्र सत्रह, क्लास बारह कॉमर्स, रामपुर बाराबंकी, दसवीं में बहत्तर प्रतिशत, परिवार की सालाना आय एक लाख पचास हज़ार रुपये। क्या यह सही है?",
+   "audio": "/audio/convos/1117-185324-d8d8/k14.flac",
+   "tts": {
+    "ok": true,
+    "secs": 2.122,
+    "first_audio_s": 1.698,
+    "sentences": 2,
+    "duration": 13.98,
+    "sample_rate": 22050,
+    "rss_mb": 460,
+    "commit_mb": 761,
+    "peak_commit_mb": 763
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 2.128,
+    "llm_s": 2.482,
+    "tts_first_s": 1.698,
+    "tts_s": 2.122,
+    "total_s": 4.62,
+    "wait_s": 4.18
+   },
+   "llm": {
+    "ttft_s": 2.128,
+    "total_s": 2.482,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 3518,
+    "cost": 0.0006784499999999999
+   },
+   "asks_about": [
+    "documents"
+   ],
+   "changes": [
+    "documents"
+   ],
+   "phase": "readback"
+  },
+  {
+   "role": "student",
+   "text": "हाँ, सब सही है।",
+   "turn": 15
+  },
+  {
+   "role": "kaabil",
+   "text": "धन्यवाद राहुल! आपकी प्रोफाइल पूरी हो गई है।",
+   "spoken": null,
+   "audio": "/audio/convos/1117-185324-d8d8/k16.flac",
+   "tts": {
+    "ok": true,
+    "secs": 0.778,
+    "first_audio_s": 0.292,
+    "sentences": 2,
+    "duration": 3.55,
+    "sample_rate": 22050,
+    "rss_mb": 458,
+    "commit_mb": 759,
+    "peak_commit_mb": 763
+   },
+   "timing": {
+    "stt_s": 0.0,
+    "llm_ttft_s": 0.928,
+    "llm_s": 1.749,
+    "tts_first_s": 0.292,
+    "tts_s": 0.778,
+    "total_s": 2.53,
+    "wait_s": 2.04
+   },
+   "llm": {
+    "ttft_s": 0.928,
+    "total_s": 1.749,
+    "model": "nvidia/nemotron-3.5-super-vl",
+    "tokens": 2006,
+    "cost": 0.00045962
+   },
+   "asks_about": [],
+   "changes": [
+    "name",
+    "age",
+    "class_or_year",
+    "stream_or_course",
+    "village",
+    "district",
+    "last_marks",
+    "family_income"
+   ],
+   "phase": "readback"
+  }
+ ],
+ "state": {
+  "lang": "hi",
+  "phase": "readback",
+  "fields": [
+   {
+    "id": "name",
+    "label": "Name",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rahul Yadav",
+    "confidence": 1.0,
+    "evidence": "राहुल यादव",
+    "doubt": ""
+   },
+   {
+    "id": "age",
+    "label": "Age",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "17",
+    "confidence": 1.0,
+    "evidence": "उम्र 17",
+    "doubt": ""
+   },
+   {
+    "id": "class_or_year",
+    "label": "Class / year",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Class 12",
+    "confidence": 1.0,
+    "evidence": "क्लास 12",
+    "doubt": ""
+   },
+   {
+    "id": "stream_or_course",
+    "label": "Stream / course",
+    "required": false,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Commerce",
+    "confidence": 1.0,
+    "evidence": "कॉमर्स",
+    "doubt": ""
+   },
+   {
+    "id": "study_mode",
+    "label": "Regular or distance",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "institution",
+    "label": "School / college",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "APS Rampur",
+    "confidence": 0.9,
+    "evidence": "APS Rampur",
+    "doubt": ""
+   },
+   {
+    "id": "village",
+    "label": "Village / town",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Rampur",
+    "confidence": 1.0,
+    "evidence": "रामपुर",
+    "doubt": ""
+   },
+   {
+    "id": "district",
+    "label": "District",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Barabanki",
+    "confidence": 1.0,
+    "evidence": "बाराबंकी",
+    "doubt": ""
+   },
+   {
+    "id": "state",
+    "label": "State",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "last_marks",
+    "label": "Last exam marks",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "72%",
+    "confidence": 1.0,
+    "evidence": "दसवीं में 72 प्रतिशत",
+    "doubt": ""
+   },
+   {
+    "id": "favourite_subjects",
+    "label": "Favourite subjects",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Math and Science",
+    "confidence": 0.9,
+    "evidence": "math aur science",
+    "doubt": ""
+   },
+   {
+    "id": "daily_life_skills",
+    "label": "Skills from daily life",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "shop accounts and mobile repair",
+    "confidence": 1.0,
+    "evidence": "दुकान का हिसाब और मोबाइल रिपेयर",
+    "doubt": ""
+   },
+   {
+    "id": "aspiration",
+    "label": "What they want to become",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "bank job",
+    "confidence": 1.0,
+    "evidence": "बैंक की नौकरी चाहिए",
+    "doubt": ""
+   },
+   {
+    "id": "constraints",
+    "label": "Limits",
+    "required": false,
+    "sensitive": false,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "family_income",
+    "label": "Family income per year",
+    "required": true,
+    "sensitive": true,
+    "status": "filled",
+    "value": "150000",
+    "confidence": 1.0,
+    "evidence": "सालाना आय 150000 रुपये",
+    "doubt": ""
+   },
+   {
+    "id": "documents",
+    "label": "Documents they have",
+    "required": true,
+    "sensitive": false,
+    "status": "filled",
+    "value": "Aadhaar, income certificate, caste certificate, bank account, marksheet",
+    "confidence": 0.9,
+    "evidence": "sare hai",
+    "doubt": ""
+   },
+   {
+    "id": "gender",
+    "label": "Gender",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "category",
+    "label": "Category",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   },
+   {
+    "id": "disability",
+    "label": "Disability",
+    "required": false,
+    "sensitive": true,
+    "status": "missing",
+    "value": "",
+    "confidence": null,
+    "evidence": "",
+    "doubt": ""
+   }
+  ],
+  "summary": "Rahul Yadav, 17, Class 12 Commerce from Rampur, Barabanki. 72% in Class 10. Skills: shop accounts and mobile repair. Aspiration: bank job. Institution: APS Rampur. Favourite subjects: Math and Science. Family income 150000 rupees per year. All documents available.",
+  "events": [],
+  "cost": 0.00338,
+  "student_turns": 8
+ },
+ "card": {
+  "name": "Rahul Yadav",
+  "age": "17",
+  "class_or_year": "Class 12",
+  "stream_or_course": "Commerce",
+  "village": "Rampur",
+  "district": "Barabanki",
+  "last_marks": "72%",
+  "daily_life_skills": "shop accounts and mobile repair",
+  "aspiration": "bank job",
+  "institution": "APS Rampur",
+  "favourite_subjects": "Math and Science",
+  "family_income": "150000",
+  "documents": "Aadhaar, income certificate, caste certificate, bank account, marksheet",
+  "_confirmed": false
+ }
+}

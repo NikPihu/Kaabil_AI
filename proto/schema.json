@@ -1,0 +1,128 @@
+{
+  "_comment": "Student profile the Profile Agent fills (deck v3, slide 4: 'A 3-4 minute spoken story becomes a skills profile'). required = asked for until filled. sensitive = asked once, skippable, never pushed. lock = read back and confirmed before saving (deck slide 8: numbers and names locked). Edit freely; the agent and the UI read this file.",
+  "fields": [
+    {
+      "id": "name",
+      "label": "Name",
+      "required": true,
+      "lock": true,
+      "hint": "Full name as on school records"
+    },
+    {
+      "id": "age",
+      "label": "Age",
+      "required": true,
+      "lock": true,
+      "hint": "In years"
+    },
+    {
+      "id": "class_or_year",
+      "label": "Class / year",
+      "required": true,
+      "lock": true,
+      "hint": "e.g. Class 10, Class 12, B.Com 2nd year"
+    },
+    {
+      "id": "stream_or_course",
+      "label": "Stream / course",
+      "required": false,
+      "hint": "Science, Commerce, Arts, ITI trade, degree name. Only ask from Class 11 upward"
+    },
+    {
+      "id": "study_mode",
+      "label": "Regular or distance",
+      "required": false,
+      "hint": "Regular, distance or open schooling. Only ask for college students; it decides some scholarships"
+    },
+    {
+      "id": "institution",
+      "label": "School / college",
+      "required": true,
+      "hint": "Name of school or college"
+    },
+    {
+      "id": "village",
+      "label": "Village / town",
+      "required": true,
+      "hint": "Where the student lives"
+    },
+    {
+      "id": "district",
+      "label": "District",
+      "required": true,
+      "hint": "District name"
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "required": false,
+      "hint": "Infer only if the district makes it certain"
+    },
+    {
+      "id": "last_marks",
+      "label": "Last exam marks",
+      "required": true,
+      "lock": true,
+      "hint": "Percentage or grade in the last exam"
+    },
+    {
+      "id": "favourite_subjects",
+      "label": "Favourite subjects",
+      "required": true,
+      "hint": "What they like studying"
+    },
+    {
+      "id": "daily_life_skills",
+      "label": "Skills from daily life",
+      "required": true,
+      "hint": "Things they do at home, farm, shop or village: farming, repairs, stitching, accounts, teaching siblings, cooking, phone repair, animal care"
+    },
+    {
+      "id": "aspiration",
+      "label": "What they want to become",
+      "required": true,
+      "hint": "Career wish, even if vague"
+    },
+    {
+      "id": "constraints",
+      "label": "Limits",
+      "required": false,
+      "hint": "How far they can travel, money, time, family duties"
+    },
+    {
+      "id": "family_income",
+      "label": "Family income per year",
+      "required": true,
+      "sensitive": true,
+      "lock": true,
+      "hint": "Approximate yearly family income in rupees. Needed for scholarships; the student may skip"
+    },
+    {
+      "id": "documents",
+      "label": "Documents they have",
+      "required": true,
+      "hint": "Aadhaar, income certificate, caste certificate, bank account, marksheet. Needed to list missing documents for scholarships"
+    },
+    {
+      "id": "gender",
+      "label": "Gender",
+      "required": false,
+      "sensitive": true,
+      "hint": "Only if offered; some scholarships are for girls"
+    },
+    {
+      "id": "category",
+      "label": "Category",
+      "required": false,
+      "sensitive": true,
+      "hint": "General / SC / ST / OBC, only if the student is comfortable; some scholarships depend on it"
+    },
+    {
+      "id": "disability",
+      "label": "Disability",
+      "required": false,
+      "sensitive": true,
+      "hint": "Only if offered"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+edge-tts
+fastapi
+faster-whisper
+huggingface_hub
+jiwer
+kokoro-onnx
+numpy
+piper-tts
+psutil
+sherpa-onnx
+soundfile
+supertonic
+uvicorn[standard]
