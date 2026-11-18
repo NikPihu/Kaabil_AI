@@ -1,0 +1,90 @@
+{
+ "id": "iti_electrician",
+ "source_url": "https://www.bharatskills.gov.in/pdf/Qp_Curriculum/Electrician-PowerDistribution_CTS_NSQF-5_0.pdf",
+ "fetched_on": "2026-11-18",
+ "sha256": "ae39b34cda0f8a5dd1053acb0b5db7f8668cb319d6386b0c3283a956b0079fe5",
+ "status": "extracted, awaiting human review",
+ "text_chars": 14000,
+ "modules": [
+  {
+   "name": "Safety, first aid, and rescue procedures",
+   "quote": "safety and environment, use of fire extinguishers, practices elementary first aid"
+  },
+  {
+   "name": "Trade tools, conductors, cables, and jointing",
+   "quote": "trade tools & its standardization, identifies different types of conductors, cables"
+  },
+  {
+   "name": "Basic electrical laws and circuits",
+   "quote": "Basic electrical laws like Kirchhoff’s law, ohm’s law, laws of resistances"
+  },
+  {
+   "name": "Electronic components and measuring instruments",
+   "quote": "electronic components/ circuits and analyze waveforms in CRO"
+  },
+  {
+   "name": "Battery, solar cell, wiring, and light fittings",
+   "quote": "testing and maintenance of batteries and solar cell. Wiring practice"
+  },
+  {
+   "name": "Motors, starters, AC drives, inverter, stabilizer, UPS",
+   "quote": "Operation, testing and maintenance of induction motors, alternators"
+  },
+  {
+   "name": "Substation equipment and transformers",
+   "quote": "identifies various substation equipment viz., isolators, over current relays"
+  },
+  {
+   "name": "Cable jointing, earthing, overhead lines, and distribution",
+   "quote": "LT/HT cable jointing, laying of cables, tests and fault finding"
+  },
+  {
+   "name": "Meter reading, billing, relay settings, and substation maintenance",
+   "quote": "monitor meter readings, reading of MRI reports, generating electricity bills"
+  },
+  {
+   "name": "Core skills: calculation, drawing, and employability",
+   "quote": "Core area (Workshop Calculation Science, Engineering Drawing and Employability Skills)"
+  }
+ ],
+ "progression": [
+  {
+   "role": "Diploma course in notified branches of Engineering by lateral entry",
+   "quote": "Can take admission in diploma course in notified branches of Engineering by lateral entry"
+  },
+  {
+   "role": "Apprenticeship programme leading to National Apprenticeship certificate (NAC)",
+   "quote": "Can join Apprenticeship programme in different types of industries leading to National Apprenticeship certificate (NAC)"
+  },
+  {
+   "role": "Crafts Instructor Training Scheme (CITS) instructor in ITIs",
+   "quote": "Can join Crafts Instructor Training Scheme (CITS) in the trade for becoming instructor in ITIs"
+  },
+  {
+   "role": "License Certificate in all State Electricity Boards",
+   "quote": "License Certificate in all State Electricity Boards"
+  },
+  {
+   "role": "Electrician General",
+   "quote": "Electrician General; installs, maintains and repairs electrical machinery equipment"
+  },
+  {
+   "role": "Lineman, Light and Power",
+   "quote": "Lineman, Light and Power; erects and maintains overhead electric power lines"
+  },
+  {
+   "role": "Electrical Line Installers, Repairers and Cable Jointers, Other",
+   "quote": "Electrical Line Installers, Repairers and Cable Jointers, Other"
+  },
+  {
+   "role": "Electrical Fitter",
+   "quote": "Electrical Fitter; fits and assembles electrical machinery and equipment"
+  }
+ ],
+ "entry": null,
+ "duration": {
+  "text": "Two Years",
+  "quote": "(Duration: Two Years)"
+ },
+ "dropped_unsupported": 0
+}

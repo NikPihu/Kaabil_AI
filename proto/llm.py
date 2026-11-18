@@ -7,6 +7,7 @@ Streams the response so time-to-first-token is measured honestly.
 """
 from __future__ import annotations
 
+import http.client
 import json
 import os
 import sys
@@ -47,7 +48,7 @@ def _extract_json(text: str):
 
 
 def chat(messages: list[dict], schema: dict | None = None, temperature: float = 0.3,
-         max_tokens: int = 800, reasoning: str | None = "low", model: str | None = None,
+         max_tokens: int = 800, reasoning: str | None = None, model: str | None = None,
          timeout: int = 120, retries: int = 2) -> dict:
     ok, why = available()
     if not ok:
@@ -63,6 +64,7 @@ def chat(messages: list[dict], schema: dict | None = None, temperature: float = 
         # ':free' models have no such provider, so the filter is dropped for them: use fictional data only.
         **({} if (model or model_name()).endswith(":free") else {"provider": {"data_collection": "deny"}}),
     }
+    reasoning = reasoning or os.environ.get("OPENROUTER_REASONING", "off")
     if reasoning == "off":
         body["reasoning"] = {"enabled": False}
     elif reasoning:
@@ -111,7 +113,7 @@ def chat(messages: list[dict], schema: dict | None = None, temperature: float = 
             last = LLMError(f"HTTP {e.code}: {msg}")
             if e.code in (400, 401, 402, 403):
                 raise last from None
-        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, LLMError) as e:
+        except (urllib.error.URLError, TimeoutError, json.JSONDecodeError, LLMError, ConnectionError, http.client.HTTPException) as e:
             last = e if isinstance(e, LLMError) else LLMError(f"{type(e).__name__}: {e}")
         time.sleep(1.5 * (attempt + 1))
     raise last

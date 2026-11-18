@@ -1,0 +1,38 @@
+{
+ "id": "data_entry",
+ "source_url": "https://nqr.gov.in/qualification/file/QF_SSC2212_Domestic%20Data%20Entry%20Operator_V3.pdf",
+ "fetched_on": "2026-11-18",
+ "sha256": "78f8b334663b211ac4d5a1fa3125ccdfacd2a5157464d63edfe7c455c065f44a",
+ "status": "extracted, awaiting human review",
+ "text_chars": 14000,
+ "modules": [
+  {
+   "name": "Undertake data entry services",
+   "quote": "Undertake data entry services"
+  },
+  {
+   "name": "Employability Skill",
+   "quote": "Employability Skill (60 Hours)"
+  },
+  {
+   "name": "OJT",
+   "quote": "OJT"
+  }
+ ],
+ "progression": [
+  {
+   "role": "Senior Data entry operator",
+   "quote": "Senior Data entry operator"
+  },
+  {
+   "role": "Domestic Biometric Data Operator",
+   "quote": "Domestic Biometric Data Operator"
+  }
+ ],
+ "entry": {
+  "text": "Grade 10 OR 8th Grade Pass with 2-year relevant experience OR Previous Relevant qualification of NSQF level 2 with 1 years of relevant experience; Min Age: 14 Years",
+  "quote": "Grade 10 OR 8th Grade Pass with 2-year relevant experience OR Previous Relevant qualification of NSQF level 2 with 1 years of relevant experience* Min Age: 14 Years"
+ },
+ "duration": null,
+ "dropped_unsupported": 0
+}

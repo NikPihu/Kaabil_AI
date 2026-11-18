@@ -63,7 +63,9 @@ function profileCard(){
     h("div",{class:"evs"},
       h("div",{}, `${st.student_turns} student turns · `, h("span",{style:bad?"color:var(--coral)":""}, `${bad} re-asks of known fields`), ` · $${(st.cost||0).toFixed(4)}`),
       st.events.slice(-8).map(e=>h("div",{class:e.type}, `turn ${e.turn}: ${e.type.replace(/_/g," ")} · ${e.field}`+(e.old?`: "${e.old}" → "${e.new}"`:"")))),
-    st.summary&&h("p",{class:"hint",style:"margin-top:10px"}, "Memory summary: "+st.summary));
+    st.summary&&h("p",{class:"hint",style:"margin-top:10px"}, "Memory summary: "+st.summary),
+    C.sid&&st.fields.filter(f=>f.value).length>=6&&h("button",{class:"go",style:"margin-top:12px;width:100%",
+      onclick:()=>openCareerFor("session",C.sid)}, st.phase==="done"?"Plan my path":"Plan my path (profile not confirmed yet)"));
 }
 
 async function startConvo(){
@@ -170,39 +172,3 @@ function renderTalk(){
   const cb = document.getElementById("chatbox"); if(cb) cb.scrollTop = cb.scrollHeight;
 }
 RENDER.talk = renderTalk;
-
-/* ---------------- JUDGES BRIEF: tiny markdown renderer (headings, tables, lists, bold, code) ---------------- */
-function mdInline(s){
-  return s.replace(/&/g,"&amp;").replace(/</g,"&lt;")
-    .replace(/`([^`]+)`/g,"<code>$1</code>").replace(/\*\*([^*]+)\*\*/g,"<b>$1</b>").replace(/(^|\W)_([^_]+)_(?=\W|$)/g,"$1<i>$2</i>");
-}
-function md(text){
-  const out=[], lines=text.split("\n"); let i=0;
-  while(i<lines.length){
-    const l=lines[i];
-    if(l.startsWith("|")){
-      const rows=[]; while(i<lines.length&&lines[i].startsWith("|")){ rows.push(lines[i]); i++; }
-      const cells=r=>r.trim().replace(/^\||\|$/g,"").split("|").map(c=>c.trim());
-      const head=cells(rows[0]), body=rows.slice(2).map(cells);
-      out.push(`<table class="brief"><thead><tr>${head.map(c=>`<th>${mdInline(c)}</th>`).join("")}</tr></thead><tbody>${body.map(r=>`<tr>${r.map(c=>`<td>${mdInline(c)}</td>`).join("")}</tr>`).join("")}</tbody></table>`);
-      continue;
-    }
-    if(l.startsWith("- ")){ const items=[]; while(i<lines.length&&lines[i].startsWith("- ")){ items.push(`<li>${mdInline(lines[i].slice(2))}</li>`); i++; } out.push(`<ul>${items.join("")}</ul>`); continue; }
-    const m=l.match(/^(#{1,3}) (.*)/);
-    if(m){ out.push(`<h${m[1].length+0} class="${m[1].length===1?"btitle":"sec"}">${mdInline(m[2])}</h${m[1].length}>`); i++; continue; }
-    if(l.trim()) out.push(`<p class="lede" style="color:var(--ink)">${mdInline(l)}</p>`);
-    i++;
-  }
-  return out.join("\n");
-}
-async function renderBrief(){
-  const root=document.getElementById("brief"); root.innerHTML="";
-  const r=await (await fetch("/api/brief")).json();
-  root.append(h("div",{class:"briefwrap",html:md(r.markdown)}));
-}
-RENDER.brief = renderBrief;
-(function addBriefTab(){
-  const nav=document.getElementById("nav"), b=document.createElement("button");
-  b.dataset.tab="brief"; b.textContent="Judges brief"; nav.insertBefore(b, nav.children[1]);
-  const m=document.createElement("main"); m.id="brief"; document.getElementById("talk").after(m);
-})();

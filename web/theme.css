@@ -129,14 +129,3 @@ input[type=checkbox],input[type=range]{accent-color:var(--peri)}
 .tag.exp{color:var(--coral);border-color:#efc3b9;background:var(--coral-soft)}
 h2.sec{font-family:var(--serif);font-weight:500;font-size:28px}
 .card h3{font-family:var(--serif);font-weight:500}
-
-/* judges brief */
-.briefwrap{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:34px 40px;box-shadow:var(--shadow)}
-.briefwrap .btitle{font-family:var(--serif);font-weight:400;font-size:40px;letter-spacing:-.02em}
-.briefwrap h2.sec{color:var(--ink)}
-.briefwrap table.brief{border-radius:12px;overflow:hidden}
-.briefwrap table.brief th{background:var(--peri-soft);color:var(--peri);font-family:var(--body);font-weight:600;padding:9px 12px}
-.briefwrap table.brief td{padding:9px 12px}
-.briefwrap table.brief tr:nth-child(even) td{background:#fcfbf8}
-.briefwrap b{color:var(--ink)}
-.briefwrap code{background:var(--peri-soft);color:var(--peri)}

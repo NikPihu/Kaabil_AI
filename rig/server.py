@@ -135,6 +135,9 @@ def transcribe(r: AsrReq):
 sys.path.insert(0, str(PROJECT / "proto"))
 from convo_api import router as convo_router  # noqa: E402
 app.include_router(convo_router)
+sys.path.insert(0, str(PROJECT / "career"))
+from career_api import router as career_router  # noqa: E402
+app.include_router(career_router)
 
 app.mount("/audio", StaticFiles(directory=OUT), name="audio")
 app.mount("/web", StaticFiles(directory=WEB), name="web")

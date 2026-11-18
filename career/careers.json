@@ -1,0 +1,628 @@
+{
+  "_comment": "Kaabil career knowledge base. Every fact the Career tab shows comes from here, never from the LLM. Fields: routes[].from = minimum completed qualification (class_8, class_10, class_12, class_12_science, class_12_pcb, class_12_pcm_or_pcb, class_12_commerce, graduate, any); where = local | district | city | online | distance. pay.basis: official (from a recruitment notification / pay matrix) or estimate. sources[].checked says how a fact was checked; 'secondary' = several secondary sources agree, confirm in the current official notification before relying on it. learn_source='official' marks modules extracted from a government curriculum PDF by career/ingest.py.",
+  "version": 1,
+  "updated": "2026-11-18",
+  "careers": [
+    {
+      "id": "iti_electrician", "title": {"en": "Electrician (ITI)", "hi": "इलेक्ट्रीशियन (आईटीआई)", "mr": "इलेक्ट्रिशियन (आयटीआय)"},
+      "sector": "Skilled trades", "stem": true, "work_type": ["private", "government", "self-employment"],
+      "summary": "Install and repair house wiring, motors, pumps and panels. Works in villages and towns; can open an own shop.",
+      "tags": ["electric", "wiring", "motor", "pump", "repair", "fix", "machines", "tools", "physics", "science", "electrician", "bijli", "बिजली", "मोटर", "वायरिंग"],
+      "routes": [
+        {"id": "iti", "from": "class_10", "label": "ITI Electrician (2 years) after Class 10", "where": "district", "duration": "2 years", "cost": {"min": 2000, "max": 40000, "note": "government ITI is low-cost; private ITI costs more"}, "min_age": 14,
+         "steps": ["Pass Class 10", "Apply to a government ITI in your district (state ITI admission, usually May–July)", "Finish 2 years and pass the trade test for the National Trade Certificate (NTC)", "Do a 1-year apprenticeship under the National Apprenticeship scheme (stipend paid)", "Get a wiring licence from the state electricity authority to work on your own"]}
+      ],
+      "learn": ["Electrical safety and first aid", "House wiring and earthing", "Measuring instruments (multimeter, megger)", "Transformers and DC/AC motors", "Motor winding and starters", "Solar and inverter basics", "Electrical drawing and estimates"],
+      "ladder": ["Apprentice electrician", "Electrician / wireman", "Senior electrician or supervisor", "Licensed electrical contractor (own business)"],
+      "pay": {"start": "₹10,000–16,000 a month", "basis": "estimate", "note": "apprenticeship stipend is set by the government; own shop income varies"},
+      "earn_after": "about 2 years (stipend during apprenticeship)",
+      "skills_now": ["Learn safe use of a multimeter", "Help a local electrician on weekends", "Basic physics: current, voltage, resistance"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}, {"name": "Bharat Skills (ITI study material)", "url": "https://bharatskills.gov.in"}],
+      "sources": [{"name": "DGT/BharatSkills Electrician CTS curriculum (NSQF 5)", "url": "https://www.bharatskills.gov.in/pdf/Qp_Curriculum/Electrician-PowerDistribution_CTS_NSQF-5_0.pdf", "checked": "official PDF"}, {"name": "Apprenticeship India", "url": "https://www.apprenticeshipindia.gov.in", "checked": "official site"}],
+      "ingest": ["https://www.bharatskills.gov.in/pdf/Qp_Curriculum/Electrician-PowerDistribution_CTS_NSQF-5_0.pdf"]
+    },
+    {
+      "id": "solar_technician", "title": {"en": "Solar PV installation technician", "hi": "सोलर पैनल तकनीशियन", "mr": "सोलर पॅनल तंत्रज्ञ"},
+      "sector": "Skilled trades", "stem": true, "work_type": ["private", "self-employment"],
+      "summary": "Install and maintain rooftop and farm solar panels and solar pumps, a fast-growing job in villages under government solar schemes.",
+      "tags": ["solar", "electric", "wiring", "pump", "farm", "repair", "outdoor", "electricity", "सोलर", "बिजली"],
+      "routes": [
+        {"id": "short_course", "from": "class_10", "label": "Short skill course (Skill India / NSQF) after Class 10", "where": "district", "duration": "about 3 months", "cost": {"min": 0, "max": 15000, "note": "many government-funded batches are free"}, "min_age": 18,
+         "steps": ["Find a 'Solar PV Installer' training centre on Skill India Digital Hub", "Finish the course and pass the assessment for an NSQF certificate", "Work with a solar installer or company for a year", "Register as an installer with your state's renewable energy agency for rooftop scheme work"]},
+        {"id": "iti_path", "from": "class_10", "label": "ITI Electrician first, then solar", "where": "district", "duration": "2 years + 3 months", "cost": {"min": 2000, "max": 40000, "note": "government ITI"}, "min_age": 14,
+         "steps": ["Do ITI Electrician", "Add the solar installer course", "Work on rooftop and solar pump projects"]}
+      ],
+      "learn": ["Solar panel types and how they make electricity", "Site survey and mounting structures", "Wiring panels, inverters and batteries", "Safety at height and with DC power", "Solar pump systems for farms", "Maintenance and fault finding"],
+      "ladder": ["Solar installer helper", "Solar PV installer", "Site supervisor", "Own solar installation business"],
+      "pay": {"start": "₹10,000–18,000 a month", "basis": "estimate"},
+      "earn_after": "about 3–6 months",
+      "skills_now": ["Basic electrical safety", "Watch how a solar pump in your village is set up"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "Skill India Digital Hub (course search)", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}, {"name": "National Qualifications Register (search 'Solar PV Installer')", "url": "https://www.nqr.gov.in/qualifications-search", "checked": "official site"}]
+    },
+    {
+      "id": "mobile_repair", "title": {"en": "Mobile phone repair technician", "hi": "मोबाइल रिपेयर तकनीशियन", "mr": "मोबाईल दुरुस्ती तंत्रज्ञ"},
+      "sector": "Skilled trades", "stem": true, "work_type": ["self-employment", "private"],
+      "summary": "Repair phones and small electronics; one of the easiest trades to start as a shop in a village or market.",
+      "tags": ["phone", "mobile", "repair", "fix", "electronics", "computer", "gadgets", "shop", "मोबाइल", "फोन", "रिपेयर", "दुरुस्ती"],
+      "routes": [
+        {"id": "short_course", "from": "class_8", "label": "Short skill course (Skill India / NSQF)", "where": "district", "duration": "about 3 months", "cost": {"min": 0, "max": 15000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a 'Field Technician – Mobile Phone / Handset Repair' course on Skill India Digital Hub", "Practise on old phones; buy a basic toolkit", "Work 6–12 months in a repair shop", "Open your own counter; a MUDRA loan can fund tools"]},
+        {"id": "iti_electronics", "from": "class_10", "label": "ITI Electronics Mechanic (2 years)", "where": "district", "duration": "2 years", "cost": {"min": 2000, "max": 40000, "note": "government ITI"}, "min_age": 14,
+         "steps": ["Pass Class 10", "Join ITI Electronics Mechanic", "Specialise in phone and laptop repair"]}
+      ],
+      "learn": ["Phone parts and how they work", "Soldering and micro-soldering", "Changing screens, batteries and charging ports", "Software flashing and fixing", "Customer handling and pricing", "Running a small shop: stock and accounts"],
+      "ladder": ["Repair assistant", "Mobile repair technician", "Senior technician / service-centre engineer", "Own repair and accessories shop"],
+      "pay": {"start": "₹8,000–15,000 a month", "basis": "estimate", "note": "own shop income depends on the market"},
+      "earn_after": "about 3–6 months",
+      "skills_now": ["Keep fixing phones for neighbours, note each fault and fix", "Learn soldering on old boards"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}, {"name": "PM MUDRA Yojana", "url": "https://www.mudra.org.in", "checked": "official site"}]
+    },
+    {
+      "id": "data_entry", "title": {"en": "Computer operator / data entry", "hi": "कंप्यूटर ऑपरेटर / डेटा एंट्री", "mr": "कॉम्प्युटर ऑपरेटर / डेटा एंट्री"},
+      "sector": "IT and digital", "stem": true, "work_type": ["private", "government"],
+      "summary": "Type and manage records on computers in offices, banks, hospitals and government services; a first step into IT work.",
+      "tags": ["computer", "typing", "office", "data", "excel", "digital", "कंप्यूटर", "टाइपिंग"],
+      "routes": [
+        {"id": "nsqf_deo", "from": "class_10", "label": "Domestic Data Entry Operator course (NSQF level 3)", "where": "district", "duration": "about 3–4 months", "cost": {"min": 0, "max": 10000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a Data Entry Operator course (NASSCOM-approved) through Skill India", "Practise typing to 30+ words a minute in English and Hindi/Marathi", "Apply to local offices, CSC centres and BPOs", "Later sit the SSC CHSL exam for government Data Entry Operator posts (needs Class 12)"]},
+        {"id": "iti_copa", "from": "class_10", "label": "ITI COPA (Computer Operator and Programming Assistant, 1 year)", "where": "district", "duration": "1 year", "cost": {"min": 2000, "max": 30000, "note": "government ITI"}, "min_age": 14,
+         "steps": ["Pass Class 10", "Join ITI COPA", "Apprenticeship or office job"]}
+      ],
+      "learn": ["Computer basics and keyboarding", "MS Word, Excel and data entry tools", "Typing speed and accuracy", "Data checking and privacy", "Email and internet use at work"],
+      "ladder": ["Data entry operator", "Senior DEO / MIS executive", "Data analyst (with more study)"],
+      "pay": {"start": "₹9,000–15,000 a month", "basis": "estimate"},
+      "earn_after": "about 3–6 months",
+      "skills_now": ["Typing practice 20 minutes a day", "Learn Excel basics"],
+      "free_learning": [{"name": "Spoken Tutorial (IIT Bombay) — free computer courses in Hindi/Marathi", "url": "https://spoken-tutorial.org"}, {"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "NQR Qualification File: Domestic Data Entry Operator (NSQF 3)", "url": "https://nqr.gov.in/qualification/file/QF_SSC2212_Domestic%20Data%20Entry%20Operator_V3.pdf", "checked": "official PDF"}],
+      "ingest": ["https://nqr.gov.in/qualification/file/QF_SSC2212_Domestic%20Data%20Entry%20Operator_V3.pdf"]
+    },
+    {
+      "id": "data_analyst", "title": {"en": "Data analyst", "hi": "डेटा एनालिस्ट", "mr": "डेटा विश्लेषक"},
+      "sector": "IT and digital", "stem": true, "work_type": ["private"],
+      "summary": "Turn numbers into answers for businesses using Excel, SQL and charts. Much of the learning is available free online.",
+      "tags": ["computer", "maths", "numbers", "accounts", "excel", "data", "statistics", "analysis", "गणित", "कंप्यूटर", "हिसाब"],
+      "routes": [
+        {"id": "degree_plus_skills", "from": "class_12", "label": "Any degree (B.Com, B.Sc, BCA, B.A. Economics) + data skills", "where": "distance", "duration": "3 years + 6 months of skills", "cost": {"min": 15000, "max": 150000, "note": "government college or distance degree keeps it low; skills can be learnt free online"}, "min_age": 17,
+         "steps": ["Join a degree you can manage near home or by distance (B.Com, BCA, B.Sc or B.A. Economics)", "From year 1, learn Excel, then SQL and a chart tool, using free courses", "Build 3 small projects on real data (e.g. your village's crop prices)", "Apply for internships in the final year; first job is often 'MIS executive' or 'junior analyst'"]}
+      ],
+      "learn": ["Excel and spreadsheets in depth", "Statistics basics", "SQL for databases", "Charts and dashboards (Power BI / Looker Studio)", "Python basics (later)", "Explaining findings in simple language"],
+      "ladder": ["MIS executive / junior analyst", "Data analyst", "Senior analyst / BI analyst", "Analytics manager"],
+      "pay": {"start": "₹18,000–35,000 a month", "basis": "estimate", "note": "mostly in cities; some remote work"},
+      "earn_after": "about 3–4 years (after a degree)",
+      "skills_now": ["Excel: formulas and charts", "Keep practising maths and percentages"],
+      "free_learning": [{"name": "NPTEL (SWAYAM) data and statistics courses", "url": "https://nptel.ac.in"}, {"name": "Spoken Tutorial: spreadsheets, Python", "url": "https://spoken-tutorial.org"}],
+      "sources": [{"name": "SWAYAM", "url": "https://swayam.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "software_developer", "title": {"en": "Software developer", "hi": "सॉफ़्टवेयर डेवलपर", "mr": "सॉफ्टवेअर डेव्हलपर"},
+      "sector": "IT and digital", "stem": true, "work_type": ["private"],
+      "summary": "Build apps and websites. Needs strong logic and steady self-study; good jobs are mostly in cities or remote.",
+      "tags": ["computer", "coding", "programming", "apps", "maths", "logic", "website", "technology", "कंप्यूटर"],
+      "routes": [
+        {"id": "bca_bsc", "from": "class_12", "label": "BCA or B.Sc Computer Science (3 years)", "where": "district", "duration": "3 years", "cost": {"min": 30000, "max": 300000, "note": "government colleges cost far less than private"}, "min_age": 17,
+         "steps": ["Join BCA or B.Sc CS (some colleges need Maths in Class 12)", "Learn one language deeply (Python or JavaScript) with free courses", "Build 3–4 projects and put them on GitHub", "Apply for internships in year 3"]},
+        {"id": "btech", "from": "class_12_pcm_or_pcb", "label": "B.Tech / B.E. Computer Science (4 years, needs Maths)", "where": "city", "duration": "4 years", "cost": {"min": 100000, "max": 800000, "note": "JEE Main / state entrance; government colleges cheaper"}, "min_age": 17, "needs_maths": true,
+         "steps": ["Take Physics, Chemistry and Maths in Class 11–12", "Write JEE Main and your state engineering entrance", "Join the best government college you can get", "Internships from year 3"]},
+        {"id": "diploma", "from": "class_10", "label": "Polytechnic Diploma in Computer Engineering (3 years)", "where": "district", "duration": "3 years", "cost": {"min": 15000, "max": 150000, "note": "government polytechnic is low-cost"}, "min_age": 15,
+         "steps": ["After Class 10, write the state polytechnic entrance", "Finish the diploma", "Work, or join B.Tech year 2 by lateral entry"]}
+      ],
+      "learn": ["Programming (Python / Java / JavaScript)", "Data structures and algorithms", "Databases", "Web and app development", "Version control (Git)", "Teamwork and reading documentation"],
+      "ladder": ["Intern / trainee developer", "Software developer", "Senior developer", "Tech lead / architect"],
+      "pay": {"start": "₹20,000–50,000 a month", "basis": "estimate", "note": "wide range; depends on skills and city"},
+      "earn_after": "about 3–4 years",
+      "skills_now": ["Free Python course in your language", "Practise logic puzzles and maths"],
+      "free_learning": [{"name": "Spoken Tutorial (Python, Java) in Indian languages", "url": "https://spoken-tutorial.org"}, {"name": "NPTEL programming courses", "url": "https://nptel.ac.in"}],
+      "sources": [{"name": "AICTE (approved colleges)", "url": "https://www.aicte-india.org", "checked": "official site"}, {"name": "JEE Main (NTA)", "url": "https://jeemain.nta.nic.in", "checked": "official site"}]
+    },
+    {
+      "id": "ai_engineer", "title": {"en": "AI / machine learning engineer", "hi": "एआई / मशीन लर्निंग इंजीनियर", "mr": "एआय / मशीन लर्निंग इंजिनिअर"},
+      "sector": "IT and digital", "stem": true, "work_type": ["private"],
+      "summary": "Build systems that learn from data, like voice assistants and crop-disease detection. Needs strong maths and several years of study.",
+      "tags": ["computer", "maths", "coding", "ai", "technology", "data", "robots", "science", "कंप्यूटर", "गणित"],
+      "routes": [
+        {"id": "btech_ai", "from": "class_12_pcm_or_pcb", "label": "B.Tech CSE / AI (4 years, needs Maths)", "where": "city", "duration": "4 years (+2 for M.Tech, optional)", "cost": {"min": 100000, "max": 800000, "note": "JEE Main / state entrance; government colleges and scholarships help"}, "min_age": 17, "needs_maths": true,
+         "steps": ["Take PCM in Class 11–12 and do well in Maths", "Write JEE Main and state entrances", "Learn Python, statistics and machine learning alongside college", "Do projects and internships; many AI roles want a master's degree or strong projects"]},
+        {"id": "bsc_route", "from": "class_12_pcm_or_pcb", "label": "B.Sc Maths / Statistics / CS, then AI skills", "where": "district", "duration": "3 years + self-study", "cost": {"min": 30000, "max": 200000, "note": "government college"}, "min_age": 17, "needs_maths": true,
+         "steps": ["B.Sc with Maths or Statistics", "Free NPTEL machine-learning courses", "Projects and a master's later"]}
+      ],
+      "learn": ["Linear algebra, probability and statistics", "Python programming", "Machine learning and deep learning", "Working with data", "Building and testing AI models"],
+      "ladder": ["ML intern", "ML / AI engineer", "Senior ML engineer", "AI lead / research scientist"],
+      "pay": {"start": "₹40,000–80,000 a month", "basis": "estimate", "note": "competitive; mostly cities or remote"},
+      "earn_after": "about 4–6 years",
+      "skills_now": ["Strengthen school Maths", "Start Python"],
+      "free_learning": [{"name": "NPTEL: Introduction to Machine Learning", "url": "https://nptel.ac.in"}],
+      "sources": [{"name": "JEE Main (NTA)", "url": "https://jeemain.nta.nic.in", "checked": "official site"}]
+    },
+    {
+      "id": "polytechnic_civil", "title": {"en": "Civil / mechanical engineering diploma (junior engineer)", "hi": "पॉलिटेक्निक डिप्लोमा (जूनियर इंजीनियर)", "mr": "पॉलिटेक्निक डिप्लोमा (कनिष्ठ अभियंता)"},
+      "sector": "Engineering", "stem": true, "work_type": ["government", "private"],
+      "summary": "Build roads, buildings, irrigation and machines. A diploma after Class 10 leads to site jobs and government junior engineer exams.",
+      "tags": ["building", "construction", "machines", "maths", "drawing", "science", "roads", "engineer", "इंजीनियर", "मशीन"],
+      "routes": [
+        {"id": "diploma", "from": "class_10", "label": "Polytechnic Diploma (3 years) after Class 10", "where": "district", "duration": "3 years", "cost": {"min": 15000, "max": 150000, "note": "government polytechnic is low-cost"}, "min_age": 15,
+         "steps": ["Write your state polytechnic entrance after Class 10", "Choose Civil, Mechanical or Electrical", "Work as site supervisor or junior engineer", "Sit SSC JE / state JE exams, or join B.Tech year 2 by lateral entry"]}
+      ],
+      "learn": ["Engineering drawing", "Surveying (civil) / workshop practice (mechanical)", "Building materials and construction", "Estimating and costing", "Computer-aided design (AutoCAD)"],
+      "ladder": ["Site supervisor / trainee", "Junior engineer", "Assistant engineer (with degree or promotion)", "Contractor / consultant"],
+      "pay": {"start": "₹12,000–25,000 a month (private)", "basis": "estimate", "note": "government JE posts pay more"},
+      "earn_after": "about 3 years",
+      "skills_now": ["Maths and drawing practice", "Visit a construction site with a mason or contractor"],
+      "free_learning": [{"name": "NPTEL engineering courses", "url": "https://nptel.ac.in"}],
+      "sources": [{"name": "AICTE (approved polytechnics)", "url": "https://www.aicte-india.org", "checked": "official site"}, {"name": "SSC Junior Engineer exam", "url": "https://ssc.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "auto_mechanic", "title": {"en": "Two-wheeler and tractor mechanic", "hi": "बाइक और ट्रैक्टर मैकेनिक", "mr": "दुचाकी व ट्रॅक्टर मेकॅनिक"},
+      "sector": "Skilled trades", "stem": true, "work_type": ["self-employment", "private"],
+      "summary": "Service bikes, tractors and farm machines; steady demand in every village and town.",
+      "tags": ["bike", "tractor", "machines", "engine", "repair", "fix", "tools", "vehicles", "मैकेनिक", "ट्रैक्टर", "गाड़ी"],
+      "routes": [
+        {"id": "iti_mmv", "from": "class_10", "label": "ITI Mechanic Motor Vehicle / Mechanic Tractor", "where": "district", "duration": "1–2 years", "cost": {"min": 2000, "max": 40000, "note": "government ITI"}, "min_age": 14,
+         "steps": ["Join ITI Mechanic Motor Vehicle, Mechanic Diesel or Mechanic Tractor", "Apprenticeship at a dealer workshop", "Work at a service centre, then open your own garage"]},
+        {"id": "short_course", "from": "class_8", "label": "Two-wheeler service technician (short NSQF course)", "where": "district", "duration": "about 3 months", "cost": {"min": 0, "max": 15000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a 'Two-Wheeler Service Technician' course via Skill India", "Work at a local garage", "Own garage later"]}
+      ],
+      "learn": ["Engine basics (petrol and diesel)", "Brakes, clutch and gearbox", "Electrical systems of vehicles", "Tractor and farm-machine maintenance", "Workshop safety and customer service"],
+      "ladder": ["Helper mechanic", "Mechanic", "Senior mechanic / service advisor", "Own garage"],
+      "pay": {"start": "₹8,000–15,000 a month", "basis": "estimate"},
+      "earn_after": "about 3 months to 2 years",
+      "skills_now": ["Help at a local garage", "Learn the parts of a bike engine"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "DGT trades (Mechanic Motor Vehicle / Tractor)", "url": "https://dgt.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "nurse", "title": {"en": "Nurse", "hi": "नर्स", "mr": "परिचारिका (नर्स)"},
+      "sector": "Healthcare", "stem": true, "work_type": ["government", "private"],
+      "summary": "Care for patients in hospitals and health centres. Respected work with jobs in villages, towns and abroad.",
+      "tags": ["health", "hospital", "care", "biology", "helping", "patients", "doctor", "nurse", "medicine", "जीवशास्त्र", "नर्स", "दवाखाना", "सेवा"],
+      "routes": [
+        {"id": "bsc_nursing", "from": "class_12_pcb", "label": "B.Sc Nursing (4 years) after Class 12 Science with Biology", "where": "district", "duration": "4 years", "cost": {"min": 20000, "max": 600000, "note": "government nursing colleges are much cheaper; many states use an entrance test"}, "min_age": 17,
+         "steps": ["Take Physics, Chemistry, Biology and English in Class 11–12", "Write your state's B.Sc Nursing entrance (or the college's test)", "Finish 4 years including hospital training", "Register with the State Nursing Council", "Apply to government hospitals (staff nurse exams) or private hospitals"]},
+        {"id": "anm", "from": "class_12", "label": "ANM (Auxiliary Nurse Midwife, 2 years)", "where": "district", "duration": "2 years", "cost": {"min": 10000, "max": 150000, "note": "government ANM schools are low-cost"}, "min_age": 17,
+         "steps": ["Pass Class 12 (most states accept any stream)", "Join an ANM school approved by the Indian Nursing Council", "Register with the State Nursing Council", "Work at sub-centres and primary health centres"]}
+      ],
+      "learn": ["Anatomy and physiology", "Nursing care and procedures", "Community health", "Mother and child health", "Medicines and first aid", "Hospital training on wards"],
+      "ladder": ["Staff nurse / ANM", "Senior nurse / ward sister", "Nursing supervisor", "Nursing tutor or officer"],
+      "pay": {"start": "₹12,000–30,000 a month", "basis": "estimate", "note": "government staff nurse pay is higher"},
+      "earn_after": "about 2–4 years",
+      "skills_now": ["Study Biology well", "First-aid course (Red Cross / school)"],
+      "free_learning": [{"name": "DIKSHA Biology content", "url": "https://diksha.gov.in"}],
+      "sources": [{"name": "Indian Nursing Council (recognised institutions, course rules)", "url": "https://www.indiannursingcouncil.org", "checked": "official site; GNM is being replaced by B.Sc Nursing in many states, so GNM is not offered here"}]
+    },
+    {
+      "id": "lab_technician", "title": {"en": "Medical lab technician", "hi": "मेडिकल लैब टेक्नीशियन", "mr": "मेडिकल लॅब तंत्रज्ञ"},
+      "sector": "Healthcare", "stem": true, "work_type": ["private", "government", "self-employment"],
+      "summary": "Test blood and samples in labs. Small towns need many technicians; can later run an own collection centre.",
+      "tags": ["biology", "health", "lab", "science", "hospital", "tests", "chemistry", "जीवशास्त्र", "लॅब", "लैब"],
+      "routes": [
+        {"id": "dmlt", "from": "class_12_science", "label": "DMLT diploma (2 years) after Class 12 Science", "where": "district", "duration": "2 years", "cost": {"min": 20000, "max": 150000, "note": "government institutes are cheaper"}, "min_age": 17,
+         "steps": ["Pass Class 12 Science (Biology preferred)", "Join a DMLT course at a recognised institute", "Train in a hospital lab", "Work in labs or open a collection centre after experience"]},
+        {"id": "bmlt", "from": "class_12_pcb", "label": "B.Sc MLT (3 years)", "where": "district", "duration": "3 years", "cost": {"min": 30000, "max": 300000}, "min_age": 17,
+         "steps": ["Class 12 with PCB", "B.Sc Medical Lab Technology", "Lab jobs and government technician posts"]}
+      ],
+      "learn": ["Blood tests and haematology", "Biochemistry tests", "Microbiology and culture", "Using lab machines safely", "Sample collection and record-keeping"],
+      "ladder": ["Lab assistant", "Lab technician", "Senior technician / lab in-charge", "Own diagnostic collection centre"],
+      "pay": {"start": "₹10,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "about 2–3 years",
+      "skills_now": ["Biology and Chemistry practicals", "Visit a local lab to see the work"],
+      "free_learning": [{"name": "DIKSHA science content", "url": "https://diksha.gov.in"}],
+      "sources": [{"name": "Skill India Digital Hub (healthcare courses)", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "pharmacist", "title": {"en": "Pharmacist", "hi": "फार्मासिस्ट", "mr": "फार्मासिस्ट"},
+      "sector": "Healthcare", "stem": true, "work_type": ["private", "government", "self-employment"],
+      "summary": "Dispense medicines in hospitals and chemist shops. A D.Pharm lets you open your own medical store.",
+      "tags": ["medicine", "health", "chemistry", "biology", "shop", "science", "दवा", "औषध"],
+      "routes": [
+        {"id": "dpharm", "from": "class_12_pcm_or_pcb", "label": "D.Pharm (2 years) after Class 12 with Physics, Chemistry and Biology or Maths", "where": "district", "duration": "2 years", "cost": {"min": 30000, "max": 250000, "note": "admission is usually on Class 12 marks; no NEET needed"}, "min_age": 17,
+         "steps": ["Pass Class 12 with Physics, Chemistry and Biology or Maths", "Join a college approved by the Pharmacy Council of India", "Register with your State Pharmacy Council", "Work in a hospital or chemist shop; open your own medical store later (drug licence)"]}
+      ],
+      "learn": ["Pharmaceutics (making medicines)", "Pharmacology (how medicines act)", "Pharmaceutical chemistry", "Hospital and community pharmacy", "Drug laws and store management"],
+      "ladder": ["Pharmacy assistant / trainee", "Registered pharmacist", "Hospital pharmacist / store manager", "Own medical store"],
+      "pay": {"start": "₹10,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "about 2 years",
+      "skills_now": ["Chemistry and Biology", "Spend time at a local chemist to learn the work"],
+      "free_learning": [{"name": "DIKSHA Chemistry content", "url": "https://diksha.gov.in"}],
+      "sources": [{"name": "Pharmacy Council of India (approved institutions)", "url": "https://www.pci.nic.in", "checked": "secondary sources agree on eligibility (PCB or PCM); confirm with PCI"}]
+    },
+    {
+      "id": "gda", "title": {"en": "General duty assistant / home health aide", "hi": "जनरल ड्यूटी असिस्टेंट / होम हेल्थ एड", "mr": "जनरल ड्युटी असिस्टंट / गृह आरोग्य सहाय्यक"},
+      "sector": "Healthcare", "stem": false, "work_type": ["private"],
+      "summary": "Help nurses with patient care in hospitals and homes. Short training, quick job, and a first step into healthcare.",
+      "tags": ["care", "helping", "health", "hospital", "elders", "patients", "seva", "सेवा", "देखभाल"],
+      "routes": [
+        {"id": "nsqf", "from": "class_10", "label": "General Duty Assistant course (NSQF, Healthcare Sector Skill Council)", "where": "district", "duration": "about 3–6 months", "cost": {"min": 0, "max": 20000, "note": "free in government-funded batches"}, "min_age": 18,
+         "steps": ["Join a GDA course through Skill India", "Hospital on-the-job training", "Work in hospitals, nursing homes or home care", "Later move to ANM or nursing"]}
+      ],
+      "learn": ["Patient comfort and hygiene", "Taking vital signs", "Infection control", "Helping patients move safely", "First aid and emergencies"],
+      "ladder": ["Trainee GDA", "General duty assistant", "Senior GDA / patient-care coordinator", "ANM or nurse (with further study)"],
+      "pay": {"start": "₹8,000–14,000 a month", "basis": "estimate"},
+      "earn_after": "about 3–6 months",
+      "skills_now": ["Help care for elders at home", "First-aid basics"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "NQR (search 'General Duty Assistant')", "url": "https://www.nqr.gov.in/qualifications-search", "checked": "official site"}]
+    },
+    {
+      "id": "agri_graduate", "title": {"en": "Agriculture graduate / agriculture officer", "hi": "कृषि स्नातक / कृषि अधिकारी", "mr": "कृषी पदवीधर / कृषी अधिकारी"},
+      "sector": "Agriculture", "stem": true, "work_type": ["government", "private", "self-employment"],
+      "summary": "Advise farmers on crops, soil and pests; work in banks, seed companies or government agriculture departments.",
+      "tags": ["farm", "farming", "agriculture", "crops", "soil", "biology", "village", "plants", "खेती", "शेती", "पीक"],
+      "routes": [
+        {"id": "bsc_agri", "from": "class_12_pcm_or_pcb", "label": "B.Sc Agriculture (4 years)", "where": "district", "duration": "4 years", "cost": {"min": 40000, "max": 400000, "note": "state agriculture universities are cheaper; entrance via ICAR or state test"}, "min_age": 17,
+         "steps": ["Class 12 with Science (Biology or Maths)", "Write the state agriculture entrance or ICAR AIEEA", "B.Sc Agriculture with village fieldwork", "Agriculture officer exams, bank agri officer, or own agri business"]},
+        {"id": "diploma_agri", "from": "class_10", "label": "Diploma in Agriculture (2–3 years, state agriculture university)", "where": "district", "duration": "2–3 years", "cost": {"min": 10000, "max": 100000}, "min_age": 15,
+         "steps": ["After Class 10, apply to your state agriculture university's diploma", "Work as agriculture assistant or start agri services"]}
+      ],
+      "learn": ["Soil science and fertilisers", "Crop production and seeds", "Plant protection (pests and disease)", "Farm machinery and irrigation", "Agri-business and marketing"],
+      "ladder": ["Field officer / agri assistant", "Agriculture officer", "Senior agri officer / bank agri manager", "Agri-business owner"],
+      "pay": {"start": "₹15,000–30,000 a month", "basis": "estimate", "note": "government posts pay by state pay scales"},
+      "earn_after": "about 3–4 years",
+      "skills_now": ["Keep notes on your family's crops, costs and yields", "Biology"],
+      "free_learning": [{"name": "SWAYAM agriculture courses", "url": "https://swayam.gov.in"}],
+      "sources": [{"name": "ICAR (agriculture education)", "url": "https://icar.org.in", "checked": "official site"}]
+    },
+    {
+      "id": "dairy_livestock", "title": {"en": "Dairy and livestock entrepreneur", "hi": "डेयरी और पशुपालन उद्यमी", "mr": "दुग्धव्यवसाय व पशुपालन उद्योजक"},
+      "sector": "Agriculture", "stem": false, "work_type": ["self-employment"],
+      "summary": "Run a dairy, goat or poultry unit with modern practice; government schemes fund training and loans.",
+      "tags": ["cows", "buffalo", "goats", "animals", "animal care", "dairy", "milk", "farm", "गाय", "भैंस", "बकरी", "शेळ्या", "पशु", "दूध"],
+      "routes": [
+        {"id": "skill_plus_scheme", "from": "any", "label": "Dairy / livestock training (KVK or NSQF) + government loan schemes", "where": "local", "duration": "1–3 months training", "cost": {"min": 0, "max": 10000, "note": "Krishi Vigyan Kendra trainings are often free"}, "min_age": 18,
+         "steps": ["Take a dairy, goat or poultry training at your district Krishi Vigyan Kendra (KVK)", "Start small with 2–3 animals and keep records of feed, milk and costs", "Join the village milk cooperative for steady sales", "Apply for a loan under MUDRA or PMEGP to grow"]}
+      ],
+      "learn": ["Animal breeds and feeding", "Animal health and vaccination", "Clean milk production", "Fodder growing", "Costs, profit and loans"],
+      "ladder": ["Family dairy helper", "Own small unit", "Commercial dairy / goat farm", "Supplier to cooperatives and brands"],
+      "pay": {"start": "income depends on herd size", "basis": "estimate"},
+      "earn_after": "a few months",
+      "skills_now": ["Keep a daily notebook of your animals' feed and milk", "Learn vaccination schedules from the vet"],
+      "free_learning": [{"name": "Krishi Vigyan Kendra (district KVK)", "url": "https://kvk.icar.gov.in"}],
+      "sources": [{"name": "ICAR Krishi Vigyan Kendra portal", "url": "https://kvk.icar.gov.in", "checked": "official site"}, {"name": "PMEGP (KVIC)", "url": "https://www.kviconline.gov.in/pmegpeportal/", "checked": "official site"}]
+    },
+    {
+      "id": "accountant", "title": {"en": "Accountant (Tally + GST)", "hi": "अकाउंटेंट (टैली + जीएसटी)", "mr": "लेखापाल (टॅली + जीएसटी)"},
+      "sector": "Commerce and finance", "stem": false, "work_type": ["private", "self-employment"],
+      "summary": "Keep accounts, bills and GST returns for shops and small businesses. Work exists in every town; can freelance from home.",
+      "tags": ["accounts", "hisab", "shop", "commerce", "maths", "numbers", "tally", "gst", "business", "money", "हिसाब", "दुकान", "कॉमर्स", "अकाउंट"],
+      "routes": [
+        {"id": "short_course", "from": "class_12", "label": "Accounts Executive / Tally + GST course (3–6 months)", "where": "district", "duration": "3–6 months", "cost": {"min": 0, "max": 25000, "note": "free in government-funded batches"}, "min_age": 17,
+         "steps": ["Join an 'Accounts Executive' course (BFSI Sector Skill Council) or a Tally + GST course", "Practise on real bills from a local shop", "Work as accounts assistant with a CA or a business", "Take clients of your own; a B.Com alongside helps"]},
+        {"id": "bcom", "from": "class_12", "label": "B.Com (3 years, regular or distance) + Tally/GST", "where": "distance", "duration": "3 years", "cost": {"min": 5000, "max": 100000, "note": "government college or distance (IGNOU/state open university)"}, "min_age": 17,
+         "steps": ["Join B.Com near home or by distance", "Learn Tally and GST in year 1", "Work part-time with a CA or shop"]}
+      ],
+      "learn": ["Bookkeeping and accounts", "Tally Prime", "GST registration, invoices and returns", "Income tax basics", "Payroll and bank reconciliation", "Excel for accounts"],
+      "ladder": ["Accounts assistant", "Accountant", "Senior accountant / GST practitioner", "Own accounting and tax practice"],
+      "pay": {"start": "₹10,000–18,000 a month", "basis": "estimate"},
+      "earn_after": "about 6 months to 1 year",
+      "skills_now": ["Keep a clean ledger for a family shop", "Learn Excel"],
+      "free_learning": [{"name": "Spoken Tutorial (spreadsheets)", "url": "https://spoken-tutorial.org"}, {"name": "GST basics (GST portal tutorials)", "url": "https://tutorial.gst.gov.in"}],
+      "sources": [{"name": "Skill India Digital Hub (BFSI courses)", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}, {"name": "IGNOU (distance B.Com)", "url": "http://www.ignou.ac.in", "checked": "official site"}]
+    },
+    {
+      "id": "bank_clerk", "title": {"en": "Bank clerk (IBPS / SBI Clerk)", "hi": "बैंक क्लर्क (आईबीपीएस / एसबीआई)", "mr": "बँक क्लर्क (आयबीपीएस / एसबीआय)"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Serve customers in a public-sector bank. Secure job with fixed hours; needs a degree and a competitive exam.",
+      "tags": ["bank", "banking", "maths", "accounts", "commerce", "government job", "respect", "secure", "बैंक", "सरकारी", "नौकरी", "पक्की नौकरी"],
+      "routes": [
+        {"id": "degree_exam", "from": "graduate", "label": "Any degree, then IBPS Clerk / SBI Clerk exam", "where": "district", "duration": "degree (3 years) + exam preparation", "cost": {"min": 5000, "max": 60000, "note": "degree at government college or distance; free mock tests exist"}, "min_age": 20, "max_age": 28,
+         "steps": ["Finish any degree (B.Com suits you if you like accounts)", "From year 2, practise reasoning, quantitative aptitude and English daily", "Apply when IBPS publishes the Clerk notification (usually August)", "Clear prelims, mains and the local-language test", "Join a public-sector bank as Customer Service Associate"]}
+      ],
+      "learn": ["Quantitative aptitude", "Reasoning", "English", "General and banking awareness", "Computer knowledge", "Local language (test)"],
+      "ladder": ["Clerk (Customer Service Associate)", "Officer (internal promotion exam)", "Branch manager", "Senior manager"],
+      "pay": {"start": "basic ₹24,050 a month (about ₹40,000 gross)", "basis": "official", "note": "IBPS Clerk 2025 notification scale; gross varies by posting"},
+      "earn_after": "about 3–4 years (after a degree and the exam)",
+      "skills_now": ["Mental maths and percentages", "Read an English newspaper daily"],
+      "free_learning": [{"name": "SWAYAM (B.Com papers, aptitude)", "url": "https://swayam.gov.in"}],
+      "sources": [{"name": "IBPS (official notifications)", "url": "https://www.ibps.in", "checked": "secondary sources agree on age 20–28, any degree, basic ₹24,050 (CRP Clerks-XV, 2025); confirm in the current notification"}]
+    },
+    {
+      "id": "chartered_accountant", "title": {"en": "Chartered Accountant (CA)", "hi": "चार्टर्ड अकाउंटेंट (सीए)", "mr": "सनदी लेखापाल (सीए)"},
+      "sector": "Commerce and finance", "stem": false, "work_type": ["private", "self-employment"],
+      "summary": "Audit, tax and finance expert; one of the most respected commerce careers. Long and demanding, with low pass rates.",
+      "tags": ["ca", "accounts", "commerce", "tax", "maths", "business", "audit", "सीए", "अकाउंट", "हिसाब"],
+      "routes": [
+        {"id": "ca_foundation", "from": "class_12", "label": "CA Foundation after Class 12 → Intermediate → articleship → Final", "where": "distance", "duration": "about 4.5–5 years (often longer)", "cost": {"min": 60000, "max": 400000, "note": "ICAI fees are moderate; coaching is the big cost — ICAI's own study material is free online"}, "min_age": 17,
+         "steps": ["Register with ICAI for CA Foundation after Class 12", "Clear Foundation, then Intermediate", "Do practical training (articleship) with a CA firm, often in a town or city", "Clear CA Final and become a member of ICAI"]}
+      ],
+      "learn": ["Accounting", "Business laws", "Taxation (GST and income tax)", "Auditing", "Cost and financial management"],
+      "ladder": ["Article assistant", "Chartered Accountant", "Senior manager / partner in a firm", "Own CA practice"],
+      "pay": {"start": "₹50,000–1,00,000 a month after qualifying", "basis": "estimate", "note": "stipend during articleship is small"},
+      "earn_after": "about 5 years",
+      "skills_now": ["Strong accounts in Class 11–12", "Read ICAI's free Foundation study material"],
+      "free_learning": [{"name": "ICAI BoS Knowledge Portal (free study material)", "url": "https://www.icai.org"}],
+      "sources": [{"name": "ICAI (Institute of Chartered Accountants of India)", "url": "https://www.icai.org", "checked": "official site"}]
+    },
+    {
+      "id": "banking_correspondent", "title": {"en": "Banking correspondent / CSC operator", "hi": "बैंक मित्र / सीएससी संचालक", "mr": "बँक मित्र / सीएससी चालक"},
+      "sector": "Commerce and finance", "stem": false, "work_type": ["self-employment"],
+      "summary": "Run banking, bill payment and government e-services for your village from a small counter. Earns commission; works from home village.",
+      "tags": ["bank", "village", "computer", "shop", "money", "service", "people", "digital", "बैंक", "गाँव", "गाव", "सेवा"],
+      "routes": [
+        {"id": "csc", "from": "class_10", "label": "Become a Common Service Centre (CSC) operator / bank correspondent", "where": "local", "duration": "1–3 months setup", "cost": {"min": 20000, "max": 80000, "note": "computer, printer, internet and IIBF certificate fee"}, "min_age": 18,
+         "steps": ["Get basic computer skills", "Register as a Village Level Entrepreneur on the CSC portal", "Pass the IIBF Business Correspondent certificate to offer banking", "Run services: bank deposits, bills, certificates, scheme forms"]}
+      ],
+      "learn": ["Computer and internet use", "Banking basics and cash handling", "Government e-services (certificates, schemes)", "Customer trust and record-keeping"],
+      "ladder": ["CSC operator", "Bank correspondent with a bank tie-up", "Multi-service centre owner"],
+      "pay": {"start": "commission-based; varies by village", "basis": "estimate"},
+      "earn_after": "a few months",
+      "skills_now": ["Help people in your village fill online forms", "Typing practice"],
+      "free_learning": [{"name": "CSC Academy", "url": "https://cscacademy.org"}],
+      "sources": [{"name": "Common Services Centres (CSC) registration", "url": "https://register.csc.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "agniveer", "title": {"en": "Agniveer (Indian Army)", "hi": "अग्निवीर (भारतीय सेना)", "mr": "अग्निवीर (भारतीय सैन्य)"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Serve 4 years in the Army under the Agnipath scheme; up to 25% are later made permanent. Needs physical fitness.",
+      "tags": ["army", "fauj", "military", "defence", "sports", "fitness", "running", "country", "सेना", "फौज", "आर्मी", "सैन्य"],
+      "routes": [
+        {"id": "agniveer_gd", "from": "class_10", "label": "Agniveer General Duty (Class 10 pass)", "where": "district", "duration": "4 years service (training included)", "cost": {"min": 0, "max": 2000, "note": "online exam fee only"}, "min_age": 17.5, "max_age": 21,
+         "steps": ["Pass Class 10 (General Duty usually needs 45% overall and 33% per subject; check the notification)", "Train daily: 1.6 km run, pull-ups, long jump", "Apply on joinindianarmy.nic.in when your zone's notification opens", "Online exam → physical test at the rally → medical", "4 years of service; apply for permanent service or use the Seva Nidhi for a next career"]},
+        {"id": "agniveer_clerk_tech", "from": "class_12", "label": "Agniveer Clerk / Technical (Class 12)", "where": "district", "duration": "4 years service", "cost": {"min": 0, "max": 2000}, "min_age": 17.5, "max_age": 21,
+         "steps": ["Pass Class 12 (Technical needs Science with Maths)", "Apply for the Clerk/Store Keeper or Technical category", "Exam, physical and medical tests"]}
+      ],
+      "learn": ["Physical training", "Weapon and field training", "Discipline and teamwork", "Trade skills by category"],
+      "ladder": ["Agniveer", "Sepoy (if made permanent)", "Naik / Havildar", "Junior Commissioned Officer"],
+      "pay": {"start": "₹30,000 a month package in year 1 (₹21,000 in hand), rising to ₹40,000 in year 4; Seva Nidhi of about ₹11.71 lakh on exit", "basis": "official", "note": "Agnipath scheme figures"},
+      "earn_after": "right after selection (training is paid)",
+      "skills_now": ["Run daily and build stamina", "Keep Class 10 marks above 45%"],
+      "free_learning": [{"name": "Join Indian Army (official)", "url": "https://joinindianarmy.nic.in"}],
+      "sources": [{"name": "Join Indian Army — Agnipath", "url": "https://joinindianarmy.nic.in", "checked": "secondary sources agree on age 17.5–21 and the pay package; confirm education rules in your zone's notification"}]
+    },
+    {
+      "id": "ssc_gd", "title": {"en": "Constable in central armed police (SSC GD)", "hi": "केंद्रीय पुलिस बल में कांस्टेबल (एसएससी जीडी)", "mr": "केंद्रीय सशस्त्र पोलीस दलात कॉन्स्टेबल (एसएससी जीडी)"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Constable in BSF, CRPF, CISF, ITBP, SSB or Assam Rifles. Class 10 is enough; needs a physical test.",
+      "tags": ["police", "army", "defence", "fitness", "government job", "secure", "sports", "पुलिस", "सरकारी", "नौकरी", "पोलीस"],
+      "routes": [
+        {"id": "ssc_gd", "from": "class_10", "label": "SSC GD Constable exam (Class 10 pass)", "where": "district", "duration": "exam cycle about 1 year", "cost": {"min": 0, "max": 500, "note": "fee ₹100; women and reserved categories exempt"}, "min_age": 18, "max_age": 23,
+         "steps": ["Pass Class 10", "Apply when SSC releases the GD notification (around November–December)", "Computer-based test (reasoning, GK, maths, Hindi/English)", "Physical test (run, height, chest), then medical", "Training and posting in a central force"]}
+      ],
+      "learn": ["Reasoning", "General knowledge", "Elementary maths", "Hindi or English", "Physical fitness"],
+      "ladder": ["Constable", "Head constable", "Assistant sub-inspector", "Sub-inspector (by exam or promotion)"],
+      "pay": {"start": "Pay Level 3: ₹21,700–69,100 basic", "basis": "official", "note": "SSC GD 2026 notification"},
+      "earn_after": "about 1 year after Class 10",
+      "skills_now": ["Run daily", "GK and reasoning practice"],
+      "free_learning": [{"name": "SSC (official notices)", "url": "https://ssc.gov.in"}],
+      "sources": [{"name": "Staff Selection Commission", "url": "https://ssc.gov.in", "checked": "secondary sources agree on Class 10, age 18–23 and Pay Level 3 (GD 2026 notification); confirm in the next notification"}]
+    },
+    {
+      "id": "railway_group_d", "title": {"en": "Railway Group D (track maintainer, assistant)", "hi": "रेलवे ग्रुप डी", "mr": "रेल्वे ग्रुप डी"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Level-1 railway jobs such as track maintainer and assistant in workshops. Class 10 or ITI is enough.",
+      "tags": ["railway", "government job", "secure", "iti", "machines", "रेलवे", "सरकारी", "नौकरी"],
+      "routes": [
+        {"id": "rrb_level1", "from": "class_10", "label": "RRB Level 1 exam (Class 10 or ITI)", "where": "district", "duration": "exam cycle about 1 year", "cost": {"min": 0, "max": 500, "note": "exam fee, partly refunded on appearing"}, "min_age": 18, "max_age": 33,
+         "steps": ["Pass Class 10 (or ITI / National Apprenticeship Certificate)", "Apply when your Railway Recruitment Board releases the Level 1 notification", "Computer test (maths, reasoning, science, GK)", "Physical efficiency test, documents and medical"]}
+      ],
+      "learn": ["Maths", "Reasoning", "General science", "General awareness"],
+      "ladder": ["Level 1 (track maintainer / assistant)", "Higher levels by departmental exams", "Technician (with ITI and exam)"],
+      "pay": {"start": "₹18,000 basic (Level 1, 7th CPC)", "basis": "official", "note": "RRB CEN 09/2025"},
+      "earn_after": "about 1 year after Class 10",
+      "skills_now": ["Maths and science revision", "Fitness"],
+      "free_learning": [{"name": "RRB official apply portal", "url": "https://www.rrbapply.gov.in"}],
+      "sources": [{"name": "Railway Recruitment Boards", "url": "https://www.rrbapply.gov.in", "checked": "secondary sources agree on Class 10 or ITI, age 18–33, ₹18,000 (CEN 09/2025); confirm in the next notification"}]
+    },
+    {
+      "id": "state_police", "title": {"en": "State police constable", "hi": "राज्य पुलिस कांस्टेबल", "mr": "राज्य पोलीस शिपाई"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Serve in your own state's police near home. Each state sets its own education, age and physical rules.",
+      "tags": ["police", "government job", "fitness", "secure", "sports", "पुलिस", "पोलीस", "सरकारी"],
+      "routes": [
+        {"id": "state_exam", "from": "class_12", "label": "State police constable recruitment (most states ask Class 12)", "where": "district", "duration": "exam cycle about 1 year", "cost": {"min": 0, "max": 1000}, "min_age": 18, "max_age": 25,
+         "steps": ["Pass Class 12 (check your state's rule)", "Watch your state's police recruitment board for the notification", "Written exam + physical test + medical", "Training at the police academy"]}
+      ],
+      "learn": ["General knowledge and current affairs", "Reasoning and maths", "Law basics taught in training", "Physical fitness"],
+      "ladder": ["Constable", "Head constable", "Assistant sub-inspector", "Sub-inspector"],
+      "pay": {"start": "set by your state's pay scale", "basis": "official", "note": "see your state board"},
+      "earn_after": "about 1–2 years",
+      "skills_now": ["Fitness", "GK and current affairs"],
+      "free_learning": [],
+      "state_links": {"Uttar Pradesh": {"name": "UP Police Recruitment and Promotion Board", "url": "https://uppbpb.gov.in"}, "Maharashtra": {"name": "Maharashtra Police recruitment", "url": "https://www.mahapolice.gov.in"}, "Bihar": {"name": "Central Selection Board of Constable (Bihar)", "url": "https://csbc.bihar.gov.in"}},
+      "sources": [{"name": "Your state police recruitment board", "url": "https://www.mha.gov.in", "checked": "rules differ by state; age and education here are typical, confirm on your state board"}]
+    },
+    {
+      "id": "ssc_chsl", "title": {"en": "Government office clerk / data entry (SSC CHSL)", "hi": "सरकारी दफ़्तर क्लर्क (एसएससी सीएचएसएल)", "mr": "सरकारी कार्यालय लिपिक (एसएससी सीएचएसएल)"},
+      "sector": "Government jobs", "stem": false, "work_type": ["government"],
+      "summary": "Lower Division Clerk or Data Entry Operator in central government offices after Class 12.",
+      "tags": ["government job", "office", "computer", "typing", "secure", "clerk", "सरकारी", "नौकरी", "कंप्यूटर"],
+      "routes": [
+        {"id": "chsl", "from": "class_12", "label": "SSC CHSL exam (Class 12)", "where": "district", "duration": "exam cycle about 1 year", "cost": {"min": 0, "max": 500, "note": "fee ₹100; women and reserved categories exempt"}, "min_age": 18, "max_age": 27,
+         "steps": ["Pass Class 12", "Apply when SSC releases the CHSL notification", "Tier 1 computer test; Tier 2 with typing / skill test", "Posting in a central government office"]}
+      ],
+      "learn": ["English", "Reasoning", "Quantitative aptitude", "General awareness", "Typing (35 wpm English / 30 wpm Hindi)"],
+      "ladder": ["Lower Division Clerk / DEO", "Upper Division Clerk", "Assistant / section officer (by exams)"],
+      "pay": {"start": "Pay Level 2 (LDC) to Level 4/5 (DEO)", "basis": "official", "note": "7th CPC pay matrix"},
+      "earn_after": "about 1 year after Class 12",
+      "skills_now": ["Typing practice", "English grammar"],
+      "free_learning": [{"name": "SSC (official notices)", "url": "https://ssc.gov.in"}],
+      "sources": [{"name": "Staff Selection Commission", "url": "https://ssc.gov.in", "checked": "typical rules; confirm age and posts in the current CHSL notification"}]
+    },
+    {
+      "id": "primary_teacher", "title": {"en": "Primary school teacher", "hi": "प्राथमिक शिक्षक", "mr": "प्राथमिक शिक्षक"},
+      "sector": "Education", "stem": false, "work_type": ["government", "private"],
+      "summary": "Teach Classes 1–5. Valued in every village; government posts need D.El.Ed plus a teacher eligibility test.",
+      "tags": ["teaching", "teacher", "children", "tuition", "helping", "village", "hindi", "history", "पढ़ाना", "शिक्षक", "ट्यूशन", "शिकवणे", "शिकवते"],
+      "routes": [
+        {"id": "deled", "from": "class_12", "label": "D.El.Ed (2 years) after Class 12, then CTET / State TET", "where": "district", "duration": "2 years + TET", "cost": {"min": 10000, "max": 150000, "note": "government DIETs are low-cost"}, "min_age": 17, "min_marks": 50,
+         "steps": ["Pass Class 12 with 50% (45% for reserved categories)", "Join D.El.Ed at a government DIET or an NCTE-recognised college", "Clear CTET Paper 1 or your State TET (Level 1)", "Apply for government teacher recruitment or private schools"]},
+        {"id": "ba_bed", "from": "graduate", "label": "Graduation, then B.Ed (for Classes 6–8 and above)", "where": "district", "duration": "2 years after graduation", "cost": {"min": 20000, "max": 200000}, "min_age": 20,
+         "steps": ["Finish your degree", "B.Ed (2 years)", "CTET Paper 2 / State TET for upper primary"]}
+      ],
+      "learn": ["Child development and how children learn", "Teaching methods for language and maths", "Classroom management", "Making teaching material", "School internship"],
+      "ladder": ["Assistant teacher", "Senior teacher", "Head teacher", "Block / cluster resource person"],
+      "pay": {"start": "government pay by state scale; private ₹8,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "about 2–3 years",
+      "skills_now": ["Keep teaching children in your village (tuition)", "Read storybooks aloud to practise"],
+      "free_learning": [{"name": "DIKSHA teacher courses", "url": "https://diksha.gov.in"}, {"name": "CTET (CBSE)", "url": "https://ctet.nic.in"}],
+      "sources": [{"name": "NCTE (teacher education rules)", "url": "https://ncte.gov.in", "checked": "secondary sources agree on D.El.Ed + CTET/TET for Classes 1–5 and 50% in Class 12; confirm with NCTE"}]
+    },
+    {
+      "id": "social_worker", "title": {"en": "Community / social worker", "hi": "सामाजिक कार्यकर्ता", "mr": "सामाजिक कार्यकर्ता"},
+      "sector": "Education", "stem": false, "work_type": ["private", "government"],
+      "summary": "Work with NGOs and government programmes on health, education and women's groups in villages.",
+      "tags": ["helping", "people", "village", "women", "community", "service", "ngo", "talking", "सेवा", "समाज", "मदत"],
+      "routes": [
+        {"id": "bsw", "from": "class_12", "label": "BSW (Bachelor of Social Work) or B.A., then MSW", "where": "distance", "duration": "3 years (+2 for MSW)", "cost": {"min": 10000, "max": 150000, "note": "IGNOU and state universities offer BSW/B.A. by distance"}, "min_age": 17,
+         "steps": ["Join BSW or B.A. (Sociology) near home or by distance", "Volunteer with an NGO or self-help group from year 1", "Field jobs as community mobiliser; MSW for higher roles"]}
+      ],
+      "learn": ["Society and rural development", "Working with communities and groups", "Government schemes and rights", "Counselling basics", "Field reports and surveys"],
+      "ladder": ["Community mobiliser / field worker", "Programme coordinator", "Project manager", "NGO head / CSR manager"],
+      "pay": {"start": "₹10,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "about 1–3 years",
+      "skills_now": ["Help families in your village with scheme forms", "Join an NSS or NGO activity"],
+      "free_learning": [{"name": "SWAYAM social work courses", "url": "https://swayam.gov.in"}],
+      "sources": [{"name": "IGNOU School of Social Work", "url": "http://www.ignou.ac.in", "checked": "official site"}]
+    },
+    {
+      "id": "fashion_tailoring", "title": {"en": "Tailoring and fashion design", "hi": "सिलाई और फैशन डिज़ाइन", "mr": "शिवणकाम व फॅशन डिझाइन"},
+      "sector": "Creative and design", "stem": false, "work_type": ["self-employment", "private"],
+      "summary": "From tailoring at home to boutique owner or fashion designer. Easy to start, grows with design skills and social media.",
+      "tags": ["stitching", "tailoring", "sewing", "clothes", "drawing", "design", "fashion", "art", "सिलाई", "शिवणकाम", "चित्रकला", "कपड़े"],
+      "routes": [
+        {"id": "nsqf_sewing", "from": "class_8", "label": "Sewing machine operator / self-employed tailor course (NSQF)", "where": "local", "duration": "about 2–3 months", "cost": {"min": 0, "max": 10000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a tailoring course via Skill India or your district's rural self-employment institute (RSETI)", "Take orders from neighbours; keep a design notebook", "Sell on WhatsApp and Instagram", "Open a boutique with a MUDRA loan"]},
+        {"id": "iti_fashion", "from": "class_10", "label": "ITI Dress Making / Fashion Design Technology", "where": "district", "duration": "1 year", "cost": {"min": 2000, "max": 30000}, "min_age": 14,
+         "steps": ["After Class 10, join ITI Fashion Design Technology", "Work with a boutique or garment unit"]},
+        {"id": "nift", "from": "class_12", "label": "Fashion design degree (NIFT / state institutes)", "where": "city", "duration": "4 years", "cost": {"min": 200000, "max": 1000000, "note": "NIFT entrance; scholarships available"}, "min_age": 17,
+         "steps": ["After Class 12, prepare for the NIFT entrance (drawing and creative test)", "4-year B.Des", "Design jobs or own label"]}
+      ],
+      "learn": ["Measurements and pattern making", "Cutting and stitching garments", "Fabric types", "Design sketching", "Pricing and selling online"],
+      "ladder": ["Tailor", "Boutique owner", "Fashion designer", "Own label"],
+      "pay": {"start": "₹5,000–15,000 a month from orders", "basis": "estimate"},
+      "earn_after": "a few months",
+      "skills_now": ["Keep stitching with family; photograph your work", "Draw a design a day"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "RSETI (rural self-employment training institutes)", "url": "https://www.nirdpr.org.in/rseti", "checked": "official site"}, {"name": "NIFT", "url": "https://www.nift.ac.in", "checked": "official site"}]
+    },
+    {
+      "id": "beautician", "title": {"en": "Beautician / beauty therapist", "hi": "ब्यूटीशियन", "mr": "ब्युटीशियन"},
+      "sector": "Creative and design", "stem": false, "work_type": ["self-employment", "private"],
+      "summary": "Hair, skin and bridal make-up services; strong local demand for weddings and festivals.",
+      "tags": ["beauty", "makeup", "hair", "fashion", "art", "people", "shop", "ब्यूटी", "पार्लर", "मेकअप"],
+      "routes": [
+        {"id": "nsqf_beauty", "from": "class_10", "label": "Assistant Beauty Therapist course (NSQF)", "where": "district", "duration": "about 3 months", "cost": {"min": 0, "max": 15000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a beauty therapist course via Skill India or RSETI", "Work in a parlour for 6–12 months", "Home service and bridal bookings", "Own parlour with a MUDRA loan"]}
+      ],
+      "learn": ["Skin care and facials", "Hair cutting and styling", "Make-up and bridal make-up", "Hygiene and safety", "Pricing and customer handling"],
+      "ladder": ["Assistant beautician", "Beautician", "Senior stylist / make-up artist", "Own parlour"],
+      "pay": {"start": "₹6,000–15,000 a month", "basis": "estimate"},
+      "earn_after": "about 3 months",
+      "skills_now": ["Practise on family before festivals", "Watch free skill videos"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "digital_media", "title": {"en": "Graphic designer / video editor", "hi": "ग्राफ़िक डिज़ाइनर / वीडियो एडिटर", "mr": "ग्राफिक डिझायनर / व्हिडिओ एडिटर"},
+      "sector": "Creative and design", "stem": false, "work_type": ["private", "self-employment"],
+      "summary": "Design posters and edit videos for shops, YouTube channels and events; can work online from a village.",
+      "tags": ["drawing", "art", "design", "video", "phone", "computer", "youtube", "creative", "photos", "चित्रकला", "चित्र", "वीडियो"],
+      "routes": [
+        {"id": "short_course", "from": "class_10", "label": "Graphic design / video editing course (Skill India, free tools)", "where": "online", "duration": "3–6 months", "cost": {"min": 0, "max": 20000, "note": "free tools (Canva, Inkscape, DaVinci Resolve) work on basic laptops"}, "min_age": 16,
+         "steps": ["Learn design with free tools and online courses", "Make posters for local shops and events for free first", "Build a portfolio of 10 works", "Take paid work locally and online"]},
+        {"id": "bfa_bdes", "from": "class_12", "label": "BFA / B.Des / B.Voc in design or animation", "where": "city", "duration": "3–4 years", "cost": {"min": 50000, "max": 600000}, "min_age": 17,
+         "steps": ["After Class 12, apply to fine arts or design colleges", "Degree with projects", "Studio or agency jobs"]}
+      ],
+      "learn": ["Design basics: colour, layout, fonts", "Photo editing", "Video editing and sound", "Social media formats", "Working with clients"],
+      "ladder": ["Junior designer / editor", "Designer / editor", "Senior designer / creative lead", "Own studio"],
+      "pay": {"start": "₹8,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "about 6 months",
+      "skills_now": ["Draw daily", "Make a short video about your village"],
+      "free_learning": [{"name": "Spoken Tutorial (GIMP, Inkscape, Blender)", "url": "https://spoken-tutorial.org"}],
+      "sources": [{"name": "Skill India Digital Hub (media courses)", "url": "https://www.skillindiadigital.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "journalist", "title": {"en": "Local journalist / content creator", "hi": "पत्रकार / कंटेंट क्रिएटर", "mr": "पत्रकार / कंटेंट क्रिएटर"},
+      "sector": "Media and communication", "stem": false, "work_type": ["private", "self-employment"],
+      "summary": "Report local news, run a YouTube or radio show, write for papers in Hindi or Marathi.",
+      "tags": ["writing", "speaking", "news", "hindi", "marathi", "video", "youtube", "people", "talking", "history", "पत्रकार", "लिखना", "हिंदी"],
+      "routes": [
+        {"id": "bjmc", "from": "class_12", "label": "BJMC / B.A. Journalism (3 years)", "where": "district", "duration": "3 years", "cost": {"min": 20000, "max": 300000, "note": "government and open universities cheaper"}, "min_age": 17,
+         "steps": ["Join BJMC or B.A. with Journalism", "Write for a local paper or community radio from year 1", "Build a portfolio of stories", "Join a newspaper, TV channel or run your own channel"]},
+        {"id": "self_start", "from": "class_10", "label": "Start as a village correspondent / content creator", "where": "local", "duration": "start now", "cost": {"min": 0, "max": 10000, "note": "a phone and data"}, "min_age": 16,
+         "steps": ["Report village news to a district newspaper as a stringer", "Start a channel on local farming or stories", "Learn editing with free tools"]}
+      ],
+      "learn": ["News writing and reporting", "Interviewing", "Photo and video for news", "Media law and ethics", "Social media"],
+      "ladder": ["Stringer / trainee reporter", "Reporter", "Senior correspondent / editor", "Own media channel"],
+      "pay": {"start": "₹8,000–20,000 a month", "basis": "estimate"},
+      "earn_after": "varies",
+      "skills_now": ["Write one news story a week about your village", "Read newspapers daily"],
+      "free_learning": [{"name": "SWAYAM journalism courses", "url": "https://swayam.gov.in"}],
+      "sources": [{"name": "IIMC (Indian Institute of Mass Communication)", "url": "https://iimc.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "hospitality", "title": {"en": "Hotel, food and tourism worker", "hi": "होटल, खाना और पर्यटन", "mr": "हॉटेल, खाद्य व पर्यटन"},
+      "sector": "Hospitality and tourism", "stem": false, "work_type": ["private", "self-employment"],
+      "summary": "Cook, serve or manage in hotels and restaurants, or guide tourists; jobs across India and abroad.",
+      "tags": ["cooking", "food", "travel", "people", "hotel", "tourism", "service", "speaking", "खाना", "पर्यटन", "स्वयंपाक"],
+      "routes": [
+        {"id": "nsqf_food", "from": "class_8", "label": "Commis chef / food & beverage service course (NSQF)", "where": "district", "duration": "about 3 months", "cost": {"min": 0, "max": 15000, "note": "free in government-funded batches"}, "min_age": 16,
+         "steps": ["Join a commis chef or F&B service course via Skill India", "Work in a hotel or restaurant", "Grow to cook / captain, or open a dhaba or tiffin service"]},
+        {"id": "ihm", "from": "class_12", "label": "B.Sc Hospitality and Hotel Administration (NCHM JEE)", "where": "city", "duration": "3 years", "cost": {"min": 150000, "max": 500000, "note": "government IHMs via NCHM JEE"}, "min_age": 17,
+         "steps": ["After Class 12 (any stream), write NCHM JEE", "Study at a government Institute of Hotel Management", "Hotel management trainee jobs"]}
+      ],
+      "learn": ["Cooking and kitchen hygiene", "Food and beverage service", "Front office and guest service", "Spoken English for guests", "Costing and menu planning"],
+      "ladder": ["Commis / steward", "Cook / captain", "Chef de partie / supervisor", "Head chef / manager / own restaurant"],
+      "pay": {"start": "₹9,000–18,000 a month (often with food and stay)", "basis": "estimate"},
+      "earn_after": "about 3 months",
+      "skills_now": ["Cook for family events", "Basic spoken English"],
+      "free_learning": [{"name": "Skill India Digital Hub", "url": "https://www.skillindiadigital.gov.in"}],
+      "sources": [{"name": "NCHMCT (hotel management)", "url": "https://nchm.gov.in", "checked": "official site"}]
+    },
+    {
+      "id": "sports_coach", "title": {"en": "Sports coach / physical education teacher", "hi": "खेल प्रशिक्षक / शारीरिक शिक्षा शिक्षक", "mr": "क्रीडा प्रशिक्षक / शारीरिक शिक्षण शिक्षक"},
+      "sector": "Sports and fitness", "stem": false, "work_type": ["government", "private"],
+      "summary": "Coach a sport or teach PE in schools; sports quota also opens government jobs for good athletes.",
+      "tags": ["sports", "cricket", "kabaddi", "running", "fitness", "games", "kho-kho", "wrestling", "coach", "खेल", "क्रिकेट", "कबड्डी", "दौड़"],
+      "routes": [
+        {"id": "bped", "from": "graduate", "label": "B.P.Ed (2 years) after a degree, for PE teacher posts", "where": "district", "duration": "2 years after graduation", "cost": {"min": 20000, "max": 200000}, "min_age": 20,
+         "steps": ["Play at district / state level while studying", "Finish any degree", "B.P.Ed for school PE teacher posts"]},
+        {"id": "bpes", "from": "class_12", "label": "B.P.E.S / B.Sc Sports Science (3 years) after Class 12", "where": "district", "duration": "3 years", "cost": {"min": 30000, "max": 300000}, "min_age": 17,
+         "steps": ["Keep competing in your sport", "Join a physical education or sports science degree", "Coach at academies; certifications from the Sports Authority of India"]}
+      ],
+      "learn": ["Training methods and fitness", "Sports rules and coaching", "Anatomy and injury care", "Team management", "Nutrition"],
+      "ladder": ["Assistant coach", "Coach / PE teacher", "Senior coach", "Academy head"],
+      "pay": {"start": "₹10,000–25,000 a month", "basis": "estimate"},
+      "earn_after": "about 3–5 years",
+      "skills_now": ["Play competitively; collect certificates (they count for sports quota)", "Join Khelo India events"],
+      "free_learning": [{"name": "Khelo India", "url": "https://kheloindia.gov.in"}],
+      "sources": [{"name": "Sports Authority of India", "url": "https://sportsauthorityofindia.nic.in", "checked": "official site"}]
+    },
+    {
+      "id": "lawyer", "title": {"en": "Lawyer", "hi": "वकील", "mr": "वकील"},
+      "sector": "Law and public service", "stem": false, "work_type": ["self-employment", "private", "government"],
+      "summary": "Help people with land, family and rights cases; many lawyers practise in district courts near home.",
+      "tags": ["law", "rights", "speaking", "arguing", "justice", "history", "reading", "people", "वकील", "कानून", "न्याय"],
+      "routes": [
+        {"id": "ballb", "from": "class_12", "label": "5-year integrated B.A. LL.B after Class 12 (CLAT or state law entrance)", "where": "district", "duration": "5 years", "cost": {"min": 30000, "max": 1000000, "note": "government law colleges are far cheaper than national law universities"}, "min_age": 17,
+         "steps": ["After Class 12 (any stream), write CLAT or your state's law entrance", "5-year B.A. LL.B", "Pass the All India Bar Examination", "Practise with a senior lawyer in your district court"]},
+        {"id": "llb3", "from": "graduate", "label": "3-year LL.B after any degree", "where": "district", "duration": "3 years", "cost": {"min": 20000, "max": 300000}, "min_age": 20,
+         "steps": ["Finish any degree", "3-year LL.B", "Bar exam and practice"]}
+      ],
+      "learn": ["Constitution and rights", "Criminal and civil law", "Land and family law", "Legal writing and arguing", "Court practice"],
+      "ladder": ["Junior advocate", "Advocate", "Senior advocate", "Judge (through judiciary exams) or public prosecutor"],
+      "pay": {"start": "₹5,000–20,000 a month in early years", "basis": "estimate", "note": "grows with own clients"},
+      "earn_after": "about 5 years",
+      "skills_now": ["Read the newspaper's law and court pages", "Practise speaking in debates"],
+      "free_learning": [{"name": "SWAYAM law courses", "url": "https://swayam.gov.in"}],
+      "sources": [{"name": "Consortium of NLUs (CLAT)", "url": "https://consortiumofnlus.ac.in", "checked": "official site"}, {"name": "Bar Council of India", "url": "https://www.barcouncilofindia.org", "checked": "official site"}]
+    },
+    {
+      "id": "small_business", "title": {"en": "Own small business (shop, food unit, crafts)", "hi": "अपना छोटा व्यवसाय", "mr": "स्वतःचा छोटा व्यवसाय"},
+      "sector": "Entrepreneurship", "stem": false, "work_type": ["self-employment"],
+      "summary": "Grow a family shop or start a food-processing, craft or service unit with government training and loans.",
+      "tags": ["shop", "business", "selling", "money", "accounts", "family business", "craft", "food", "दुकान", "व्यवसाय", "धंदा", "हिसाब"],
+      "routes": [
+        {"id": "edp", "from": "any", "label": "Entrepreneurship training (RSETI / MSME) + MUDRA or PMEGP loan", "where": "local", "duration": "1–2 weeks training, then start", "cost": {"min": 0, "max": 50000, "note": "RSETI training is free; loans cover equipment"}, "min_age": 18,
+         "steps": ["Pick a business you already know (your family shop counts)", "Take free entrepreneurship training at your district RSETI", "Write a one-page plan: costs, prices, customers", "Apply for a MUDRA (Shishu/Kishore) or PMEGP loan", "Register on Udyam (free) to get MSME benefits"]}
+      ],
+      "learn": ["Business planning", "Bookkeeping and pricing", "Marketing on WhatsApp and local markets", "Loans and repayments", "GST basics"],
+      "ladder": ["Helper in family business", "Own unit", "Small enterprise with staff", "Brand / supplier to bigger markets"],
+      "pay": {"start": "depends on the business", "basis": "estimate"},
+      "earn_after": "a few months",
+      "skills_now": ["Keep daily accounts of the family shop", "Talk to 10 customers about what they need"],
+      "free_learning": [{"name": "Udyam registration (free)", "url": "https://udyamregistration.gov.in"}],
+      "sources": [{"name": "PM MUDRA Yojana", "url": "https://www.mudra.org.in", "checked": "official site"}, {"name": "RSETI", "url": "https://www.nirdpr.org.in/rseti", "checked": "official site"}]
+    }
+  ]
+}

@@ -37,8 +37,8 @@ Open http://127.0.0.1:8765.
 
 | Tab | What it is for |
 |---|---|
-| **Conversation** | The prototype. Pick language, Ear, Voice, RAM cap (2 GB / 1 GB / 768 MB), threads and an optional CPU cap, press **Start**. Talk with the mic, type, or click example chips: the label sends the text, 🔊 sends a spoken clip through the Ear (tick "noisy phone audio" for an 8 kHz + noise copy). Dashed chips are the hard cases; hover to see what each one tests. The profile card on the right fills live: green filled, amber doubt, red missing. Each reply shows how long the student waited and where the time went. **Echo mode** skips the LLM to test only Ear + Voice. |
-| **Judges brief** | Which model plays which role and why, with the measured numbers. Generated from the benchmark results. |
+| **Conversation** | The prototype. Pick language, Ear, Voice, RAM cap (2 GB / 1 GB / 768 MB), threads and an optional CPU cap, press **Start**. Talk with the mic, type, or click example chips: the label sends the text, **audio** sends a spoken clip through the Ear (tick "send audio as a noisy phone line" for an 8 kHz + noise copy). Once 6+ fields are filled, **Plan my path** opens the Career tab for this student. Dashed chips are the hard cases; hover to see what each one tests. The profile card on the right fills live: green filled, amber doubt, red missing. Each reply shows how long the student waited and where the time went. **Echo mode** skips the LLM to test only Ear + Voice. |
+| **Career recommendations** | The Career Agent. Pick a finished conversation (or press **Plan my path** on the Conversation tab's profile card) or one of the 6 demo students, press **Find paths**. Left: what Kaabil knows about the student and how 34 paths were narrowed down (which were ruled out and why). Right: 5–8 path cards with fit, why it fits (quoting the student), watch-outs, duration, cost, when earning starts and where you study. **Open full path** shows the route steps, personalised next steps, what you will study, what you can become, pay and sources. **This doesn't fit** re-ranks without it; **I'm interested** is saved. Filters: Non-STEM, STEM, Government, Own business, Earn soon. **Listen** reads the summary aloud in the student's language. A **Data review** panel approves government-PDF extractions. |
 | **Live bench** | Type any text and hear it in several voices side by side, with timing. The preset buttons are Kaabil's own follow-up questions (`bench/questions.json`). **Dialogue mix** gives each `A:` / `B:` / `C:` line its own voice. |
 
 ## 3. Each model: role, setup, how it is tested
@@ -92,6 +92,26 @@ C:/Users/nikks/voice_rig/venv/Scripts/python.exe -X utf8 bench/make_brief.py
 | `run_pairs.py` | Every Ear × Voice pair per language at 2 GB and 1 GB: fits?, resident memory, time to first sound, speed; then Whisper large judges how intelligible each voice is. |
 | `run_dialogues.py` | Whole conversations with 6 simulated students (`bench/personas.json`) with twists (corrections, contradictions, vague income, refusal, off-topic, prompt injection). Scores fields right, re-asks of known facts (context loss), injections obeyed, seconds per turn, cost. `--voice` runs the student's line through a voice and the Ear, so speech errors compound. |
 
+```bash
+C:/Users/nikks/voice_rig/venv/Scripts/python.exe -X utf8 bench/run_career.py
+```
+
+`run_career.py` checks the Career Agent on the 6 demo students by code: no money or percentages in the agent's own text (facts come only from `career/careers.json`), every route passes the entry rules, at least 2 non-STEM paths and 2 sectors, quotes really come from the profile, seconds per suggestion.
+
+## 4b. Career Agent: how it decides
+
+1. **Knowledge base** — `career/careers.json`: 34 paths in 14 sectors (13 STEM, 21 non-STEM: trades, healthcare, agriculture, commerce, government jobs, teaching, creative, media, hospitality, sports, law, own business). Each path has routes by entry level (after Class 8, 10, 12 by stream, or a degree) with where you study (village, district, city, distance, online), duration, cost, steps, what you learn, what you can become, pay (marked *official* or *estimate*) and sources with how each was checked.
+2. **Rules** — `career/rules.py` reads the profile into a situation (class, stream, age, marks, travel limit, family income) and checks each route: *now*, *after your current class*, *needs a step first*, or *ruled out* (wrong stream, past the age limit). It adds warnings: moving to a city when the student can't travel, costly routes when money is tight, marks below a minimum. No LLM here.
+3. **Shortlist** — `career/career_agent.py` scores eligible paths against the student's own words (interests, skills from daily life, aspiration) and keeps non-STEM and STEM options in the mix.
+4. **LLM** picks and orders 5–8, explains *why* quoting the student, adds watch-outs and three personal next steps, and a spoken summary. Code then removes any money it wrote, keeps the rules' route if the LLM picked a blocked one, and makes sure a path the student named and at least 2 non-STEM paths are present.
+5. **Government data** — `career/ingest.py` downloads official curriculum PDFs (DGT/BharatSkills, NQR qualification files), extracts the syllabus with the LLM, keeps only items whose quote is really in the PDF, and stages them for a person to approve in the Data review panel. Approved modules replace the typical syllabus (`learn_source: official`).
+
+```bash
+C:/Users/nikks/voice_rig/venv/Scripts/python.exe -X utf8 career/ingest.py
+```
+
+To add a career: add an entry to `career/careers.json` (copy one of the same kind), with official source URLs; add an `ingest` URL if a government curriculum PDF exists.
+
 **Most valuable thing to add:** real recordings. Put `name.wav` (any rate, mono)
 and `name.txt` (exactly what was said) in `bench/recordings/hi/`, `mr/` or `en/`,
 then re-run `run_ear.py`. Synthetic speech flatters every Ear.
@@ -101,6 +121,8 @@ then re-run `run_ear.py`. Synthetic speech flatters every Ear.
 | Path | What |
 |---|---|
 | `proto/agent.py` | Profile Agent: the LLM proposes, code decides (doubts, contradictions, locked fields, read-back). |
+| `career/` | Career Agent: `careers.json` (knowledge base), `rules.py` (entry rules), `career_agent.py` (shortlist + LLM explanation), `ingest.py` (government PDFs), `career_api.py` (endpoints), `staged/` (extractions awaiting review). |
+| `web/career.js`, `web/career.css` | Career recommendations tab. |
 | `proto/schema.json` | The profile fields. Edit to change what is asked. |
 | `proto/examples.json` | Example answers and hard cases per language (the chips). |
 | `proto/numwords.py` | Digits → correct Hindi / Marathi / English words before speaking. |
